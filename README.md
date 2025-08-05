@@ -44,8 +44,8 @@ Inspirado por situaciones reales como el trabajo científico del CONICET en Mar 
 
 <p>
 (Agregá imágenes de gameplay si ya tenés)<br><br>
-<img src="" width="400"/>
-<img src="" width="400"/>
+<!-- <img src="" width="400"/>
+<img src="" width="400"/> -->
 </p>
 
 <h2>📁 Estructura del proyecto</h2>
@@ -57,8 +57,8 @@ Assets/
 ├── Prefabs/
 ├── Art/
 ├── Audio/
-└── UI/
-└── StreamingAssets/Desktop/
+├── UI/
+└── StreamingAssets/Mobile/
 
 </pre>
 
@@ -71,8 +71,8 @@ Assets/
   <li><b>Luciana </b> – <a href="https://github.com/lucianatux" target="_blank">GitHub</a></li>
   <li><b>Fabricio Mettan</b> – <a href="https://github.com/FabricioMettan" target="_blank">GitHub</a></li>
   <li><b>Lautaro</b> – <a href="https://github.com/laugabr" target="_blank">GitHub</a></li>
-  <li><b>Camila</b> – <a href="" target="_blank">GitHub</a></li>
-  <li><b>Simmón</b> – <a href="" target="_blank">GitHub</a></li>
+  <li><b>Camila</b> – <a href="https://github.com/boessca" target="_blank">GitHub</a></li>
+  <li><b>Simón</b> – <a href="" target="_blank">GitHub</a></li>
   <!-- <li><b></b> – <a href="" target="_blank">GitHub</a></li> -->
 </ul>
 
