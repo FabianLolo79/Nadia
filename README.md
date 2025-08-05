@@ -68,11 +68,11 @@ Assets/
   <li><b>Brian Schoepf</b> – <a href="https://github.com/BraSchoepf" target="_blank">GitHub</a></li>
   <li><b>Esteban Barone</b> – <a href="https://github.com/Esteban163" target="_blank">GitHub</a></li>
   <li><b>Fabian García</b> – <a href="https://github.com/FabianLolo79" target="_blank">GitHub</a></li>
-  <li><b>Luciana </b> – <a href="https://github.com/lucianatux" target="_blank">GitHub</a></li>
+  <li><b>Luciana Caminos Cano</b> – <a href="https://github.com/lucianatux" target="_blank">GitHub</a></li>
   <li><b>Fabricio Mettan</b> – <a href="https://github.com/FabricioMettan" target="_blank">GitHub</a></li>
-  <li><b>Lautaro</b> – <a href="https://github.com/laugabr" target="_blank">GitHub</a></li>
-  <li><b>Camila</b> – <a href="" target="_blank">GitHub</a></li>
-  <li><b>Simmón</b> – <a href="" target="_blank">GitHub</a></li>
+  <li><b>Lautaro Gabriel</b> – <a href="https://github.com/laugabr" target="_blank">GitHub</a></li>
+  <li><b>Camila Boess</b> – <a href="" target="_blank">GitHub</a></li>
+  <li><b>Simón Frías</b> – <a href="" target="_blank">GitHub</a></li>
   <!-- <li><b></b> – <a href="" target="_blank">GitHub</a></li> -->
 </ul>
 
