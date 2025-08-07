@@ -13,8 +13,7 @@ public class SpeciesCollectable : MonoBehaviour
         if (player.AddSpecies(speciesData))
         {
             Debug.Log($"Recolectaste: {speciesData.speciesName}");
-            // Acá podrías hacer un efecto visual o sonido
-            Destroy(gameObject); // Simula que lo agarraste
+            Destroy(gameObject); 
         }
     }
 }
