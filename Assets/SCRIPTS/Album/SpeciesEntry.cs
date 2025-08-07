@@ -28,7 +28,7 @@ public class SpeciesEntry : MonoBehaviour
         }
         else
         {
-            Color faded = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            Color faded = new Color(0.2f, 0.2f, 0.2f, 0.2f);
             iconImage.color = faded;
             nameText.color = faded;
             descriptionText.color = faded;
