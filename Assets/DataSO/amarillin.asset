@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: amarillin
   m_EditorClassIdentifier: 
   speciesID: amarillin
-  speciesName: esponja
+  speciesName: "esponja amarill\xEDn"
   speciesImage: {fileID: -5158576283903949858, guid: 303d00e38157c40459351e819179290a, type: 3}
-  description: bla bla bla
+  description: description

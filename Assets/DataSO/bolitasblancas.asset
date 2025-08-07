@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: bolitasblancas
   m_EditorClassIdentifier: 
   speciesID: bolitasblancas
-  speciesName: bb name
+  speciesName: bolitas blancas
   speciesImage: {fileID: -3998017290171597367, guid: b2419169231062c43abadd00eee2caa4, type: 3}
-  description: bb description
+  description: description

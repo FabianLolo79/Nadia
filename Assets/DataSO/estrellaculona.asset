@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: estrellaculona
   m_EditorClassIdentifier: 
   speciesID: estrellaculona
-  speciesName: estrella name
+  speciesName: estrella culona
   speciesImage: {fileID: -6274818482530293152, guid: 304a6029f8dfa6b4fbadf7f424461b82, type: 3}
-  description: ec description
+  description: description
