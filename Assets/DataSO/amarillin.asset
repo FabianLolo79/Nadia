@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: amarillin
   m_EditorClassIdentifier: 
-  speciesID: 
-  speciesName: 
-  speciesImage: {fileID: 0}
-  description: 
+  speciesID: amarillin
+  speciesName: esponja
+  speciesImage: {fileID: -5158576283903949858, guid: 303d00e38157c40459351e819179290a, type: 3}
+  description: bla bla bla

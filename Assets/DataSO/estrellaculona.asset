@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: estrellaculona
   m_EditorClassIdentifier: 
-  speciesID: 
-  speciesName: 
-  speciesImage: {fileID: 0}
-  description: 
+  speciesID: estrellaculona
+  speciesName: estrella name
+  speciesImage: {fileID: -6274818482530293152, guid: 304a6029f8dfa6b4fbadf7f424461b82, type: 3}
+  description: ec description
