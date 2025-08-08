@@ -35,7 +35,7 @@ public class PlayerCollection : MonoBehaviour
 
         if (collectedSpecies.Contains(species))
         {
-            Debug.Log($"Species '{species.speciesName}' already collected.");
+            Debug.Log($"Species '{species.speciesID}' already collected.");
             return false;
         }
 
@@ -43,9 +43,9 @@ public class PlayerCollection : MonoBehaviour
 
         if (added)
         {
-            Debug.Log($"Collected new species: {species.speciesName}");
+            Debug.Log($"Collected new species: {species.speciesID}");
         }
-
+        
         return added;
     }
 }

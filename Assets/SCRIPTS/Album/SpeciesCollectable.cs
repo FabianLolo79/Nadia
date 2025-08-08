@@ -37,7 +37,7 @@ public class SpeciesCollectable : MonoBehaviour
 
         if (player.AddSpecies(speciesData))
         {
-            Debug.Log($"Recolectaste: {speciesData.speciesName}");
+            Debug.Log($"Recolectaste: {speciesData.speciesID}");
             Destroy(gameObject);
         }
     }
