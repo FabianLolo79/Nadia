@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class FABRIK_ROV : MonoBehaviour
 {
+    [Header("Configuración de Joystick")]
+    [SerializeField] private Joystick _joystick;
+    [SerializeField] private float _joystickRange = 5f;
+
     [Header("Configuración de la garra")]
     public Transform[] joints;               // Segment0, Segment1, ..., Pinza
     public float[] segmentLengths;           // Largo de cada segmento
@@ -51,12 +55,21 @@ public class FABRIK_ROV : MonoBehaviour
         // Movimiento dinámico de la garra mediante el mouse
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPos.z = 0f;
-        Vector2 rawTarget = mouseWorldPos;
+        Vector2 input = new Vector2(_joystick.Horizontal, _joystick.Vertical);
+        Vector2 rawTarget; 
 
-        if (!initialized)
+        if (input.magnitude > 0.1f)
+        {
+            rawTarget = basePosition + input.normalized * _joystickRange;
+        }
+        else
+        {
+            rawTarget = filteredTarget; 
+        }
+
+        if (initialized)
         {
             filteredTarget = rawTarget;
-            initialized = true;
         }
         else
         {
