@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calamar_0: -5814487329837073629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
