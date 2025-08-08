@@ -1,13 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Gestiona las especies que el jugador ha coleccionado
+/// y permite consultar o agregar nuevas especies.
+/// </summary>
 public class PlayerCollection : MonoBehaviour
 {
-    private HashSet<SpeciesSO> collectedSpecies = new HashSet<SpeciesSO>();
+    private HashSet<SpeciesSO> collectedSpecies = new HashSet<SpeciesSO>(); // Conjunto de especies únicas recolectadas
 
-    // Exponer como solo lectura
+    // Propiedad de solo lectura para acceder a la colección
     public IReadOnlyCollection<SpeciesSO> CollectedSpecies => collectedSpecies;
 
+    // Devuelve true si la especie indicada ya fue coleccionada
     public bool HasCollected(SpeciesSO species)
     {
         if (species == null)
@@ -19,6 +24,7 @@ public class PlayerCollection : MonoBehaviour
         return collectedSpecies.Contains(species);
     }
 
+    // Intenta añadir una nueva especie a la colección
     public bool AddSpecies(SpeciesSO species)
     {
         if (species == null)
