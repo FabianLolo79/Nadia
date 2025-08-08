@@ -9,7 +9,7 @@ public class SpeciesSpawner : MonoBehaviour
 
     [SerializeField] private float spawnInterval = 1f;
 
-
+    private bool _canSpawn;
     private float timer;
 
     void Update()
@@ -24,6 +24,8 @@ public class SpeciesSpawner : MonoBehaviour
 
         void SpawnRandom()
     {
+
+        if (!_canSpawn) return; 
         if (species.Count == 0 || spawnArea == null) return;
 
         // Sacar centro y tamaño del collider
