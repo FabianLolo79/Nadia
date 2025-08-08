@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Para usar TextMeshPro
+using TMPro;
 
 /// <summary>
 /// Controla cómo se muestra una entrada del álbum.
@@ -10,15 +10,23 @@ using TMPro; // Para usar TextMeshPro
 public class SpeciesEntry : MonoBehaviour
 {
     [Header("UI Elements")]
-    [SerializeField] private Image iconImage;         // Imagen de la especie
-    [SerializeField] private TMP_Text nameText;       // Texto con el nombre
-    [SerializeField] private TMP_Text descriptionText;// Texto con la descripción
+    [SerializeField] private Image iconImage;         
+    [SerializeField] private TMP_Text nameText;       
+    [SerializeField] private TMP_Text descriptionText;
+
+    [Header("Collected Colors")]
+    [SerializeField] private Color collectedIconColor = Color.white;
+    [SerializeField] private Color collectedNameColor = Color.white;
+    [SerializeField] private Color collectedDescriptionColor = Color.white;
+
+    [Header("Not Collected Colors")]
+    [SerializeField] private Color notCollectedIconColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
+    [SerializeField] private Color notCollectedNameColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
+    [SerializeField] private Color notCollectedDescriptionColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
 
     /// <summary>
     /// Configura la entrada del álbum con los datos de la especie.
     /// </summary>
-    /// <param name="species">Datos de la especie (ScriptableObject)</param>
-    /// <param name="collected">Indica si el jugador ya la recolectó</param>
     public void Setup(SpeciesSO species, bool collected)
     {
         // Asignar nombre y descripción
@@ -28,19 +36,19 @@ public class SpeciesEntry : MonoBehaviour
         // Asignar imagen
         iconImage.sprite = species.speciesImage;
 
-        // Ajustar color según estado de colección
+        // Ajustar colores según estado
         if (collected)
         {
-            iconImage.color = Color.white;
-            nameText.color = Color.white;
-            descriptionText.color = Color.white;
+            iconImage.color = collectedIconColor;
+            nameText.color = collectedNameColor;
+            descriptionText.color = collectedDescriptionColor;
         }
         else
         {
-            Color faded = new Color(0.2f, 0.2f, 0.2f, 0.2f); // Color apagado
-            iconImage.color = faded;
-            nameText.color = faded;
-            descriptionText.color = faded;
+            iconImage.color = notCollectedIconColor;
+            nameText.color = notCollectedNameColor;
+            descriptionText.color = notCollectedDescriptionColor;
         }
     }
 }
+
