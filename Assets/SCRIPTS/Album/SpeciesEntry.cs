@@ -11,8 +11,6 @@ public class SpeciesEntry : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] private Image iconImage;         
-    [SerializeField] private TMP_Text nameText;       
-    [SerializeField] private TMP_Text descriptionText;
 
     [Header("Collected Colors")]
     [SerializeField] private Color collectedIconColor = Color.white;
@@ -29,10 +27,7 @@ public class SpeciesEntry : MonoBehaviour
     /// </summary>
     public void Setup(SpeciesSO species, bool collected)
     {
-        // Asignar nombre y descripción
-        nameText.text = species.speciesName;
-        descriptionText.text = species.description;
-
+       
         // Asignar imagen
         iconImage.sprite = species.speciesImage;
 
@@ -40,14 +35,10 @@ public class SpeciesEntry : MonoBehaviour
         if (collected)
         {
             iconImage.color = collectedIconColor;
-            nameText.color = collectedNameColor;
-            descriptionText.color = collectedDescriptionColor;
         }
         else
         {
             iconImage.color = notCollectedIconColor;
-            nameText.color = notCollectedNameColor;
-            descriptionText.color = notCollectedDescriptionColor;
         }
     }
 }

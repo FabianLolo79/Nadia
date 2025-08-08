@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cerebrito_0: -9087452909922295983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

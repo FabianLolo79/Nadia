@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pulpodumbo_0: -6503338447600281936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
