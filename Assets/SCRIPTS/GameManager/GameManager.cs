@@ -127,5 +127,24 @@ public class GameManager : MonoBehaviour
     // Alterna abrir/cerrar álbum, pausa/reanuda el juego según estado
     public void ToggleAlbum()
     {
-        bool isActive = albumPanel.activ
+        bool isActive = albumPanel.activeSelf;
+        albumPanel.SetActive(!isActive);
 
+        if (!isActive)
+        {
+            PauseGame(); // Pausa al abrir álbum
+        }
+        else
+        {
+            ResumeGame(); // Reanuda al cerrar
+        }
+    }
+
+    // ==== Actualiza texto del timer en UI ====
+    private void UpdateTimerUI()
+    {
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+}
