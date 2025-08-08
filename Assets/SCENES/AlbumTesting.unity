@@ -167,9 +167,19 @@ MonoBehaviour:
   entriesContainer: {fileID: 731535218}
   speciesEntryPrefab: {fileID: 1047719709383372420, guid: 6b2d843ee58dbb44894220bbcf9044c3, type: 3}
   allSpecies:
-  - {fileID: 11400000, guid: d6f666ecec2edcb4aa5a12ece56c0d05, type: 2}
-  - {fileID: 11400000, guid: 7a70881eefe14b2409642d91725c0c35, type: 2}
-  - {fileID: 11400000, guid: a23ad9daf1ff88f4284e12f84131fa26, type: 2}
+  - {fileID: 11400000, guid: c1c9f2e9427f127428d2d656d9b5976a, type: 2}
+  - {fileID: 11400000, guid: 1a89e3b5d0ed9a54eadb1252ea5a9234, type: 2}
+  - {fileID: 11400000, guid: 68546fcff9571d842b5a1a4061530159, type: 2}
+  - {fileID: 11400000, guid: fc78d7f751d8d614e91b0411f55aca89, type: 2}
+  - {fileID: 11400000, guid: e88715bf27912a6448a8c1a0b0763b5d, type: 2}
+  - {fileID: 11400000, guid: f75cf9f430d4c8649a3cfe0d1e1b2988, type: 2}
+  - {fileID: 11400000, guid: d809c838c76e88346af6f99388af8a4f, type: 2}
+  - {fileID: 11400000, guid: 450bc6c43e4a76a4e822908669918a89, type: 2}
+  - {fileID: 11400000, guid: 128b2c87813ef194987a085edd95d7d0, type: 2}
+  - {fileID: 11400000, guid: e804df4ab280027438bc097917bd4db0, type: 2}
+  - {fileID: 11400000, guid: c80f7eaa405f8674e828820c26de970f, type: 2}
+  - {fileID: 11400000, guid: 947f7d4ebd4767848907f11b5f1878d4, type: 2}
+  - {fileID: 11400000, guid: 09638a9ec64b4f44e9c7f02e0dc801d7, type: 2}
   playerCollection: {fileID: 191928669}
 --- !u!1 &162533552
 GameObject:
@@ -254,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -648,7 +658,7 @@ MonoBehaviour:
     m_Top: 150
     m_Bottom: 200
   m_ChildAlignment: 4
-  m_Spacing: 300
+  m_Spacing: 180
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1006,7 +1016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff983663805c86d44b2d702a4b2dccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speciesData: {fileID: 11400000, guid: 7a70881eefe14b2409642d91725c0c35, type: 2}
+  spriteRenderer: {fileID: 0}
+  speciesData: {fileID: 11400000, guid: 68546fcff9571d842b5a1a4061530159, type: 2}
 --- !u!61 &1128144439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1532,7 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0.79607844, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1713,7 +1724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff983663805c86d44b2d702a4b2dccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speciesData: {fileID: 11400000, guid: a23ad9daf1ff88f4284e12f84131fa26, type: 2}
+  spriteRenderer: {fileID: 0}
+  speciesData: {fileID: 11400000, guid: c1c9f2e9427f127428d2d656d9b5976a, type: 2}
 --- !u!61 &1885615449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1861,7 +1873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff983663805c86d44b2d702a4b2dccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speciesData: {fileID: 11400000, guid: d6f666ecec2edcb4aa5a12ece56c0d05, type: 2}
+  spriteRenderer: {fileID: 0}
+  speciesData: {fileID: 11400000, guid: e88715bf27912a6448a8c1a0b0763b5d, type: 2}
 --- !u!61 &1950681449
 BoxCollider2D:
   m_ObjectHideFlags: 0

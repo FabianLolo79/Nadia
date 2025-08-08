@@ -8,8 +8,7 @@ using UnityEngine;
 public class SpeciesSO : ScriptableObject
 {
     public string speciesID;       // Identificador único (ej. "octopus", "sea_star")
-    public string speciesName;     // Nombre a mostrar en UI
     public Sprite speciesImage;    // Sprite/imagen en color para el álbum
-    public string description;     // Texto descriptivo (opcional)
+    public Sprite speciesImagePixel;   // Imagen en pixel art (juego)
 }
 

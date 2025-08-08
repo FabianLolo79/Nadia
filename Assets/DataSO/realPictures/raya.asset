@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
-  m_Name: amarillin
+  m_Name: raya
   m_EditorClassIdentifier: 
-  speciesID: amarillin
-  speciesName: "esponja amarill\xEDn"
-  speciesImage: {fileID: -5158576283903949858, guid: 303d00e38157c40459351e819179290a, type: 3}
-  description: description
+  speciesID: raya
+  speciesName: Raya de profundidad
+  speciesImage: {fileID: 2847085743724766186, guid: 6b9c2638594b8754e9c1085833563032, type: 3}
+  speciesImagePixel: {fileID: 0}
+  description: Bathyraja sp., Arhynchobatidae

@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
-  m_Name: bolitasblancas
+  m_Name: calamar
   m_EditorClassIdentifier: 
-  speciesID: bolitasblancas
-  speciesName: bolitas blancas
-  speciesImage: {fileID: -3998017290171597367, guid: b2419169231062c43abadd00eee2caa4, type: 3}
-  description: description
+  speciesID: calamar
+  speciesName: Calamar de profundidad
+  speciesImage: {fileID: -5814487329837073629, guid: 81f87843919619b4b84125de235e48a1, type: 3}
+  speciesImagePixel: {fileID: 0}
+  description: Architeuthis sp. o Magnapinna sp.

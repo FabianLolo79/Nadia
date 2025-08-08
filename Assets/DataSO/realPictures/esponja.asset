@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
+  m_Name: esponja
+  m_EditorClassIdentifier: 
+  speciesID: esponja
+  speciesName: esponja
+  speciesImage: {fileID: 1552250095395780857, guid: 19b89562bb3839e429d1180cfd35fce4, type: 3}
+  speciesImagePixel: {fileID: -5158576283903949858, guid: 303d00e38157c40459351e819179290a, type: 3}
+  description: 
