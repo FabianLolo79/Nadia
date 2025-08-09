@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
     public event Action OnStopScroll;
 
     // ==== Eventos para interacción con peces ====
-    public event Action<SpeciesSO> OnFishTouch;  // Cuando el brazo toca un pez
-    public event Action<SpeciesSO> OnFishCatch;  // Cuando el pez es capturado
+    public event Action<SpeciesSO> OnFishTouch;  
+    public event Action<SpeciesSO> OnFishCatch;
 
     // ==== Estados del juego ====
     public enum GameState { Waiting, Playing, Paused, Ended }
@@ -29,18 +29,21 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject endGamePanel;
 
     [Header("UI Timer")]
-    [SerializeField] private TMPro.TMP_Text timerText;
-    [SerializeField] private float gameTime = 60f; // Duración en segundos
+    [SerializeField] private TMP_Text timerText;
+    [SerializeField] private float gameTime = 60f; 
 
     private float timeRemaining;
-    private bool timerRunning = false;
 
     // ==== Singleton ====
     public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance == null) 
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else Destroy(gameObject);
     }
 
@@ -48,51 +51,62 @@ public class GameManager : MonoBehaviour
     {
         CurrentState = GameState.Waiting;
         timeRemaining = gameTime;
+        Time.timeScale = 1f; // aseguramos que esté activo
         UpdateTimerUI();
+        endGamePanel.SetActive(false);
+        albumPanel.SetActive(false);
     }
 
     private void Update()
     {
-        if (timerRunning)
+        if (CurrentState == GameState.Playing)
         {
-            timeRemaining -= Time.deltaTime;
+            timeRemaining -= Time.unscaledDeltaTime; // usar unscaled para que pause via timeScale afecte el timer (opcional, si querés que no baje en pausa)
+            
             if (timeRemaining <= 0)
             {
+                timeRemaining = 0;
                 EndGame();
             }
             UpdateTimerUI();
         }
     }
 
-    // ==== Métodos para controlar el flujo del juego ====
+    // ==== Control del flujo ====
     public void StartGame()
     {
+        if (CurrentState != GameState.Waiting) return;
+
         CurrentState = GameState.Playing;
-        timerRunning = true;
-        OnGameStart?.Invoke(); // evento general
-        OnStartScroll?.Invoke(); // comienza scroll
+        Time.timeScale = 1f;
+        OnGameStart?.Invoke();
+        OnStartScroll?.Invoke();
     }
 
     public void PauseGame()
     {
         if (CurrentState != GameState.Playing) return;
+
         CurrentState = GameState.Paused;
-        timerRunning = false;
+        Time.timeScale = 0f;
         OnGamePause?.Invoke();
     }
 
     public void ResumeGame()
     {
         if (CurrentState != GameState.Paused) return;
+
         CurrentState = GameState.Playing;
-        timerRunning = true;
+        Time.timeScale = 1f;
         OnGameResume?.Invoke();
     }
 
     public void EndGame()
     {
+        if (CurrentState == GameState.Ended) return;
+
         CurrentState = GameState.Ended;
-        timerRunning = false;
+        Time.timeScale = 0f;
         endGamePanel.SetActive(true);
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
@@ -108,8 +122,8 @@ public class GameManager : MonoBehaviour
     {
         OnStopScroll?.Invoke();
     }
-    
-    // ==== Eventos de interacción con peces ====
+
+    // ==== Eventos peces ====
     public void FishTouched(SpeciesSO species)
     {
         OnFishTouch?.Invoke(species);
@@ -120,7 +134,7 @@ public class GameManager : MonoBehaviour
         OnFishCatch?.Invoke(species);
     }
 
-    // ==== Control del álbum ====
+    // ==== Control álbum ====
     public void ToggleAlbum()
     {
         bool isActive = albumPanel.activeSelf;
@@ -130,7 +144,7 @@ public class GameManager : MonoBehaviour
         else ResumeGame();
     }
 
-    // ==== UI Timer ====
+    // ==== Actualizar UI timer ====
     private void UpdateTimerUI()
     {
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
@@ -138,4 +152,5 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
     }
 }
+
 
