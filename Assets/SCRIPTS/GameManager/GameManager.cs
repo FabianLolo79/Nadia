@@ -1,15 +1,21 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro; 
 
 public class GameManager : MonoBehaviour
 {
-    // ==== Eventos ====
-    // Se disparan cuando el fondo y las criaturas deben moverse o detenerse
+    // ==== Eventos de flujo general ====
+    public event Action OnGameStart;
+    public event Action OnGamePause;
+    public event Action OnGameResume;
+    public event Action OnGameEnd;
+
+    // ==== Eventos para scroll ====
     public event Action OnStartScroll;
     public event Action OnStopScroll;
 
-    // Eventos para interacción con peces
+    // ==== Eventos para interacción con peces ====
     public event Action<SpeciesSO> OnFishTouch;  // Cuando el brazo toca un pez
     public event Action<SpeciesSO> OnFishCatch;  // Cuando el pez es capturado
 
@@ -23,7 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject endGamePanel;
 
     [Header("UI Timer")]
-    [SerializeField] private Text timerText;
+    [SerializeField] private TMPro.TMP_Text timerText;
     [SerializeField] private float gameTime = 60f; // Duración en segundos
 
     private float timeRemaining;
@@ -34,14 +40,12 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton básico para acceso global
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
     private void Start()
     {
-        // Estado inicial: esperando inicio de partida
         CurrentState = GameState.Waiting;
         timeRemaining = gameTime;
         UpdateTimerUI();
@@ -49,7 +53,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        // Control del temporizador solo si el juego está activo
         if (timerRunning)
         {
             timeRemaining -= Time.deltaTime;
@@ -62,42 +65,40 @@ public class GameManager : MonoBehaviour
     }
 
     // ==== Métodos para controlar el flujo del juego ====
-
-    // Inicia el juego, empieza el timer y el scroll del mar
     public void StartGame()
     {
         CurrentState = GameState.Playing;
         timerRunning = true;
-        OnStartScroll?.Invoke();
+        OnGameStart?.Invoke(); // evento general
+        OnStartScroll?.Invoke(); // comienza scroll
     }
 
-    // Pausa el juego y el timer
     public void PauseGame()
     {
         if (CurrentState != GameState.Playing) return;
         CurrentState = GameState.Paused;
         timerRunning = false;
+        OnGamePause?.Invoke();
     }
 
-    // Reanuda el juego y el timer
     public void ResumeGame()
     {
         if (CurrentState != GameState.Paused) return;
         CurrentState = GameState.Playing;
         timerRunning = true;
+        OnGameResume?.Invoke();
     }
 
-    // Termina la partida, muestra panel final y detiene el scroll
     public void EndGame()
     {
         CurrentState = GameState.Ended;
         timerRunning = false;
         endGamePanel.SetActive(true);
+        OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
     }
 
-    // ==== Métodos para controlar el scroll del mar y criaturas ====
-
+    // ==== Scroll manual ====
     public void TriggerStartScroll()
     {
         OnStartScroll?.Invoke();
@@ -108,39 +109,28 @@ public class GameManager : MonoBehaviour
         OnStopScroll?.Invoke();
     }
     
-    // ==== Métodos para disparar eventos de interacción con peces ====
-
-    // Llamar cuando el brazo toca un pez
+    // ==== Eventos de interacción con peces ====
     public void FishTouched(SpeciesSO species)
     {
         OnFishTouch?.Invoke(species);
     }
 
-    // Llamar cuando se captura un pez
     public void FishCaught(SpeciesSO species)
     {
         OnFishCatch?.Invoke(species);
     }
 
     // ==== Control del álbum ====
-
-    // Alterna abrir/cerrar álbum, pausa/reanuda el juego según estado
     public void ToggleAlbum()
     {
         bool isActive = albumPanel.activeSelf;
         albumPanel.SetActive(!isActive);
 
-        if (!isActive)
-        {
-            PauseGame(); // Pausa al abrir álbum
-        }
-        else
-        {
-            ResumeGame(); // Reanuda al cerrar
-        }
+        if (!isActive) PauseGame();
+        else ResumeGame();
     }
 
-    // ==== Actualiza texto del timer en UI ====
+    // ==== UI Timer ====
     private void UpdateTimerUI()
     {
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
@@ -148,3 +138,4 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
     }
 }
+
