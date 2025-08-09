@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
+  m_Name: calamar
+  m_EditorClassIdentifier: 
+  speciesID: calamar
+  speciesImage: {fileID: 21300000, guid: c187c3be45b63c94c9263f05a964b3dd, type: 3}
+  speciesImagePixel: {fileID: 21300000, guid: 5f1ea8094166edf49966c23c20c4c886, type: 3}
