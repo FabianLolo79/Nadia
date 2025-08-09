@@ -14,24 +14,15 @@ public class MapScroll : MonoBehaviour
         {
             Debug.LogError("Material not found");
         }
-         
+
+        GameManager.Instance.OnStartScroll += ResumeScroll;
+        GameManager.Instance.OnStopScroll += PauseScroll;
+
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isPaused)
-            {
-                ResumeScroll();
-            }
-            else
-            {
-                PauseScroll();
-            }
-
-        }
-
         if (!isPaused)
         {
             currentOffset.y += speed * Time.deltaTime;
@@ -39,12 +30,6 @@ public class MapScroll : MonoBehaviour
             _mat.SetVector("_Offset", currentOffset);
         }
     }
-
-    private void StopScroll()
-    {
-        _mat.SetVector("_Speed", new Vector2(0, 0));
-    }
-
 
     public void PauseScroll()
     {
@@ -54,5 +39,10 @@ public class MapScroll : MonoBehaviour
     public void ResumeScroll()
     {
         isPaused = false;
+    }
+    void OnDestroy()
+    {
+        GameManager.Instance.OnStartScroll -= ResumeScroll;
+        GameManager.Instance.OnStopScroll -= PauseScroll;
     }
 }

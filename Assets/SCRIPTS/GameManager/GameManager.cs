@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public event Action<SpeciesSO> OnFishTouch;  
     public event Action<SpeciesSO> OnFishCatch;
 
+    public event Action<SpeciesSO> OnFishNotCatch;
+
+
     // ==== Estados del juego ====
     public enum GameState { Waiting, Playing, Paused, Ended }
     public GameState CurrentState { get; private set; } = GameState.Waiting;
@@ -132,6 +135,11 @@ public class GameManager : MonoBehaviour
     public void FishCaught(SpeciesSO species)
     {
         OnFishCatch?.Invoke(species);
+    }
+
+    public void FishNotCaught(SpeciesSO species)
+    {
+        OnFishNotCatch?.Invoke(species);
     }
 
     // ==== Control álbum ====

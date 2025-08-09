@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SpeciesSpawner : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> species; 
+    [SerializeField] private List<GameObject> species;
 
     [SerializeField] private BoxCollider2D spawnArea; // área para spawnear
 
@@ -11,6 +11,22 @@ public class SpeciesSpawner : MonoBehaviour
 
     private bool _canSpawn = true;
     private float timer;
+
+    void Start()
+    {
+        GameManager.Instance.OnStartScroll += ResumeSpawn;
+        GameManager.Instance.OnStartScroll += PauseSpawn;
+    }
+
+    private void PauseSpawn()
+    {
+        _canSpawn = false;
+    }
+
+    private void ResumeSpawn()
+    {
+        _canSpawn = true;
+    }
 
     void Update()
     {
@@ -22,10 +38,10 @@ public class SpeciesSpawner : MonoBehaviour
         }
     }
 
-        void SpawnRandom()
+    void SpawnRandom()
     {
 
-        if (!_canSpawn) return; 
+        if (!_canSpawn) return;
         if (species.Count == 0 || spawnArea == null) return;
 
         // Sacar centro y tamaño del collider
@@ -40,4 +56,11 @@ public class SpeciesSpawner : MonoBehaviour
         int index = Random.Range(0, species.Count);
         Instantiate(species[index], spawnPos, Quaternion.identity);
     }
+
+    void OnDestroy()
+    {
+        GameManager.Instance.OnStartScroll -= ResumeSpawn;
+        GameManager.Instance.OnStartScroll -= PauseSpawn;
+    }
+
 }
