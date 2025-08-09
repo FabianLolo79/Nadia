@@ -9,7 +9,7 @@ public class SpeciesSpawner : MonoBehaviour
 
     [SerializeField] private float spawnInterval = 1f;
 
-    private bool _canSpawn;
+    private bool _canSpawn = true;
     private float timer;
 
     void Update()
