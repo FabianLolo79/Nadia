@@ -1,10 +1,15 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
+using UnityEngine.SceneManagement; // <-- Necesario para cambiar de escena
 
 public class GameManager : MonoBehaviour
 {
+    // ==== Configuración de escenas ====
+    [Header("Nombre de la escena del menú")]
+    [SerializeField] private string menuSceneName = "Menu"; // Cambiable desde Inspector
+
     // ==== Eventos de flujo general ====
     public event Action OnGameStart;
     public event Action OnGamePause;
@@ -18,9 +23,7 @@ public class GameManager : MonoBehaviour
     // ==== Eventos para interacción con peces ====
     public event Action<SpeciesSO> OnFishTouch;  
     public event Action<SpeciesSO> OnFishCatch;
-
     public event Action<SpeciesSO> OnFishNotCatch;
-
 
     // ==== Estados del juego ====
     public enum GameState { Waiting, Playing, Paused, Ended }
@@ -64,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Playing)
         {
-            timeRemaining -= Time.unscaledDeltaTime; // usar unscaled para que pause via timeScale afecte el timer (opcional, si querés que no baje en pausa)
+            timeRemaining -= Time.unscaledDeltaTime; 
             
             if (timeRemaining <= 0)
             {
@@ -115,17 +118,22 @@ public class GameManager : MonoBehaviour
         OnStopScroll?.Invoke();
     }
 
+    // ==== Volver al menú ====
+    public void ReturnToMenu()
+    {
+        Time.timeScale = 1f; // aseguramos que no esté pausado
+        SceneManager.LoadScene(menuSceneName);
+    }
+
     // ==== Scroll manual ====
     public void TriggerStartScroll()
     {
         OnStartScroll?.Invoke();
-        Debug.Log("TriggerStartScroll: evento OnStartScroll disparado");
     }
 
     public void TriggerStopScroll()
     {
         OnStopScroll?.Invoke();
-        Debug.Log("TriggerStopScroll: evento OnStopScroll disparado");
     }
 
     // ==== Eventos peces ====
@@ -162,5 +170,6 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
     }
 }
+
 
 
