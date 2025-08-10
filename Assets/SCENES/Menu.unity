@@ -394,7 +394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -449814729466383560, guid: ee7fff7e799bf984eb6f0382298326ad, type: 3}
+  m_Sprite: {fileID: -4021890491971134458, guid: 9cf9bb8fabf7c404fa6e6230baccd96b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -471,8 +471,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Una creaci\xF3n de "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
-  m_sharedMaterial: {fileID: 3286442676641488870, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
+  m_sharedMaterial: {fileID: 5657515312535876235, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -605,12 +605,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Arte\nBrian Schoepf\nCamila Boess\nEsteban Barone\nFabricio Mettan\n\nProgramaci\xF3n\nLautaro
-    Gabriel\nLuciana Caminos Cano\nFabi\xE1n Garc\xEDa\nBrian Schoepf\nSim\xF3n Fr\xEDas\n\nM\xFAsica/Sonido\nFabi\xE1n
-    Garc\xEDa\n\nDise\xF1o del Juego\nTodos\n\nProducci\xF3n\nCamila Boess\n"
+  m_text: "Arte\nBrian Schoepf\nCamila Boess\nEsteban Barone\nFabricio Mettan\nSim\xF3n
+    Fr\xEDas\n\nProgramaci\xF3n\nLautaro Gabriel\nLuciana Caminos Cano\nFabi\xE1n
+    Garc\xEDa\nBrian Schoepf\n\nM\xFAsica/Sonido\nFabi\xE1n Garc\xEDa\n\nDise\xF1o
+    del Juego\nTodos\n\nProducci\xF3n\nCamila Boess\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
-  m_sharedMaterial: {fileID: 3286442676641488870, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
+  m_sharedMaterial: {fileID: 5657515312535876235, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -634,8 +635,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -799,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 226}
+  m_AnchoredPosition: {x: -34, y: 226}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781258800
@@ -824,8 +825,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Efenemel Studio
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
-  m_sharedMaterial: {fileID: 3286442676641488870, guid: 528e6f42cc4ff934db8b94799ac2b0d8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
+  m_sharedMaterial: {fileID: 5657515312535876235, guid: e6b7f356b065bdf439f9916015d49e7c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -849,8 +850,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1389,6 +1390,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsPanel: {fileID: 196731620}
+  gameSceneName: GameManagerTesting
+  albumSceneName: AlbumTesting
 --- !u!4 &1031951143
 Transform:
   m_ObjectHideFlags: 0
@@ -1821,7 +1824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2d310ea9edbfad45987be3dbba0c769, type: 3}
+  m_Sprite: {fileID: -7857747031587701802, guid: d885152df7c3ce445adaa9a9046b74bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

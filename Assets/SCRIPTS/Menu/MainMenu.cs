@@ -6,29 +6,33 @@ public class MainMenu : MonoBehaviour
     [Header("Panel interno de créditos")]
     [SerializeField] private GameObject creditsPanel;
 
+    [Header("Scene Names")]
+    [SerializeField] private string gameSceneName = "GameScene";
+    [SerializeField] private string albumSceneName = "AlbumScene";
+
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        bool tienePartidaPausada = PlayerPrefs.GetInt("HasPausedGame", 0) == 1;
+
+        if (tienePartidaPausada)
+            PlayerPrefs.SetInt("ResumeAfterLoad", 1);
+        else
+            PlayerPrefs.SetInt("StartGameOnLoad", 1);
+
+        SceneManager.LoadScene(gameSceneName);
     }
 
     public void OpenAlbum()
     {
-        SceneManager.LoadScene("AlbumScene");
+        SceneManager.LoadScene(albumSceneName);
     }
 
     public void ShowCredits()
     {
         if (creditsPanel != null)
-        {
             creditsPanel.SetActive(true);
-        }
-        else
-        {
-            SceneManager.LoadScene("CreditsScene");
-        }
     }
 
-    // Método público para el botón "Volver" dentro del panel de créditos
     public void CloseCredits()
     {
         if (creditsPanel != null)
@@ -41,5 +45,6 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 }
+
 
 
