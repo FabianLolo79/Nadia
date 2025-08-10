@@ -147,8 +147,8 @@ MonoBehaviour:
   segmentLengths:
   - 0
   - 4.2
-  - 3.9
-  detectionRadius: 3
+  - 3.8
+  detectionRadius: 4
   tipAimSpeedDeg: 90
   armMoveSpeed: 5
   reachThreshold: 0.1
@@ -366,8 +366,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03326118, y: 1.9981394}
-  m_Radius: 1.5355272
+  m_Offset: {x: -0.026653886, y: 2.0179622}
+  m_Radius: 1.0862186
 --- !u!114 &6230367109268028790
 MonoBehaviour:
   m_ObjectHideFlags: 0
