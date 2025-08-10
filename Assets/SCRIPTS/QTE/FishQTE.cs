@@ -42,11 +42,15 @@ public class FishQTE : MonoBehaviour
         }
 
         // Input jugador
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            bool success = RectTransformUtility.RectangleContainsScreenPoint(safeZone, pointerTransform.position, null);
-            FinishQTE(success);
-        }
+    if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+    {
+        bool success = RectTransformUtility.RectangleContainsScreenPoint(
+            safeZone,
+            pointerTransform.position,
+            null
+        );
+        FinishQTE(success);
+    }
     }
 
     void FinishQTE(bool success)

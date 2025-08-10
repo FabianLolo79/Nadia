@@ -10,6 +10,7 @@ public class SpeciesCollectable : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer; // Muestra la imagen en pixel art
     [SerializeField] private SpeciesSO speciesData; // Datos de la especie
+    public SpeciesSO SpeciesSO => speciesData;
 
     private void Awake()
     {
@@ -30,17 +31,23 @@ public class SpeciesCollectable : MonoBehaviour
         }
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerCollection player = other.GetComponent<PlayerCollection>();
-        if (player == null || speciesData == null) return;
 
-        if (player.AddSpecies(speciesData))
+        if (player == null || speciesData == null)
         {
-            Debug.Log($"Recolectaste: {speciesData.speciesID}");
-            Destroy(gameObject);
+            return;
         }
+
+        GameManager.Instance.FishTouched(speciesData);
+
+        Destroy(gameObject);
     }
+
+
 }
 
 

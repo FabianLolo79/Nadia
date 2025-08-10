@@ -19,6 +19,7 @@ public class ManagerQTE : MonoBehaviour
     {
         currentSpecies = species;
         qteUI.SetActive(true);
+        GameManager.Instance.TriggerStopScroll();
         fishQTE.StartQTE();
     }
     void Update()
@@ -30,12 +31,21 @@ public class ManagerQTE : MonoBehaviour
     {
         if (success)
         {
+            Debug.Log("Handle QTE Succes");
             GameManager.Instance.FishCaught(currentSpecies);
+            GameManager.Instance.TriggerStartScroll();
+
         }
         else
         {
+            Debug.Log("Handle QTE Failed");
+
             GameManager.Instance.FishNotCaught(currentSpecies);
+            GameManager.Instance.TriggerStartScroll();
+
         }
+
+        GameManager.Instance.TriggerStartScroll();
 
         qteUI.SetActive(false);
     }

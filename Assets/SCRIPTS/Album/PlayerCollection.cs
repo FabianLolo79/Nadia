@@ -24,19 +24,24 @@ public class PlayerCollection : MonoBehaviour
         return collectedSpecies.Contains(species);
     }
 
+    void Start()
+    {
+        GameManager.Instance.OnFishCatch += AddSpecies;
+    }
+
     // Intenta añadir una nueva especie a la colección
-    public bool AddSpecies(SpeciesSO species)
+    public void AddSpecies(SpeciesSO species)
     {
         if (species == null)
         {
             Debug.LogWarning("Tried to add a null species to the collection.");
-            return false;
+            return;
         }
 
         if (collectedSpecies.Contains(species))
         {
             Debug.Log($"Species '{species.speciesID}' already collected.");
-            return false;
+            return;
         }
 
         bool added = collectedSpecies.Add(species);
@@ -45,8 +50,8 @@ public class PlayerCollection : MonoBehaviour
         {
             Debug.Log($"Collected new species: {species.speciesID}");
         }
+
         
-        return added;
     }
 }
 

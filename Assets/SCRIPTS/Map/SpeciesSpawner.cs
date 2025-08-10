@@ -15,7 +15,7 @@ public class SpeciesSpawner : MonoBehaviour
     void Start()
     {
         GameManager.Instance.OnStartScroll += ResumeSpawn;
-        GameManager.Instance.OnStartScroll += PauseSpawn;
+        GameManager.Instance.OnStopScroll += PauseSpawn;
     }
 
     private void PauseSpawn()
@@ -60,7 +60,7 @@ public class SpeciesSpawner : MonoBehaviour
     void OnDestroy()
     {
         GameManager.Instance.OnStartScroll -= ResumeSpawn;
-        GameManager.Instance.OnStartScroll -= PauseSpawn;
+        GameManager.Instance.OnStopScroll -= PauseSpawn;
     }
 
 }

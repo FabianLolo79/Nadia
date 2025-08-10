@@ -212,7 +212,7 @@ MonoBehaviour:
   pointA: {fileID: 4169449529028755410}
   pointB: {fileID: 1363411585314566460}
   safeZone: {fileID: 8795356657162230594}
-  moveSpeed: 250
+  moveSpeed: 100
 --- !u!1 &5659147092908177237
 GameObject:
   m_ObjectHideFlags: 0
