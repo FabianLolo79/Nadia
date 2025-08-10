@@ -148,7 +148,7 @@ MonoBehaviour:
   - 0
   - 4.2
   - 3.9
-  detectionRadius: 3.5
+  detectionRadius: 3
   tipAimSpeedDeg: 90
   armMoveSpeed: 5
   reachThreshold: 0.1
@@ -365,8 +365,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03326118, y: 2.3025641}
-  m_Radius: 1.4791517
+  m_Offset: {x: -0.03326118, y: 1.9981394}
+  m_Radius: 1.5355272
 --- !u!114 &6230367109268028790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,15 +507,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7441096413088818137, guid: 6a1306489a5565f4181134579505573c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.05
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7441096413088818137, guid: 6a1306489a5565f4181134579505573c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.05
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7441096413088818137, guid: 6a1306489a5565f4181134579505573c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.05
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7441096413088818137, guid: 6a1306489a5565f4181134579505573c, type: 3}
       propertyPath: m_LocalPosition.x

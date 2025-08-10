@@ -80,12 +80,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3998017290171597367, guid: b2419169231062c43abadd00eee2caa4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 050e45539b209a344977f75256e5f0f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.92, y: 0.94}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
-  speciesData: {fileID: 11400000, guid: 68546fcff9571d842b5a1a4061530159, type: 2}
+  speciesData: {fileID: 11400000, guid: 6315014e614ab254c8da60a9226e002d, type: 2}
 --- !u!50 &434516107661469840
 Rigidbody2D:
   serializedVersion: 5
