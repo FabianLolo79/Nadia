@@ -119,11 +119,13 @@ public class GameManager : MonoBehaviour
     public void TriggerStartScroll()
     {
         OnStartScroll?.Invoke();
+        Debug.Log("TriggerStartScroll: evento OnStartScroll disparado");
     }
 
     public void TriggerStopScroll()
     {
         OnStopScroll?.Invoke();
+        Debug.Log("TriggerStopScroll: evento OnStopScroll disparado");
     }
 
     // ==== Eventos peces ====

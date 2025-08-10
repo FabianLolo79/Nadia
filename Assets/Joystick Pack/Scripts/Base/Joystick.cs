@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
@@ -25,6 +26,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public bool SnapX { get { return snapX; } set { snapX = value; } }
     public bool SnapY { get { return snapY; } set { snapY = value; } }
 
+    [Header("Joystick")]
     [SerializeField] private float handleRange = 1;
     [SerializeField] private float deadZone = 0;
     [SerializeField] private AxisOptions axisOptions = AxisOptions.Both;
@@ -40,6 +42,21 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     private Vector2 input = Vector2.zero;
 
+    // === Nuevo: Doble toque / Scroll ===
+    [Header("Doble toque / Scroll")]
+    [Tooltip("Tiempo máximo entre toques para contar como doble toque")]
+    [SerializeField] private float doubleTapMaxDelay = 0.3f;
+    private float lastTapTime = -1f;
+
+    [SerializeField] private bool scrollMode = false;
+
+
+    [Header("UI Icono")]
+    public Image icon;            // ícono a cambiar
+    public Sprite normalIcon;     // ícono normal
+    public Sprite scrollIcon;     // ícono cuando está en modo scroll
+
+
     protected virtual void Start()
     {
         HandleRange = handleRange;
@@ -47,7 +64,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         baseRect = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         if (canvas == null)
-            Debug.LogError("The Joystick is not placed inside a canvas");
+        Debug.LogError("The Joystick is not placed inside a canvas");
 
         Vector2 center = new Vector2(0.5f, 0.5f);
         background.pivot = center;
@@ -55,15 +72,33 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         handle.anchorMax = center;
         handle.pivot = center;
         handle.anchoredPosition = Vector2.zero;
+
+        UpdateIcon();
     }
 
     public virtual void OnPointerDown(PointerEventData eventData)
     {
-        OnDrag(eventData);
+        // Detectar doble toque
+        float now = Time.unscaledTime;
+        if (now - lastTapTime <= doubleTapMaxDelay)
+        {
+            // Doble toque: alternar modo scroll
+            ToggleScroll();
+            lastTapTime = -1f; // reset
+            return;            // no empezamos drag si fue doble toque
+        }
+
+        lastTapTime = now;
+
+        if (!scrollMode) OnDrag(eventData);
+
     }
+           
 
     public void OnDrag(PointerEventData eventData)
     {
+        //if (scrollMode) return;
+
         cam = null;
         if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
             cam = canvas.worldCamera;
@@ -131,6 +166,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     public virtual void OnPointerUp(PointerEventData eventData)
     {
+        //if (scrollMode) return; // en modo scroll no reseteamos la palanca (ya está inmóvil)
         input = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
     }
@@ -144,6 +180,39 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
             return localPoint - (background.anchorMax * baseRect.sizeDelta) + pivotOffset;
         }
         return Vector2.zero;
+    }
+
+    private void ToggleScroll()
+    {
+        scrollMode = !scrollMode;
+
+        if (scrollMode)
+        {
+            // Reset visual del joystick al entrar a scroll
+            input = Vector2.zero;
+            handle.anchoredPosition = Vector2.zero;
+        }
+
+        // Notificar al GameManager
+        if (GameManager.Instance != null)
+        {
+            if (scrollMode) GameManager.Instance.TriggerStartScroll();
+            else GameManager.Instance.TriggerStopScroll();
+        }
+        else
+        {
+            Debug.LogWarning("GameManager.Instance no encontrado en la escena.");
+        }
+
+        UpdateIcon();
+    }
+
+    private void UpdateIcon()
+    {
+        if (icon != null)
+        {
+            icon.sprite = scrollMode ? scrollIcon : normalIcon;
+        }
     }
 }
 
