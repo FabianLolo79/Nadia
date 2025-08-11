@@ -6,9 +6,12 @@ public class MainMenu : MonoBehaviour
     [Header("Panel interno de créditos")]
     [SerializeField] private GameObject creditsPanel;
 
+    [Header("Panel interno de álbum")]
+    [SerializeField] private GameObject albumPanel;
+
     [Header("Scene Names")]
     [SerializeField] private string gameSceneName = "GameScene";
-    [SerializeField] private string albumSceneName = "AlbumScene";
+   
 
     public void PlayGame()
     {
@@ -22,9 +25,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(gameSceneName);
     }
 
-    public void OpenAlbum()
+    public void ShowAlbum()
     {
-        SceneManager.LoadScene(albumSceneName);
+        if (albumPanel != null)
+            albumPanel.SetActive(true);
+    }
+
+    public void CloseAlbum()
+    {
+        if (albumPanel != null)
+            albumPanel.SetActive(false);
     }
 
     public void ShowCredits()
