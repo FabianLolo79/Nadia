@@ -113,6 +113,10 @@ public class AudioManager : MonoBehaviour
             currentMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
+    // Pausar la música actual sin destruirla
+    public void PauseMusic() => currentMusic.setPaused(true);
+    public void ResumeMusic() => currentMusic.setPaused(false);
+
     public void SwitchMusic(EventReference newMusic)
     {
         StopMusic();
@@ -143,6 +147,7 @@ public class AudioManager : MonoBehaviour
     public void PlayMusicFinalHimno() => PlayMusic(musicFinalHimno);
 
     // ------------------- SNAPSHOTS -------------------
+
     public void StartSnapshot(EventReference snapshotRef)
     {
         StopSnapshot();
@@ -155,6 +160,7 @@ public class AudioManager : MonoBehaviour
         if (activeSnapshot.isValid())
             activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
+
 
     // ------------------- MOTORES -------------------
     public void StartEngineAsc()
@@ -187,14 +193,7 @@ public class AudioManager : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
-    
-
-
-    private void SetMotorIntensity(EventInstance instance, float value)
-    {
-        instance.setParameterByName("intensidad_motor", value);
-    }
-
+   
     // ------------------- SFX -------------------
     public void PlayTapButton() => PlayOneShot(buttonTap);
     public void PlayChangeMandoBoat() => PlayOneShot(changeMandoBoat);
@@ -203,6 +202,11 @@ public class AudioManager : MonoBehaviour
     public void PlayTakeObject() => PlayOneShot(winTakeObject);
     public void PlayFallObject() => PlayOneShot(wrongTakeObject);
     public void PlayClockAlarm() => PlayOneShot(clockAlarm);
+
+    public void PlaySfx(EventReference sfx)
+    {
+        RuntimeManager.PlayOneShot(sfx);
+    }
 
     // ------------------- LIMPIEZA -------------------
     private void OnDestroy()

@@ -1654,6 +1654,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
+      propertyPath: garra.Path
+      value: event:/SFX-Submarine/robot_arm
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
+      propertyPath: garra.Guid.Data1
+      value: 361367301
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
+      propertyPath: garra.Guid.Data2
+      value: 1139336049
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
+      propertyPath: garra.Guid.Data3
+      value: -68190023
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
+      propertyPath: garra.Guid.Data4
+      value: -1016974185
+      objectReference: {fileID: 0}
     - target: {fileID: 8586675280890287856, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
