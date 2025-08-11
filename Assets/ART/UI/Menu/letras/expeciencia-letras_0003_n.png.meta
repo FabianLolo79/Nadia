@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 8ee1d3cf0d31de544bb102cfd1f9819c
+guid: 2ef1b1f9daaba5b47935a37c1e934d16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5625660016749615600
-    second: QTE Pointer_0
+      213: -4839817376347929653
+    second: expeciencia-letras_0003_n_0
+  - first:
+      213: -8379531801857898123
+    second: expeciencia-letras_0003_n_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QTE Pointer_0
+      name: expeciencia-letras_0003_n_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 9
-        height: 18
+        x: 0
+        y: 111
+        width: 12
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f99a7daafb521e40800000000000000
-      internalID: 5625660016749615600
+      spriteID: bc3c4091db385dcb0800000000000000
+      internalID: -4839817376347929653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: expeciencia-letras_0003_n_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 127
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579cb2e093ce5bb80800000000000000
+      internalID: -8379531801857898123
       vertices: []
       indices: 
       edges: []
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      QTE Pointer_0: 5625660016749615600
+      expeciencia-letras_0003_n_0: -4839817376347929653
+      expeciencia-letras_0003_n_1: -8379531801857898123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

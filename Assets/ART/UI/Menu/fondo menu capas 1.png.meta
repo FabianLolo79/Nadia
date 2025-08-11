@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: 00b032cf2437369488bcf2d2988ff60e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -673867002711495789
+    second: fondo menu capas 1_0
+  - first:
+      213: 7162820888725783595
+    second: fondo menu capas 1_1
+  - first:
+      213: 7504804499946437141
+    second: fondo menu capas 1_2
+  - first:
+      213: 5087278173694350725
+    second: fondo menu capas 1_3
+  - first:
+      213: -1588429675562084442
+    second: fondo menu capas 1_4
+  - first:
+      213: 4611822783099430810
+    second: fondo menu capas 1_5
+  - first:
+      213: -337414150569350522
+    second: fondo menu capas 1_6
+  - first:
+      213: -7801532092499900370
+    second: fondo menu capas 1_7
+  - first:
+      213: 7324665581374997253
+    second: fondo menu capas 1_8
+  - first:
+      213: -5564449106977403393
+    second: fondo menu capas 1_9
+  - first:
+      213: 4221801950518462796
+    second: fondo menu capas 1_10
+  - first:
+      213: -1607647615657207967
+    second: fondo menu capas 1_11
+  - first:
+      213: 4535424414905691727
+    second: fondo menu capas 1_12
+  - first:
+      213: -6519108663185498743
+    second: fondo menu capas 1_13
+  - first:
+      213: -3507717498265518728
+    second: fondo menu capas 1_14
+  - first:
+      213: 3889982211726960607
+    second: fondo menu capas 1_15
+  - first:
+      213: 2428913361994430429
+    second: fondo menu capas 1_16
+  - first:
+      213: 4046161599070880847
+    second: fondo menu capas 1_17
+  - first:
+      213: -5767802004196377749
+    second: fondo menu capas 1_18
+  - first:
+      213: 8798378971499084899
+    second: fondo menu capas 1_19
+  - first:
+      213: 8707302525418114543
+    second: fondo menu capas 1_20
+  - first:
+      213: -3443586120432755117
+    second: fondo menu capas 1_21
+  - first:
+      213: -1750674709118137129
+    second: fondo menu capas 1_22
+  - first:
+      213: -5411839946100770890
+    second: fondo menu capas 1_23
+  - first:
+      213: 5951331662351161483
+    second: fondo menu capas 1_24
+  - first:
+      213: 2338734067432270602
+    second: fondo menu capas 1_25
+  - first:
+      213: 3843575001618374166
+    second: fondo menu capas 1_26
+  - first:
+      213: 1470436234368752308
+    second: fondo menu capas 1_27
+  - first:
+      213: -784566828415918976
+    second: fondo menu capas 1_28
+  - first:
+      213: -5095657012347187727
+    second: fondo menu capas 1_29
+  - first:
+      213: -4472024442761921603
+    second: fondo menu capas 1_30
+  - first:
+      213: -6931672443386812868
+    second: fondo menu capas 1_31
+  - first:
+      213: -3139212622085118828
+    second: fondo menu capas 1_32
+  - first:
+      213: 5965888057379600441
+    second: fondo menu capas 1_33
+  - first:
+      213: -5706478786369502205
+    second: fondo menu capas 1_34
+  - first:
+      213: -8731724475720771150
+    second: fondo menu capas 1_35
+  - first:
+      213: 6136515780883042034
+    second: fondo menu capas 1_36
+  - first:
+      213: -3869660950628692608
+    second: fondo menu capas 1_37
+  - first:
+      213: 7991745615249617223
+    second: fondo menu capas 1_38
+  - first:
+      213: -6053302629243844451
+    second: fondo menu capas 1_39
+  - first:
+      213: 9139768845102795020
+    second: fondo menu capas 1_40
+  - first:
+      213: -6174146270782775877
+    second: fondo menu capas 1_41
+  - first:
+      213: -8579113130113913919
+    second: fondo menu capas 1_42
+  - first:
+      213: 2584001035851879374
+    second: fondo menu capas 1_43
+  - first:
+      213: -474550091840681396
+    second: fondo menu capas 1_44
+  - first:
+      213: -3225645620893615642
+    second: fondo menu capas 1_45
+  - first:
+      213: -8122652880360928047
+    second: fondo menu capas 1_46
+  - first:
+      213: 3430661038884885123
+    second: fondo menu capas 1_47
+  - first:
+      213: 1705140032551001228
+    second: fondo menu capas 1_48
+  - first:
+      213: 1082772950271831900
+    second: fondo menu capas 1_49
+  - first:
+      213: 6523589005923385019
+    second: fondo menu capas 1_50
+  - first:
+      213: -7648177734028799899
+    second: fondo menu capas 1_51
+  - first:
+      213: -2763380103315867135
+    second: fondo menu capas 1_52
+  - first:
+      213: -480962151849065226
+    second: fondo menu capas 1_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fondo menu capas 1_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 5659
+        width: 752
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b26850881f5a6f0800000000000000
+      internalID: -673867002711495789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_1
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 6239
+        width: 372
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b248f36e5a3776360800000000000000
+      internalID: 7162820888725783595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 5659
+        width: 752
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a7f083eeb662860800000000000000
+      internalID: 7504804499946437141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_3
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 6239
+        width: 372
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58556a0ab84a99640800000000000000
+      internalID: 5087278173694350725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_4
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 5669
+        width: 752
+        height: 731
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7de6d30a3c4f9e0800000000000000
+      internalID: -1588429675562084442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_5
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 6249
+        width: 372
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97e1b1036c700040800000000000000
+      internalID: 4611822783099430810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_6
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 5699
+        width: 611
+        height: 701
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68aaf152e93415bf0800000000000000
+      internalID: -337414150569350522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4739
+        width: 861
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28cbba65e36bb390800000000000000
+      internalID: -7801532092499900370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3819
+        width: 861
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503036cd98076a560800000000000000
+      internalID: 7324665581374997253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_9
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 4739
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd4fd7d40b17c2b0800000000000000
+      internalID: -5564449106977403393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_10
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 3819
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4944b4818ad69a30800000000000000
+      internalID: 4221801950518462796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_11
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 4749
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1679fb0e20d70b9e0800000000000000
+      internalID: -1607647615657207967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_12
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 3829
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e6614c97011fe30800000000000000
+      internalID: 4535424414905691727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_13
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 4779
+        width: 801
+        height: 1352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d18a6e5397785a0800000000000000
+      internalID: -6519108663185498743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_14
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 3859
+        width: 801
+        height: 1352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d367f1585125fc0800000000000000
+      internalID: -3507717498265518728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2899
+        width: 861
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7e298263efbf530800000000000000
+      internalID: 3889982211726960607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_16
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 2899
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7b0e375db35b120800000000000000
+      internalID: 2428913361994430429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_17
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 3669
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f444270798ad62830800000000000000
+      internalID: 4046161599070880847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_18
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2909
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bb615e2a6a4ffa0800000000000000
+      internalID: -5767802004196377749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_19
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 2939
+        width: 801
+        height: 1352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c387b0f0f1a1a70800000000000000
+      internalID: 8798378971499084899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1969
+        width: 861
+        height: 1392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed886b738d86d870800000000000000
+      internalID: 8707302525418114543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_21
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1969
+        width: 942
+        height: 1392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ed32a1bace530d0800000000000000
+      internalID: -3443586120432755117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_22
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2719
+        width: 412
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcc0c5a0aa54b7e0800000000000000
+      internalID: -1750674709118137129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_23
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 2719
+        width: 482
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7f46ffd3845e4b0800000000000000
+      internalID: -5411839946100770890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_24
+      rect:
+        serializedVersion: 2
+        x: 3509
+        y: 2919
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88d9fa8d90679250800000000000000
+      internalID: 5951331662351161483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_25
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 2719
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ba7614e3ad47020800000000000000
+      internalID: 2338734067432270602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_26
+      rect:
+        serializedVersion: 2
+        x: 3459
+        y: 2719
+        width: 141
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ed80f891f175530800000000000000
+      internalID: 3843575001618374166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1049
+        width: 861
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba9966e6f9086410800000000000000
+      internalID: 1470436234368752308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_28
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1049
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cd6b950a8ac15f0800000000000000
+      internalID: -784566828415918976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_29
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1059
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd41d9f1f69849b0800000000000000
+      internalID: -5095657012347187727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_30
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1979
+        width: 752
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbbf4e867d20f1c0800000000000000
+      internalID: -4472024442761921603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_31
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 1099
+        width: 801
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36a09863a0cdcf90800000000000000
+      internalID: -6931672443386812868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_32
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 2009
+        width: 611
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494a132a0c64f64d0800000000000000
+      internalID: -3139212622085118828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 861
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9383bdd54971bc250800000000000000
+      internalID: 5965888057379600441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_34
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 129
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304c42c27c38ec0b0800000000000000
+      internalID: -5706478786369502205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_35
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 139
+        width: 942
+        height: 1382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9541c1adea2d680800000000000000
+      internalID: -8731724475720771150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_36
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 879
+        width: 252
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fecc1e0798492550800000000000000
+      internalID: 6136515780883042034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_37
+      rect:
+        serializedVersion: 2
+        x: 3089
+        y: 869
+        width: 192
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d83942ed33c4ac0800000000000000
+      internalID: -3869660950628692608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 401
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7413d348b4268ee60800000000000000
+      internalID: 7991745615249617223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_39
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 0
+        width: 482
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d988bf994595efba0800000000000000
+      internalID: -6053302629243844451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_40
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 0
+        width: 482
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09c88d075bf6de70800000000000000
+      internalID: 9139768845102795020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_41
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 0
+        width: 482
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd90b2cda6015aa0800000000000000
+      internalID: -6174146270782775877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_42
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 169
+        width: 611
+        height: 702
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbabafef0ed0f880800000000000000
+      internalID: -8579113130113913919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_43
+      rect:
+        serializedVersion: 2
+        x: 3509
+        y: 149
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3513160473cd320800000000000000
+      internalID: 2584001035851879374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_44
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 92
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a05bba43f0a69f0800000000000000
+      internalID: -474550091840681396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_45
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 82
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e97753e5643c33d0800000000000000
+      internalID: -3225645620893615642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_46
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc8840bd3a864f80800000000000000
+      internalID: -8122652880360928047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_47
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 0
+        width: 92
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3829187d9082c9f20800000000000000
+      internalID: 3430661038884885123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_48
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 0
+        width: 82
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c108c43dfd9a710800000000000000
+      internalID: 1705140032551001228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_49
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 0
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5faa51f248c60f00800000000000000
+      internalID: 1082772950271831900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_50
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 0
+        width: 92
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbef4be23a1788a50800000000000000
+      internalID: 6523589005923385019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_51
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 0
+        width: 222
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56059286fd63cd590800000000000000
+      internalID: -7648177734028799899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_52
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 0
+        width: 92
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ab972ef6086a9d0800000000000000
+      internalID: -2763380103315867135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo menu capas 1_53
+      rect:
+        serializedVersion: 2
+        x: 3459
+        y: 0
+        width: 141
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f401ac98774359f0800000000000000
+      internalID: -480962151849065226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fondo menu capas 1_0: -673867002711495789
+      fondo menu capas 1_1: 7162820888725783595
+      fondo menu capas 1_10: 4221801950518462796
+      fondo menu capas 1_11: -1607647615657207967
+      fondo menu capas 1_12: 4535424414905691727
+      fondo menu capas 1_13: -6519108663185498743
+      fondo menu capas 1_14: -3507717498265518728
+      fondo menu capas 1_15: 3889982211726960607
+      fondo menu capas 1_16: 2428913361994430429
+      fondo menu capas 1_17: 4046161599070880847
+      fondo menu capas 1_18: -5767802004196377749
+      fondo menu capas 1_19: 8798378971499084899
+      fondo menu capas 1_2: 7504804499946437141
+      fondo menu capas 1_20: 8707302525418114543
+      fondo menu capas 1_21: -3443586120432755117
+      fondo menu capas 1_22: -1750674709118137129
+      fondo menu capas 1_23: -5411839946100770890
+      fondo menu capas 1_24: 5951331662351161483
+      fondo menu capas 1_25: 2338734067432270602
+      fondo menu capas 1_26: 3843575001618374166
+      fondo menu capas 1_27: 1470436234368752308
+      fondo menu capas 1_28: -784566828415918976
+      fondo menu capas 1_29: -5095657012347187727
+      fondo menu capas 1_3: 5087278173694350725
+      fondo menu capas 1_30: -4472024442761921603
+      fondo menu capas 1_31: -6931672443386812868
+      fondo menu capas 1_32: -3139212622085118828
+      fondo menu capas 1_33: 5965888057379600441
+      fondo menu capas 1_34: -5706478786369502205
+      fondo menu capas 1_35: -8731724475720771150
+      fondo menu capas 1_36: 6136515780883042034
+      fondo menu capas 1_37: -3869660950628692608
+      fondo menu capas 1_38: 7991745615249617223
+      fondo menu capas 1_39: -6053302629243844451
+      fondo menu capas 1_4: -1588429675562084442
+      fondo menu capas 1_40: 9139768845102795020
+      fondo menu capas 1_41: -6174146270782775877
+      fondo menu capas 1_42: -8579113130113913919
+      fondo menu capas 1_43: 2584001035851879374
+      fondo menu capas 1_44: -474550091840681396
+      fondo menu capas 1_45: -3225645620893615642
+      fondo menu capas 1_46: -8122652880360928047
+      fondo menu capas 1_47: 3430661038884885123
+      fondo menu capas 1_48: 1705140032551001228
+      fondo menu capas 1_49: 1082772950271831900
+      fondo menu capas 1_5: 4611822783099430810
+      fondo menu capas 1_50: 6523589005923385019
+      fondo menu capas 1_51: -7648177734028799899
+      fondo menu capas 1_52: -2763380103315867135
+      fondo menu capas 1_53: -480962151849065226
+      fondo menu capas 1_6: -337414150569350522
+      fondo menu capas 1_7: -7801532092499900370
+      fondo menu capas 1_8: 7324665581374997253
+      fondo menu capas 1_9: -5564449106977403393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

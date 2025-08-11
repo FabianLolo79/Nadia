@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8ee1d3cf0d31de544bb102cfd1f9819c
+guid: 3a3ad82f41c79ed419827901941dd98b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5625660016749615600
-    second: QTE Pointer_0
+      213: -6231074200121786811
+    second: fondo menu capas2 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,12 +37,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QTE Pointer_0
+      name: fondo menu capas2 1_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 9
-        height: 18
+        x: 19
+        y: 19
+        width: 3552
+        height: 6372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f99a7daafb521e40800000000000000
-      internalID: 5625660016749615600
+      spriteID: 54eb3a45707c689a0800000000000000
+      internalID: -6231074200121786811
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      QTE Pointer_0: 5625660016749615600
+      fondo menu capas2 1_0: -6231074200121786811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

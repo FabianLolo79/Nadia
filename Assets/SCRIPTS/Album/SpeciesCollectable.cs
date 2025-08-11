@@ -5,15 +5,21 @@ using UnityEngine;
 /// Al ser recogida por el jugador, se agrega a su colección
 /// y el objeto desaparece.
 /// </summary>
-
 public class SpeciesCollectable : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer; // Muestra la imagen en pixel art
-    [SerializeField] private SpeciesSO speciesData; // Datos de la especie
+    [SerializeField] private SpeciesSO speciesData;         // Datos de la especie
+
     public SpeciesSO SpeciesSO => speciesData;
+
+    [SerializeField] private bool isGrabbed = false;
 
     private void Awake()
     {
+        // Si no se asignó en el inspector, buscarlo automáticamente
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (speciesData == null)
         {
             Debug.LogWarning($"[SpeciesCollectable] No se asignó SpeciesSO en {gameObject.name}");
@@ -27,10 +33,14 @@ public class SpeciesCollectable : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"[SpeciesCollectable] No se asignó SpriteRenderer en {gameObject.name}");
+            Debug.LogWarning($"[SpeciesCollectable] No se encontró SpriteRenderer en {gameObject.name}");
         }
-    }
 
+    }
+    void Start()
+    {
+        FishQTE.Instance.OnQTEFinished += Dissapear;
+    }
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,16 +48,28 @@ public class SpeciesCollectable : MonoBehaviour
         PlayerCollection player = other.GetComponent<PlayerCollection>();
 
         if (player == null || speciesData == null)
-        {
             return;
-        }
 
         GameManager.Instance.FishTouched(speciesData);
-
         Destroy(gameObject);
+        Collider2D col = GetComponent<Collider2D>();
+        col.enabled = false;
+
     }
 
+    public void Dissapear(bool bol)
+    {
+        if (isGrabbed)
+            Destroy(gameObject);
+    }
+    void OnDestroy()
+    {
+        FishQTE.Instance.OnQTEFinished -= Dissapear;
+
+    }
 
 }
+    
+
 
 

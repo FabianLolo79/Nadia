@@ -8,6 +8,7 @@ public class SpeciesSpawner : MonoBehaviour
     [SerializeField] private BoxCollider2D spawnArea; // área para spawnear
 
     [SerializeField] private float spawnInterval = 1f;
+    [SerializeField]  float totalTime;
 
     private bool _canSpawn = true;
     private float timer;
@@ -30,11 +31,29 @@ public class SpeciesSpawner : MonoBehaviour
 
     void Update()
     {
+        totalTime += Time.deltaTime;
         timer += Time.deltaTime;
-        if (timer >= spawnInterval)
+        if (timer >= spawnInterval - GameManager.Instance.DifficultyMult * 0.8f)
         {
             SpawnRandom();
             timer = 0f;
+
+            if (totalTime == 30)
+            {
+                spawnInterval -= 0.5f;
+            }
+            else if (totalTime == 60)
+            {
+                spawnInterval -= 0.5f;
+            }
+            else if (totalTime == 90)
+            {
+                spawnInterval -= 0.5f;
+            }
+            else if(totalTime > 120f)
+            {
+                spawnInterval -= Time.deltaTime;
+            }
         }
     }
 

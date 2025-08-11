@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement; // <-- Necesario para cambiar de escena
 
 public class GameManager : MonoBehaviour
 {
+
+
     // ==== Configuración de escenas ====
     [Header("Nombre de la escena del menú")]
     [SerializeField] private string menuSceneName = "Menu"; // Cambiable desde Inspector
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
     // ==== Eventos para scroll ====
     public event Action OnStartScroll;
     public event Action OnStopScroll;
+
+    // ==== Configuración de dificultad ====
+    public float DifficultyMult { get; private set; }
+    [SerializeField] private float difficultyLevel = 1;
 
     // ==== Eventos para interacción con peces ====
     public event Action<SpeciesSO> OnFishTouch;  
@@ -67,8 +73,8 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Playing)
         {
-            timeRemaining -= Time.unscaledDeltaTime; 
-            
+            timeRemaining -= Time.unscaledDeltaTime;
+
             if (timeRemaining <= 0)
             {
                 timeRemaining = 0;
@@ -76,6 +82,9 @@ public class GameManager : MonoBehaviour
             }
             UpdateTimerUI();
         }
+
+        DifficultyMult = difficultyLevel * 0.4f + Time.deltaTime;
+
     }
 
     // ==== Control del flujo ====
