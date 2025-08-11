@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
   speciesData: {fileID: 11400000, guid: 9de2f968714c22b45b64a85605231d6c, type: 2}
+  isGrabbed: 0
 --- !u!114 &8586211208014805638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc9c7ddfdf801345b8acd4c7592ae1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -1
+  speed: -7
 --- !u!50 &6643809829661422930
 Rigidbody2D:
   serializedVersion: 5
