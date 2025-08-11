@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        CurrentState = GameState.Waiting;
+        CurrentState = GameState.Waiting; // Intercambiar por Playing para que el timer corra hasta que exista el endpanel
         timeRemaining = gameTime;
         Time.timeScale = 1f; // aseguramos que esté activo
         UpdateTimerUI();
