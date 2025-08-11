@@ -8,12 +8,25 @@ public class FishQTE : MonoBehaviour
     public RectTransform safeZone;
     public float moveSpeed = 100f;
 
+    public static FishQTE Instance { get; private set; }
+
     public event Action<bool> OnQTEFinished; 
     // true = éxito, false = fallo
 
     private RectTransform pointerTransform;
     private Vector3 targetPosition;
     private bool isRunning = false;
+
+    public bool IsRunning => isRunning;
+
+        private void Awake()
+    {
+        if (Instance == null) 
+        {
+            Instance = this;
+        }
+        else Destroy(gameObject);
+    }
 
     public void StartQTE()
     {
@@ -28,7 +41,7 @@ public class FishQTE : MonoBehaviour
         if (!isRunning) return;
 
         // Mover puntero
-        pointerTransform.position = Vector3.MoveTowards(pointerTransform.position, targetPosition, moveSpeed * Time.deltaTime);
+        pointerTransform.position = Vector3.MoveTowards(pointerTransform.position, targetPosition, moveSpeed * Time.deltaTime + GameManager.Instance.DifficultyMult);
 
         // Cambiar dirección
         if (Vector3.Distance(pointerTransform.position, pointA.position) < 0.1f)
@@ -56,6 +69,7 @@ public class FishQTE : MonoBehaviour
     void FinishQTE(bool success)
     {
         isRunning = false;
+
         OnQTEFinished?.Invoke(success);
     }
 }
