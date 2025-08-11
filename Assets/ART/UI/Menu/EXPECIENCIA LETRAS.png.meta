@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 8c959c4e82702ed4498614fba9c45b85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7794820518665090142
+    second: EXPECIENCIA LETRAS_0
+  - first:
+      213: 1621426179088628272
+    second: EXPECIENCIA LETRAS_1
+  - first:
+      213: -4988386892759471183
+    second: EXPECIENCIA LETRAS_2
+  - first:
+      213: 6351876241942861583
+    second: EXPECIENCIA LETRAS_3
+  - first:
+      213: -3295484607456107850
+    second: EXPECIENCIA LETRAS_4
+  - first:
+      213: 4211643747133795093
+    second: EXPECIENCIA LETRAS_5
+  - first:
+      213: 1614387077253263817
+    second: EXPECIENCIA LETRAS_6
+  - first:
+      213: 7889543262701439262
+    second: EXPECIENCIA LETRAS_7
+  - first:
+      213: -5110516829474958681
+    second: EXPECIENCIA LETRAS_8
+  - first:
+      213: -7188081664712154850
+    second: EXPECIENCIA LETRAS_9
+  - first:
+      213: -4202641145723049233
+    second: EXPECIENCIA LETRAS_10
+  - first:
+      213: 8140377687393910161
+    second: EXPECIENCIA LETRAS_11
+  - first:
+      213: 8838641440466784476
+    second: EXPECIENCIA LETRAS_12
+  - first:
+      213: -4864225762387172947
+    second: EXPECIENCIA LETRAS_13
+  - first:
+      213: 4571701041836604524
+    second: EXPECIENCIA LETRAS_14
+  - first:
+      213: 9178343028523575700
+    second: EXPECIENCIA LETRAS_15
+  - first:
+      213: -3117268819818398636
+    second: EXPECIENCIA LETRAS_16
+  - first:
+      213: 1036666588090575585
+    second: EXPECIENCIA LETRAS_17
+  - first:
+      213: 5097909929512455942
+    second: EXPECIENCIA LETRAS_18
+  - first:
+      213: -6414055445362401725
+    second: EXPECIENCIA LETRAS_19
+  - first:
+      213: 8014837147288629090
+    second: EXPECIENCIA LETRAS_20
+  - first:
+      213: -1909225716512257141
+    second: EXPECIENCIA LETRAS_21
+  - first:
+      213: 605294844428404904
+    second: EXPECIENCIA LETRAS_22
+  - first:
+      213: 5767764595412499832
+    second: EXPECIENCIA LETRAS_23
+  - first:
+      213: -4648484485072834161
+    second: EXPECIENCIA LETRAS_24
+  - first:
+      213: 1702200361161807732
+    second: EXPECIENCIA LETRAS_25
+  - first:
+      213: 6885589048018663195
+    second: EXPECIENCIA LETRAS_26
+  - first:
+      213: 7033710046705733003
+    second: EXPECIENCIA LETRAS_27
+  - first:
+      213: -7728130864392575914
+    second: EXPECIENCIA LETRAS_28
+  - first:
+      213: -6788098438720321666
+    second: EXPECIENCIA LETRAS_29
+  - first:
+      213: -3173847280583470926
+    second: EXPECIENCIA LETRAS_30
+  - first:
+      213: -571779392700562492
+    second: EXPECIENCIA LETRAS_31
+  - first:
+      213: -4447887803023433604
+    second: EXPECIENCIA LETRAS_32
+  - first:
+      213: 478462762592573509
+    second: EXPECIENCIA LETRAS_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_0
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2187
+        width: 1273
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5475f686f3cc2c60800000000000000
+      internalID: 7794820518665090142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_1
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 2181
+        width: 440
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ab81ae486708610800000000000000
+      internalID: 1621426179088628272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_2
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 2073
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb6bd6fc80b5cab0800000000000000
+      internalID: -4988386892759471183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_3
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1992
+        width: 65
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f075f32d9c5662850800000000000000
+      internalID: 6351876241942861583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_4
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 2040
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2afc1b5361442d0800000000000000
+      internalID: -3295484607456107850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_5
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1988
+        width: 49
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ba76c7ca3c27a30800000000000000
+      internalID: 4211643747133795093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_6
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 2050
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c179ad4e74776610800000000000000
+      internalID: 1614387077253263817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_7
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1992
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19456dfbc94d7d60800000000000000
+      internalID: 7889543262701439262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_8
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1987
+        width: 89
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a25d70350cc319b0800000000000000
+      internalID: -5110516829474958681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_9
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 1992
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11655e5fcdce3c90800000000000000
+      internalID: -7188081664712154850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_10
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1992
+        width: 21
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaacbef4283da5c0800000000000000
+      internalID: -4202641145723049233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_11
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 1988
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d31aa806e68f070800000000000000
+      internalID: 8140377687393910161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_12
+      rect:
+        serializedVersion: 2
+        x: 2547
+        y: 1992
+        width: 21
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0d11c9f8929aa70800000000000000
+      internalID: 8838641440466784476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_13
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1988
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1eb9dd07cce7cb0800000000000000
+      internalID: -4864225762387172947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_14
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1990
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c34f920e1f17f30800000000000000
+      internalID: 4571701041836604524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_15
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1990
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499a4d10b56006f70800000000000000
+      internalID: 9178343028523575700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_16
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1994
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cb25d368c3db4d0800000000000000
+      internalID: -3117268819818398636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_17
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1994
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaa7a5f4caf26e00800000000000000
+      internalID: 1036666588090575585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_18
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1990
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fc68d221a6fb640800000000000000
+      internalID: 5097909929512455942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_19
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 1992
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e93893e82bcf6a0800000000000000
+      internalID: -6414055445362401725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_20
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1992
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f6eb8cbeb6a3f60800000000000000
+      internalID: 8014837147288629090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_21
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1988
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b0f3b83511185e0800000000000000
+      internalID: -1909225716512257141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_22
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1991
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8c78a3470766800800000000000000
+      internalID: 605294844428404904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_23
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1992
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87df2a137573b0050800000000000000
+      internalID: 5767764595412499832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_24
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1994
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81b1535df34d7fb0800000000000000
+      internalID: -4648484485072834161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_25
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1994
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4775797b53e6f9710800000000000000
+      internalID: 1702200361161807732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_26
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 1990
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17f87cf1c68e8f50800000000000000
+      internalID: 6885589048018663195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_27
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 1997
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8dcdf27502cc9160800000000000000
+      internalID: 7033710046705733003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_28
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1988
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654e52a9ce920c490800000000000000
+      internalID: -7728130864392575914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_29
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 1991
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7701b35f64dbc1a0800000000000000
+      internalID: -6788098438720321666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_30
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 1997
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b09b7dc6ba34f3d0800000000000000
+      internalID: -3173847280583470926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_31
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 1988
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3c138fba1a018f0800000000000000
+      internalID: -571779392700562492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_32
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1992
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70eefbeb9de542c0800000000000000
+      internalID: -4447887803023433604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXPECIENCIA LETRAS_33
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 1988
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548159af857d3a600800000000000000
+      internalID: 478462762592573509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EXPECIENCIA LETRAS_0: 7794820518665090142
+      EXPECIENCIA LETRAS_1: 1621426179088628272
+      EXPECIENCIA LETRAS_10: -4202641145723049233
+      EXPECIENCIA LETRAS_11: 8140377687393910161
+      EXPECIENCIA LETRAS_12: 8838641440466784476
+      EXPECIENCIA LETRAS_13: -4864225762387172947
+      EXPECIENCIA LETRAS_14: 4571701041836604524
+      EXPECIENCIA LETRAS_15: 9178343028523575700
+      EXPECIENCIA LETRAS_16: -3117268819818398636
+      EXPECIENCIA LETRAS_17: 1036666588090575585
+      EXPECIENCIA LETRAS_18: 5097909929512455942
+      EXPECIENCIA LETRAS_19: -6414055445362401725
+      EXPECIENCIA LETRAS_2: -4988386892759471183
+      EXPECIENCIA LETRAS_20: 8014837147288629090
+      EXPECIENCIA LETRAS_21: -1909225716512257141
+      EXPECIENCIA LETRAS_22: 605294844428404904
+      EXPECIENCIA LETRAS_23: 5767764595412499832
+      EXPECIENCIA LETRAS_24: -4648484485072834161
+      EXPECIENCIA LETRAS_25: 1702200361161807732
+      EXPECIENCIA LETRAS_26: 6885589048018663195
+      EXPECIENCIA LETRAS_27: 7033710046705733003
+      EXPECIENCIA LETRAS_28: -7728130864392575914
+      EXPECIENCIA LETRAS_29: -6788098438720321666
+      EXPECIENCIA LETRAS_3: 6351876241942861583
+      EXPECIENCIA LETRAS_30: -3173847280583470926
+      EXPECIENCIA LETRAS_31: -571779392700562492
+      EXPECIENCIA LETRAS_32: -4447887803023433604
+      EXPECIENCIA LETRAS_33: 478462762592573509
+      EXPECIENCIA LETRAS_4: -3295484607456107850
+      EXPECIENCIA LETRAS_5: 4211643747133795093
+      EXPECIENCIA LETRAS_6: 1614387077253263817
+      EXPECIENCIA LETRAS_7: 7889543262701439262
+      EXPECIENCIA LETRAS_8: -5110516829474958681
+      EXPECIENCIA LETRAS_9: -7188081664712154850
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
