@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638905059674624179
+  lastModified: 638905390158714571
   FileSizes:
   - Name: 
     Value: 2430
@@ -439,7 +439,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638905059674594191
+  lastModified: 638905390158454122
   FileSizes: []
   Exists: 1
 --- !u!114 &-3711856228109306577
@@ -573,7 +573,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8984776978519488713}
   cacheVersion: 131848
-  cacheTime: 638905059745491491
+  cacheTime: 638905390175058416
   SerializableEventsDict:
   - key: snapshot:/sin_musica
     index: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Nadia.bank
   Name: Nadia
   StudioPath: bank:/Nadia
-  lastModified: 638905059745491491
+  lastModified: 638905390175058416
   FileSizes: []
   Exists: 1
 --- !u!114 &1994601861124137945
