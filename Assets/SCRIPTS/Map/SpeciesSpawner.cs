@@ -33,7 +33,7 @@ public class SpeciesSpawner : MonoBehaviour
     {
         totalTime += Time.deltaTime;
         timer += Time.deltaTime;
-        if (timer >= spawnInterval - GameManager.Instance.DifficultyMult * 0.8f)
+        if (timer >= spawnInterval)
         {
             SpawnRandom();
             timer = 0f;
@@ -50,9 +50,10 @@ public class SpeciesSpawner : MonoBehaviour
             {
                 spawnInterval -= 0.5f;
             }
-            else if(totalTime > 120f)
+            else if (totalTime > 120f)
             {
-                spawnInterval -= Time.deltaTime;
+                spawnInterval -= Time.deltaTime * 0.1f;
+
             }
         }
     }

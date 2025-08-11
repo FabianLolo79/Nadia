@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -32,6 +34,11 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     [SerializeField] private AxisOptions axisOptions = AxisOptions.Both;
     [SerializeField] private bool snapX = false;
     [SerializeField] private bool snapY = false;
+
+    [Header("SFX")]
+    [SerializeField] private EventReference garra;
+    private EventInstance garraInstance;
+    private bool garraSonando = false;
 
     [SerializeField] protected RectTransform background = null;
     [SerializeField] private RectTransform handle = null;
@@ -107,8 +114,19 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         Vector2 radius = background.sizeDelta / 2;
         input = (eventData.position - position) / (radius * canvas.scaleFactor);
         FormatInput();
+
+        // Comienza el sonido la primera vez que se mueve
+        if (!garraSonando)
+        {
+            garraInstance = RuntimeManager.CreateInstance(garra);
+            garraInstance.start();
+            garraSonando = true;
+        }
+
         HandleInput(input.magnitude, input.normalized, radius, cam);
         handle.anchoredPosition = input * radius * handleRange;
+
+       
     }
 
     protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)
@@ -117,9 +135,12 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         {
             if (magnitude > 1)
                 input = normalised;
+
         }
         else
             input = Vector2.zero;
+
+        
     }
 
     private void FormatInput()
@@ -169,6 +190,14 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         //if (scrollMode) return; // en modo scroll no reseteamos la palanca (ya está inmóvil)
         input = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
+
+        // Para el sonido al soltar
+        if (garraSonando)
+        {
+            garraInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            garraInstance.release();
+            garraSonando = false;
+        }
     }
 
     protected Vector2 ScreenPointToAnchoredPosition(Vector2 screenPosition)

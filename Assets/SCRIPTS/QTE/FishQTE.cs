@@ -6,8 +6,7 @@ public class FishQTE : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public RectTransform safeZone;
-    public float moveSpeed = 100f;
-
+    public float pointerSpeed = 40f;
     public static FishQTE Instance { get; private set; }
 
     public event Action<bool> OnQTEFinished; 
@@ -39,9 +38,10 @@ public class FishQTE : MonoBehaviour
     void Update()
     {
         if (!isRunning) return;
+    // Aumenta velocidad, pero cada vez menos rápido
 
-        // Mover puntero
-        pointerTransform.position = Vector3.MoveTowards(pointerTransform.position, targetPosition, moveSpeed * Time.deltaTime + GameManager.Instance.DifficultyMult);
+        // Limita la velocidad
+        pointerTransform.position = Vector3.MoveTowards(pointerTransform.position, targetPosition, pointerSpeed + GameManager.Instance.DifficultyMult * 0.3f);
 
         // Cambiar dirección
         if (Vector3.Distance(pointerTransform.position, pointA.position) < 0.1f)
@@ -55,16 +55,16 @@ public class FishQTE : MonoBehaviour
         }
 
         // Input jugador
-    if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-    {
-        bool success = RectTransformUtility.RectangleContainsScreenPoint(
-            safeZone,
-            pointerTransform.position,
-            null
-        );
-        FinishQTE(success);
-    }
-    }
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+            bool success = RectTransformUtility.RectangleContainsScreenPoint(
+                safeZone,
+                pointerTransform.position,
+                null
+            );
+            FinishQTE(success);
+        }
+        }
 
     void FinishQTE(bool success)
     {

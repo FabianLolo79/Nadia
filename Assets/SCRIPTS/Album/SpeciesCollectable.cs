@@ -13,6 +13,7 @@ public class SpeciesCollectable : MonoBehaviour
     [SerializeField] GameObject SucceedVFX;
     [SerializeField] GameObject FailedVFX;
 
+    [SerializeField] GameObject NewSpeciesVFX;
 
     public SpeciesSO SpeciesSO => speciesData;
 
@@ -41,11 +42,16 @@ public class SpeciesCollectable : MonoBehaviour
         }
 
     }
-    void Start()
-    {
-        FishQTE.Instance.OnQTEFinished += Dissapear;
-    }
+void Start()
+{
+    FishQTE.Instance.OnQTEFinished += Dissapear;
 
+    // Si el jugador todavía NO tiene esta especie, spawneamos halo
+    if (!PlayerCollection.Instance.HasCollected(speciesData))
+    {
+        Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+    }
+}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -85,6 +91,7 @@ public class SpeciesCollectable : MonoBehaviour
         FishQTE.Instance.OnQTEFinished -= Dissapear;
 
     }
+
 
 }
     
