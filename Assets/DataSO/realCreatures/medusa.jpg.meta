@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a34ed05b5efb88342aa711f38d5e57ae
+guid: 4ac3b40fb6579e14ebbe1cb8407979be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2421152544854972833
-    second: soundSymb_0
+      213: 4136674337628803617
+    second: medusa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soundSymb_0
+      name: medusa_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 50
-        width: 140
-        height: 134
+        x: 0
+        y: 0
+        width: 1660
+        height: 1245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f56e2e89696566ed0800000000000000
-      internalID: -2421152544854972833
+      spriteID: 122d6dd946b686930800000000000000
+      internalID: 4136674337628803617
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      soundSymb_0: -2421152544854972833
+      medusa_0: 4136674337628803617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a34ed05b5efb88342aa711f38d5e57ae
+guid: 14eb1163972084c4785a7d00ccebc7a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2421152544854972833
-    second: soundSymb_0
+      213: -4404905755850945527
+    second: piscis_33x29_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soundSymb_0
+      name: piscis_33x29_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 50
-        width: 140
-        height: 134
+        x: 0
+        y: 0
+        width: 99
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f56e2e89696566ed0800000000000000
-      internalID: -2421152544854972833
+      spriteID: 90c4e61ad81aed2c0800000000000000
+      internalID: -4404905755850945527
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      soundSymb_0: -2421152544854972833
+      piscis_33x29_0: -4404905755850945527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
