@@ -12,6 +12,8 @@ public class SpeciesCollectable : MonoBehaviour
 
     public SpeciesSO SpeciesSO => speciesData;
 
+    [SerializeField] private bool isGrabbed = false;
+
     private void Awake()
     {
         // Si no se asignó en el inspector, buscarlo automáticamente
@@ -33,7 +35,13 @@ public class SpeciesCollectable : MonoBehaviour
         {
             Debug.LogWarning($"[SpeciesCollectable] No se encontró SpriteRenderer en {gameObject.name}");
         }
+
     }
+    void Start()
+    {
+        FishQTE.Instance.OnQTEFinished += Dissapear;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -44,7 +52,24 @@ public class SpeciesCollectable : MonoBehaviour
 
         GameManager.Instance.FishTouched(speciesData);
         Destroy(gameObject);
+        Collider2D col = GetComponent<Collider2D>();
+        col.enabled = false;
+
     }
+
+    public void Dissapear(bool bol)
+    {
+        if (isGrabbed)
+            Destroy(gameObject);
+    }
+    void OnDestroy()
+    {
+        FishQTE.Instance.OnQTEFinished -= Dissapear;
+
+    }
+
 }
+    
+
 
 
