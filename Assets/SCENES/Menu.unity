@@ -374,6 +374,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayTapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayCreditToMusicBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &319106596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,6 +1064,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayTapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayCreditToMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &790117911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,6 +1137,7 @@ GameObject:
   - component: {fileID: 827089146}
   - component: {fileID: 827089145}
   - component: {fileID: 827089144}
+  - component: {fileID: 827089147}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1170,6 +1219,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827089147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827089143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &958288255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1845,260 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669697432}
   m_CullTransparentMesh: 1
+--- !u!1 &1790905464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790905466}
+  - component: {fileID: 1790905465}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790905465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790905464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89bd913ee3d6ddb409cee71ad0c5e7de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAmbientGame:
+    Guid:
+      Data1: -1627717264
+      Data2: 1172157032
+      Data3: 1378331582
+      Data4: 1106699373
+    Path: event:/MUSICA/ambient_game
+  musicFinalHimno:
+    Guid:
+      Data1: -214798243
+      Data2: 1214189266
+      Data3: 713302455
+      Data4: -1870281739
+    Path: event:/MUSICA/final_himno
+  musicGame:
+    Guid:
+      Data1: -1895278133
+      Data2: 1162902231
+      Data3: -178366560
+      Data4: 891792443
+    Path: event:/MUSICA/music_game
+  musicMenu:
+    Guid:
+      Data1: 1861438760
+      Data2: 1088790423
+      Data3: -1737488234
+      Data4: -965577654
+    Path: event:/MUSICA/music_menu
+  musicCreditos:
+    Guid:
+      Data1: 199845517
+      Data2: 1229333586
+      Data3: 958967722
+      Data4: 498922570
+    Path: event:/MUSICA/music_creditos
+  amarillin:
+    Guid:
+      Data1: -1621768786
+      Data2: 1297309845
+      Data3: 537771698
+      Data4: -979247592
+    Path: event:/SFX-DESCRIPCION/amarillin
+  batata:
+    Guid:
+      Data1: 1744514844
+      Data2: 1151121900
+      Data3: -174011205
+      Data4: 326467161
+    Path: event:/SFX-DESCRIPCION/batata
+  centollaCoqueta:
+    Guid:
+      Data1: 2097207050
+      Data2: 1097218590
+      Data3: 2086717607
+      Data4: 74161492
+    Path: event:/SFX-DESCRIPCION/centolla_coqueta
+  chanchitoDeMar:
+    Guid:
+      Data1: 2035293528
+      Data2: 1077072748
+      Data3: -1484845387
+      Data4: 229555329
+    Path: event:/SFX-DESCRIPCION/chanchito_de_mar
+  esponjaVitria:
+    Guid:
+      Data1: 2135029032
+      Data2: 1254915686
+      Data3: -1616337757
+      Data4: 751389631
+    Path: event:/SFX-DESCRIPCION/esponja_vitria-bolitas_blancas
+  estrellaCulona:
+    Guid:
+      Data1: 1543181582
+      Data2: 1151444897
+      Data3: -1516067194
+      Data4: 315850202
+    Path: event:/SFX-DESCRIPCION/estrella_culona
+  estrellaLoca1:
+    Guid:
+      Data1: 1901963404
+      Data2: 1130961151
+      Data3: 2103592591
+      Data4: -1170374971
+    Path: event:/SFX-DESCRIPCION/estrella_loca_1
+  estrellaLoca2:
+    Guid:
+      Data1: -113987268
+      Data2: 1106082370
+      Data3: 1743888528
+      Data4: -299699534
+    Path: event:/SFX-DESCRIPCION/estrella_loca_2
+  peluquita:
+    Guid:
+      Data1: -328996616
+      Data2: 1127775098
+      Data3: 1847170238
+      Data4: 1530940088
+    Path: event:/SFX-DESCRIPCION/peluquitas
+  raya:
+    Guid:
+      Data1: 1144040982
+      Data2: 1170801536
+      Data3: 1047664033
+      Data4: 1648572180
+    Path: event:/SFX-DESCRIPCION/raya
+  changeMandoBoat:
+    Guid:
+      Data1: 279997002
+      Data2: 1251577010
+      Data3: 368967588
+      Data4: -690685015
+    Path: event:/SFX-Submarine/change_mando-boat
+  changeMandoGarra:
+    Guid:
+      Data1: 721375479
+      Data2: 1300444949
+      Data3: 1898103986
+      Data4: -435062280
+    Path: event:/SFX-Submarine/change_mando-garra
+  engineAsc:
+    Guid:
+      Data1: 1408492914
+      Data2: 1187502945
+      Data3: 154387096
+      Data4: -1796659001
+    Path: event:/SFX-Submarine/engine_boat-asc
+  engineDesc:
+    Guid:
+      Data1: -1529993940
+      Data2: 1289400369
+      Data3: 1101208205
+      Data4: 875581836
+    Path: event:/SFX-Submarine/engine_boat-desc
+  garra:
+    Guid:
+      Data1: 361367301
+      Data2: 1139336049
+      Data3: -68190023
+      Data4: -1016974185
+    Path: event:/SFX-Submarine/robot_arm
+  lintern:
+    Guid:
+      Data1: 2015576469
+      Data2: 1140791146
+      Data3: -769043523
+      Data4: -1561650109
+    Path: event:/SFX-Submarine/click_lintern
+  bubble:
+    Guid:
+      Data1: -34692276
+      Data2: 1217953628
+      Data3: -1190248541
+      Data4: -770720232
+    Path: event:/SFX-Submarine/bubble
+  winTakeObject:
+    Guid:
+      Data1: 887429758
+      Data2: 1175463227
+      Data3: -670512236
+      Data4: -1845145861
+    Path: event:/SFX-Submarine/win_take-object
+  wrongTakeObject:
+    Guid:
+      Data1: -680938487
+      Data2: 1169013324
+      Data3: -793809525
+      Data4: 1148426071
+    Path: event:/SFX-Submarine/wrong_falls-object
+  clockAlarm:
+    Guid:
+      Data1: 1596785372
+      Data2: 1148101660
+      Data3: 579859893
+      Data4: -171390338
+    Path: event:/SFX-Submarine/chaos_alarm
+  buttonTap:
+    Guid:
+      Data1: -1826557474
+      Data2: 1126203948
+      Data3: 471742389
+      Data4: 391743718
+    Path: event:/SFX-UI/button_tap_1
+  snapshotEnPausa:
+    Guid:
+      Data1: -839849594
+      Data2: 1210518770
+      Data3: 375669683
+      Data4: -1433612652
+    Path: snapshot:/en_pausa
+  snapshotSinMusica:
+    Guid:
+      Data1: 1089282327
+      Data2: 1211072376
+      Data3: 1987325840
+      Data4: 1973335127
+    Path: snapshot:/sin_musica
+  snapshotSinAmbiente:
+    Guid:
+      Data1: 1185136630
+      Data2: 1178969704
+      Data3: 686273412
+      Data4: -1120641068
+    Path: snapshot:/sin_ambiente
+  snapshotSinSfx:
+    Guid:
+      Data1: -1712564338
+      Data2: 1261495232
+      Data3: -917607549
+      Data4: -1814629697
+    Path: snapshot:/sin_sfx
+--- !u!4 &1790905466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790905464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 181.01501, y: 357.9289, z: -2.9314857}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918896620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +2185,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1031951142}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayTapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayGameMusicWithEngine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2138,6 +2509,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayTapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2061380913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,6 +2654,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1790905465}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayTapButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2146898042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2317,3 +2712,4 @@ SceneRoots:
   - {fileID: 1388240890}
   - {fileID: 1004093817}
   - {fileID: 1031951143}
+  - {fileID: 1790905466}

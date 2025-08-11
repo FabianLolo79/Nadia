@@ -608,8 +608,8 @@ GameObject:
   m_Component:
   - component: {fileID: 718814914}
   - component: {fileID: 718814913}
-  - component: {fileID: 718814912}
   - component: {fileID: 718814915}
+  - component: {fileID: 718814916}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -617,14 +617,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &718814912
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718814911}
-  m_Enabled: 1
 --- !u!20 &718814913
 Camera:
   m_ObjectHideFlags: 0
@@ -735,6 +727,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &718814916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718814911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &731535217
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +839,7 @@ GameObject:
   - component: {fileID: 843070681}
   - component: {fileID: 843070680}
   - component: {fileID: 843070679}
+  - component: {fileID: 843070682}
   m_Layer: 5
   m_Name: AlbumButton (1)
   m_TagString: Untagged
@@ -916,6 +923,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 843070682}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: PlayTapSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &843070680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,6 +973,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843070677}
   m_CullTransparentMesh: 1
+--- !u!114 &843070682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843070677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &952716426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1492,7 @@ GameObject:
   - component: {fileID: 1885473825}
   - component: {fileID: 1885473824}
   - component: {fileID: 1885473823}
+  - component: {fileID: 1885473826}
   m_Layer: 5
   m_Name: AlbumButton
   m_TagString: Untagged
@@ -1544,6 +1576,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1885473826}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: PlayTapSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1885473824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,6 +1626,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885473821}
   m_CullTransparentMesh: 1
+--- !u!114 &1885473826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885473821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1952620512
 PrefabInstance:
   m_ObjectHideFlags: 0
