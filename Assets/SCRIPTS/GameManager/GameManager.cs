@@ -23,7 +23,9 @@ public class GameManager : MonoBehaviour
     public event Action OnStopScroll;
 
     // ==== Configuración de dificultad ====
-    public float DifficultyMult { get; private set; }
+    public float DifficultyMult;
+
+    [SerializeField] float difficulty => DifficultyMult;
     [SerializeField] private float difficultyLevel = 1;
 
     // ==== Eventos para interacción con peces ====
@@ -63,10 +65,16 @@ public class GameManager : MonoBehaviour
     {
         CurrentState = GameState.Waiting;
         timeRemaining = gameTime;
+
         Time.timeScale = 1f; // aseguramos que esté activo
+
         UpdateTimerUI();
+
         endGamePanel.SetActive(false);
         albumPanel.SetActive(false);
+
+        DifficultyMult = difficultyLevel * 0.4f;
+
     }
 
     private void Update()
@@ -83,7 +91,7 @@ public class GameManager : MonoBehaviour
             UpdateTimerUI();
         }
 
-        DifficultyMult = difficultyLevel * 0.4f + Time.deltaTime;
+        DifficultyMult += Time.deltaTime * difficultyLevel;
 
     }
 

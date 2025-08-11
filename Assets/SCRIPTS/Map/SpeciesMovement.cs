@@ -30,7 +30,7 @@ public class SpeciesMovement : MonoBehaviour
         {
             Transform trans = transform;
             Vector3 pos = trans.position; // copiamos la posición actual
-            pos.y += Time.deltaTime * speed * GameManager.Instance.DifficultyMult; // modificamos Y
+            pos.y += Time.deltaTime * speed * GameManager.Instance.DifficultyMult ; // modificamos Y
             trans.position = pos; // reasignamos
         }
     }
