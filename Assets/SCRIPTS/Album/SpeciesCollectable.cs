@@ -10,6 +10,10 @@ public class SpeciesCollectable : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer; // Muestra la imagen en pixel art
     [SerializeField] private SpeciesSO speciesData;         // Datos de la especie
 
+    [SerializeField] GameObject SucceedVFX;
+    [SerializeField] GameObject FailedVFX;
+
+
     public SpeciesSO SpeciesSO => speciesData;
 
     [SerializeField] private bool isGrabbed = false;
@@ -49,19 +53,33 @@ public class SpeciesCollectable : MonoBehaviour
 
         if (player == null || speciesData == null)
             return;
+        if (FishQTE.Instance.IsRunning) return;
 
         GameManager.Instance.FishTouched(speciesData);
-        Destroy(gameObject);
+
         Collider2D col = GetComponent<Collider2D>();
         col.enabled = false;
 
+        isGrabbed = true;
     }
 
     public void Dissapear(bool bol)
     {
-        if (isGrabbed)
+        if (!isGrabbed) return;
+        if (bol)
+        {
+            Instantiate(SucceedVFX, transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
+        else
+        {
+            Instantiate(FailedVFX, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+
+        }
+
     }
+
     void OnDestroy()
     {
         FishQTE.Instance.OnQTEFinished -= Dissapear;

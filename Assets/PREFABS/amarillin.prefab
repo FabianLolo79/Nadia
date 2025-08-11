@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0027cd8dfb74b44419f3a80df3b74844, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1afad735a07d244aa24d8c2c2fc4eec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,8 +103,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff983663805c86d44b2d702a4b2dccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1530973636437791957}
   speciesData: {fileID: 11400000, guid: ab7327a172b45994c941e762c9cd10b3, type: 2}
+  SucceedVFX: {fileID: 1145524740610475989, guid: f1b166e3808e2574db25db91f634f4ab, type: 3}
+  FailedVFX: {fileID: 3142229179482008957, guid: 904d6416a1015df4fa3c584ac9f8441c, type: 3}
   isGrabbed: 0
 --- !u!114 &3071305635568286665
 MonoBehaviour:
@@ -118,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc9c7ddfdf801345b8acd4c7592ae1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -4
+  speed: -1
 --- !u!50 &1639936056778023476
 Rigidbody2D:
   serializedVersion: 5
