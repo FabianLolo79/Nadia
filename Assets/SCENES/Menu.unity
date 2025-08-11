@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsPanel: {fileID: 196731620}
-  gameSceneName: GameManagerTesting
+  gameSceneName: ScrollingMap
   albumSceneName: AlbumTesting
 --- !u!4 &1031951143
 Transform:
