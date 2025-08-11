@@ -3,7 +3,7 @@ using UnityEngine;
 public class ManagerQTE : MonoBehaviour
 
 {
-    public GameObject qteUI; 
+    public GameObject qteUI;
     public FishQTE fishQTE;
 
     private SpeciesSO currentSpecies;
@@ -17,6 +17,8 @@ public class ManagerQTE : MonoBehaviour
 
     void StartQTE(SpeciesSO species)
     {
+        if (fishQTE.IsRunning) return;
+
         currentSpecies = species;
         qteUI.SetActive(true);
         GameManager.Instance.TriggerStopScroll();
@@ -24,6 +26,7 @@ public class ManagerQTE : MonoBehaviour
     }
     void Update()
     {
+        if (fishQTE.IsRunning) return;
         if (Input.GetKeyDown(KeyCode.Space)) StartQTE(null);
     }
 
@@ -48,5 +51,10 @@ public class ManagerQTE : MonoBehaviour
         GameManager.Instance.TriggerStartScroll();
 
         qteUI.SetActive(false);
+    }
+    void OnDestroy()
+    {
+        GameManager.Instance.OnFishTouch -= StartQTE;
+        fishQTE.OnQTEFinished -= HandleQTEResult;
     }
 }

@@ -12,7 +12,18 @@ public class PlayerCollection : MonoBehaviour
     // Propiedad de solo lectura para acceder a la colección
     public IReadOnlyCollection<SpeciesSO> CollectedSpecies => collectedSpecies;
 
+    public static PlayerCollection Instance { get; private set; }
+
     // Devuelve true si la especie indicada ya fue coleccionada
+    private void Awake()
+    {
+        if (Instance == null) 
+        {
+            Instance = this;
+        }
+        else Destroy(gameObject);
+    }
+
     public bool HasCollected(SpeciesSO species)
     {
         if (species == null)

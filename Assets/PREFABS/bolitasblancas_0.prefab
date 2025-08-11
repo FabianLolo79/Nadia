@@ -116,8 +116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff983663805c86d44b2d702a4b2dccd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1530973636437791957, guid: d3a218b5506dd3b4ea29dcf24172f365, type: 3}
   speciesData: {fileID: 11400000, guid: 6315014e614ab254c8da60a9226e002d, type: 2}
+  SucceedVFX: {fileID: 1145524740610475989, guid: f1b166e3808e2574db25db91f634f4ab, type: 3}
+  FailedVFX: {fileID: 3142229179482008957, guid: 904d6416a1015df4fa3c584ac9f8441c, type: 3}
+  NewSpeciesVFX: {fileID: 7858316346605752773, guid: cd0ecfc9025bf6547bee8310af5036a5, type: 3}
+  isGrabbed: 0
 --- !u!50 &434516107661469840
 Rigidbody2D:
   serializedVersion: 5
