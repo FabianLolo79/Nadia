@@ -351,10 +351,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: QTE Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4402830005928101430, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: m_Name
+      value: Pointer - FISHQTE PARA LOS BICHOS
+      objectReference: {fileID: 0}
     - target: {fileID: 4658320864148793404, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8ee1d3cf0d31de544bb102cfd1f9819c, type: 3}
+    - target: {fileID: 4658320864148793404, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658320864148793404, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658320864148793404, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: m_Color.r
+      value: 0.38823533
+      objectReference: {fileID: 0}
     - target: {fileID: 4690032448707365698, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -421,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795356657162230594, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 12.14
+      value: 10.3
       objectReference: {fileID: 0}
     - target: {fileID: 8902053275594059476, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Pivot.x

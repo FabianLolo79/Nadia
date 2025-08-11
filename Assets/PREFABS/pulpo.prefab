@@ -105,6 +105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
   speciesData: {fileID: 11400000, guid: 677ebd84b9c0bb041ae2f41c28337347, type: 2}
+  SucceedVFX: {fileID: 1145524740610475989, guid: f1b166e3808e2574db25db91f634f4ab, type: 3}
+  FailedVFX: {fileID: 3142229179482008957, guid: 904d6416a1015df4fa3c584ac9f8441c, type: 3}
+  isGrabbed: 0
 --- !u!114 &7540175133054254121
 MonoBehaviour:
   m_ObjectHideFlags: 0
