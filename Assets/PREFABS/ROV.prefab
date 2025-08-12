@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _joystick: {fileID: 0}
   _joystickRange: 8
-  _deadZone: 0.1
+  _deadZone: 0.3
   _snapToMaxWhenFullTilt: 1
   joints:
   - {fileID: 7483278800261609694}
@@ -682,10 +682,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7031266307511157915, guid: 6a1306489a5565f4181134579505573c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4341240498799916769}
   m_SourcePrefab: {fileID: 100100000, guid: 6a1306489a5565f4181134579505573c, type: 3}
 --- !u!4 &5206725487864348999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7441096413088818137, guid: 6a1306489a5565f4181134579505573c, type: 3}
   m_PrefabInstance: {fileID: 3388418850574246558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5661595970422908421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7031266307511157915, guid: 6a1306489a5565f4181134579505573c, type: 3}
+  m_PrefabInstance: {fileID: 3388418850574246558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4341240498799916769
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5661595970422908421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aee81c2b329bff64ab85464b075b95cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
