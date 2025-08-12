@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6056341792290241885}
   - component: {fileID: 1399663931676801447}
   - component: {fileID: 2449593057060611453}
+  - component: {fileID: 5726100199798800902}
+  - component: {fileID: 1738724286429122015}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,10 +49,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: Menu
+  gameplayScene: ScrollingMap
   DifficultyMult: 0
-  difficultyLevel: 0.1
+  baseDifficulty: 1
+  difficultyGrowth: 0.2
+  maxDifficulty: 3
   albumPanel: {fileID: 0}
-  endGamePanel: {fileID: 0}
   timerText: {fileID: 0}
   gameTime: 60
 --- !u!114 &1399663931676801447
@@ -66,6 +70,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2449593057060611453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126371605948501300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1fb468c909d8245aaa41b17b58d219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUpSceneName: TimeOut
+  albumCompletedSceneName: Congratulations
+--- !u!114 &5726100199798800902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126371605948501300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0469b2ea0444344194af79d45696423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1738724286429122015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
