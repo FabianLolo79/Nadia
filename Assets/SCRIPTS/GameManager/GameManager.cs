@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        DifficultyMult += Time.deltaTime * difficultyLevel;
+
         if (CurrentState == GameState.Playing)
         {
             timeRemaining -= Time.unscaledDeltaTime;
@@ -86,17 +88,17 @@ public class GameManager : MonoBehaviour
             UpdateTimerUI();
         }
 
-        DifficultyMult += Time.deltaTime * difficultyLevel;
     }
 
     // ==== Control del flujo ====
     public void StartGame()
     {
         if (CurrentState != GameState.Waiting) return;
-        DifficultyMult = difficultyLevel * 0.4f;
 
+        DifficultyMult = difficultyLevel * 0.4f;
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
+
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
     }
@@ -202,6 +204,8 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = $"{minutes:00}:{seconds:00}";
     }
+
+
 }
 
 

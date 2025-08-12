@@ -3,14 +3,17 @@ using System;
 
 public class FishQTE : MonoBehaviour
 {
-    public Transform pointA;
-    public Transform pointB;
-    public RectTransform safeZone;
-    public float pointerSpeed = 40f;
+    [SerializeField] private Transform pointA;
+    [SerializeField] private Transform pointB;
+    [SerializeField] private RectTransform safeZone;
+    [SerializeField] private float pointerSpeed = 40f;
+    [SerializeField] private float minPointerSpeed = 2f; // Mínimo permitido
+    [SerializeField] private float maxPointerSpeed = 5f; // Máximo permitido
+
+    [SerializeField] private float currentSpeed;
     public static FishQTE Instance { get; private set; }
 
-    public event Action<bool> OnQTEFinished; 
-    // true = éxito, false = fallo
+    public event Action<bool> OnQTEFinished;
 
     private RectTransform pointerTransform;
     private Vector3 targetPosition;
@@ -18,12 +21,15 @@ public class FishQTE : MonoBehaviour
 
     public bool IsRunning => isRunning;
 
-        private void Awake()
+
+    void Start()
     {
-        if (Instance == null) 
-        {
-            Instance = this;
-        }
+        currentSpeed = 1f;    
+    }
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
@@ -38,19 +44,25 @@ public class FishQTE : MonoBehaviour
     void Update()
     {
         if (!isRunning) return;
-    // Aumenta velocidad, pero cada vez menos rápido
+        if (currentSpeed < 4.2f) currentSpeed = pointerSpeed + GameManager.Instance.DifficultyMult * 0.3f;
 
         // Limita la velocidad
-        pointerTransform.position = Vector3.MoveTowards(pointerTransform.position, targetPosition, pointerSpeed + GameManager.Instance.DifficultyMult * 0.3f);
+        pointerSpeed = Mathf.Clamp(pointerSpeed, minPointerSpeed, maxPointerSpeed);
 
-        // Cambiar dirección
+        // Movimiento
+        pointerTransform.position = Vector3.MoveTowards(
+            pointerTransform.position,
+            targetPosition,
+            currentSpeed
+        );
+
+        // Cambiar dirección o terminar
         if (Vector3.Distance(pointerTransform.position, pointA.position) < 0.1f)
         {
             targetPosition = pointB.position;
         }
         else if (Vector3.Distance(pointerTransform.position, pointB.position) < 0.1f)
         {
-            // Llegó a punto B, termina automáticamente si no apretó nada
             FinishQTE(false);
         }
 
@@ -64,12 +76,11 @@ public class FishQTE : MonoBehaviour
             );
             FinishQTE(success);
         }
-        }
+    }
 
     void FinishQTE(bool success)
     {
         isRunning = false;
-
         OnQTEFinished?.Invoke(success);
     }
 }

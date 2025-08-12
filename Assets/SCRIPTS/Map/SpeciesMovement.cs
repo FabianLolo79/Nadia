@@ -4,7 +4,11 @@ using UnityEngine;
 public class SpeciesMovement : MonoBehaviour
 {
     private bool isPaused;
-    [SerializeField] float speed = 0.1f;
+
+    [SerializeField] private float speed = 0.1f;
+    [SerializeField] private float minSpeed = -3f; // Velocidad mínima permitida
+    [SerializeField] private float maxSpeed = -1f; // Velocidad máxima permitida
+    [SerializeField] private float velocity;
 
     void Start()
     {
@@ -22,18 +26,25 @@ public class SpeciesMovement : MonoBehaviour
         isPaused = false;
     }
 
-    void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.Space)) StopMovement();
-
+void Update()
+{
         if (!isPaused)
         {
             Transform trans = transform;
-            Vector3 pos = trans.position; // copiamos la posición actual
-            pos.y += Time.deltaTime * speed * GameManager.Instance.DifficultyMult ; // modificamos Y
-            trans.position = pos; // reasignamos
+            Vector3 pos = trans.position;
+
+            velocity = speed * GameManager.Instance.DifficultyMult * 0.001f;
+
+            // Forzamos a que sea hacia abajo
+            velocity *= -0.1f;
+
+            // Limita la velocidad
+            velocity = Mathf.Clamp(velocity, minSpeed, maxSpeed);
+
+            pos.y += velocity * 0.05f;
+            trans.position = pos;
         }
-    }
+}
     private void StopMovement()
     {
         if (!isPaused)
