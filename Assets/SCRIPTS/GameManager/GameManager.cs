@@ -120,7 +120,6 @@ public class GameManager : MonoBehaviour
         if (CurrentState != GameState.Waiting) return;
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
-        DifficultyMult = Mathf.Max(DifficultyMult, baseDifficulty);
 
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
