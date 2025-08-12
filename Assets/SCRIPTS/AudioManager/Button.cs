@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Button : MonoBehaviour
+public class Button1 : MonoBehaviour
 {
     public void PlayTapSound()
     {
@@ -10,7 +10,7 @@ public class Button : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró el AudioManager en la escena o en memoria.");
+            Debug.LogWarning("No se encontrï¿½ el AudioManager en la escena o en memoria.");
         }
     }
 

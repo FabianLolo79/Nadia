@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     // ==== Configuración de escenas ====
     [Header("Nombre de la escena del menú")]
     [SerializeField] private string menuSceneName = "Menu"; // Cambiable desde Inspector
+    [SerializeField] private string endGameSceneName = "EndGame"; // Cambiable desde Inspector
+    [SerializeField] private string TimeOut = "Menu"; // Cambiable desde Inspector
+
 
     // ==== Eventos de flujo general ====
     public event Action OnGameStart;
@@ -63,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        CurrentState = GameState.Waiting; // Intercambiar por Playing para que el timer corra hasta que exista el endpanel
+        CurrentState = GameState.Waiting    ; // Intercambiar por Playing para que el timer corra hasta que exista el endpanel
         timeRemaining = gameTime;
 
         Time.timeScale = 1f; // aseguramos que esté activo
@@ -73,7 +76,6 @@ public class GameManager : MonoBehaviour
         endGamePanel.SetActive(false);
         albumPanel.SetActive(false);
 
-        DifficultyMult = difficultyLevel * 0.4f;
 
     }
 
@@ -99,7 +101,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         if (CurrentState != GameState.Waiting) return;
-
+        DifficultyMult = difficultyLevel * 0.4f;
+        
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
         OnGameStart?.Invoke();
@@ -133,6 +136,8 @@ public class GameManager : MonoBehaviour
         endGamePanel.SetActive(true);
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
+        SceneManager.LoadScene(menuSceneName);
+
     }
 
     // ==== Volver al menú ====

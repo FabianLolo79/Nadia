@@ -27,12 +27,20 @@ public class PlayerCollection : MonoBehaviour
 
     [Serializable] private class SaveData { public List<string> ids = new List<string>(); }
 
+    //SingleTon
+    public static PlayerCollection Instance { get; private set; }
+
     public event Action OnCollectionChanged;
 
     private void Awake()
     {
         BuildIndex();
         Load();
+        if (Instance == null) 
+        {
+            Instance = this;
+        }
+        else Destroy(gameObject);
     }
 
     private void OnDestroy()

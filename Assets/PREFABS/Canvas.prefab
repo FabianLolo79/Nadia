@@ -121,6 +121,13 @@ MonoBehaviour:
   axisOptions: 0
   snapX: 0
   snapY: 0
+  garra:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   background: {fileID: 8760252049599620988}
   handle: {fileID: 6474557880971418236}
   doubleTapMaxDelay: 0.3
@@ -163,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: 72.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 3.65, y: -127}
+  m_SizeDelta: {x: 50, y: 55.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7833635603133126206
 CanvasRenderer:
@@ -430,6 +437,13 @@ MonoBehaviour:
   axisOptions: 0
   snapX: 0
   snapY: 0
+  garra:
+    Guid:
+      Data1: 361367301
+      Data2: 1139336049
+      Data3: -68190023
+      Data4: -1016974185
+    Path: event:/SFX-Submarine/robot_arm
   background: {fileID: 8760252049599620988}
   handle: {fileID: 6474557880971418236}
   doubleTapMaxDelay: 0.3
@@ -488,6 +502,10 @@ PrefabInstance:
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: moveSpeed
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: pointerSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5707769402831566403, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_LocalScale.x

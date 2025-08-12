@@ -38,19 +38,19 @@ public class SpeciesSpawner : MonoBehaviour
             SpawnRandom();
             timer = 0f;
 
-            if (totalTime == 30)
+            if (totalTime == 30 && spawnInterval >= 1)
             {
                 spawnInterval -= 0.5f;
             }
-            else if (totalTime == 60)
+            else if (totalTime == 60 && spawnInterval >= 1)
             {
                 spawnInterval -= 0.5f;
             }
-            else if (totalTime == 90)
+            else if (totalTime == 90 && spawnInterval >= 1)
             {
                 spawnInterval -= 0.5f;
             }
-            else if (totalTime > 120f)
+            else if (totalTime > 120f && spawnInterval >= 1)
             {
                 spawnInterval -= Time.deltaTime * 0.1f;
 
