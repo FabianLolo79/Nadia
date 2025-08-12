@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        RebindSceneRefs();
         // cada vez que entro a Menú o Gameplay, reseteo
         if (scene.name == menuSceneName || scene.name == gameplayScene)
         {
@@ -235,6 +236,16 @@ public class GameManager : MonoBehaviour
         timeRemaining = gameTime;
         DifficultyMult = baseDifficulty;        //  Reinicio dificultad
 
+        UpdateTimerUI();
+    }
+
+    private void RebindSceneRefs()
+    {
+        // TimerText
+        var tgo = GameObject.FindWithTag("TimeText");
+        timerText = tgo ? tgo.GetComponent<TMP_Text>() : null;
+
+        // Actualizá la UI apenas re-vinculada
         UpdateTimerUI();
     }
 

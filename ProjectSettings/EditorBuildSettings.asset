@@ -6,11 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SCENES/Cover.unity
+    guid: 6f31ed853b2fdd246898a5a1b6fb451a
+  - enabled: 1
     path: Assets/SCENES/Menu.unity
     guid: a2c6f01649641b34dbc18d72bcb482ee
   - enabled: 1
     path: Assets/SCENES/ScrollingMap.unity
     guid: c84414efa0151cd4c84ab60369da47c8
+  - enabled: 1
+    path: Assets/SCENES/TimeOut.unity
+    guid: dd9593444fc649d48a6a42bf9ea7291f
+  - enabled: 1
+    path: Assets/SCENES/Congratulations.unity
+    guid: 5afbd2d165636ab46b000a2a5de01566
   - enabled: 0
     path: Assets/SCENES/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02

@@ -332,11 +332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: maxPointerSpeed
-      value: 0.9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: minPointerSpeed
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8902053275594059476, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Pivot.x
