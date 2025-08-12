@@ -1164,8 +1164,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4126371605948501300, guid: 28db563f2f2886f498417a118e492b6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 776828946585127363}
+    - targetCorrespondingSourceObject: {fileID: 4126371605948501300, guid: 28db563f2f2886f498417a118e492b6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 776828946585127362}
   m_SourcePrefab: {fileID: 100100000, guid: 28db563f2f2886f498417a118e492b6a, type: 3}
+--- !u!1 &776828946585127361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4126371605948501300, guid: 28db563f2f2886f498417a118e492b6a, type: 3}
+  m_PrefabInstance: {fileID: 776828946585127360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &776828946585127362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776828946585127361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1fb468c909d8245aaa41b17b58d219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUpSceneName: TimeOut
+  albumCompletedSceneName: Congratulations
+--- !u!114 &776828946585127363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776828946585127361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0469b2ea0444344194af79d45696423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8387510375206106459
 PrefabInstance:
   m_ObjectHideFlags: 0
