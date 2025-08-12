@@ -1055,6 +1055,22 @@ PrefabInstance:
       propertyPath: playerCollection
       value: 
       objectReference: {fileID: 2058899204}
+    - target: {fileID: 4038287638289932317, guid: c112f681e4632ea48854644d6055c80c, type: 3}
+      propertyPath: allSpecies.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038287638289932317, guid: c112f681e4632ea48854644d6055c80c, type: 3}
+      propertyPath: 'allSpecies.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9de2f968714c22b45b64a85605231d6c, type: 2}
+    - target: {fileID: 4038287638289932317, guid: c112f681e4632ea48854644d6055c80c, type: 3}
+      propertyPath: 'allSpecies.Array.data[12]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f741d5dbac2bd6e4d9188b4fe8621f60, type: 2}
+    - target: {fileID: 4038287638289932317, guid: c112f681e4632ea48854644d6055c80c, type: 3}
+      propertyPath: 'allSpecies.Array.data[13]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 187dc5ae775fc434787286c125122604, type: 2}
     - target: {fileID: 4385531942372961127, guid: c112f681e4632ea48854644d6055c80c, type: 3}
       propertyPath: m_Name
       value: GameObject
