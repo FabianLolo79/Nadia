@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     // ==== Configuración de escenas ====
     [Header("Nombre de la escena del menú")]
     [SerializeField] private string menuSceneName = "Menu"; // Cambiable desde Inspector
-
+    [SerializeField] private string gameplayScene = "ScrollingMap";
     // ==== Eventos de flujo general ====
     public event Action OnGameStart;
     public event Action OnGamePause;
@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour
     // ==== Configuración de dificultad ====
     public float DifficultyMult;
 
-    [SerializeField] float difficulty => DifficultyMult;
-    [SerializeField] private float difficultyLevel = 1;
+    [SerializeField] float baseDifficulty = 1f;
+    [SerializeField] float difficultyGrowth = 0.2f;
+    [SerializeField] private float maxDifficulty = 3f;
 
     // ==== Eventos para interacción con peces ====
     public event Action<SpeciesSO> OnFishTouch;
@@ -38,7 +39,6 @@ public class GameManager : MonoBehaviour
     // ==== Referencias a UI ====
     [Header("UI Panels")]
     [SerializeField] private GameObject albumPanel;
-    [SerializeField] private GameObject endGamePanel;
 
     [Header("UI Timer")]
     [SerializeField] private TMP_Text timerText;
@@ -59,25 +59,48 @@ public class GameManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     private void Start()
     {
-        CurrentState = GameState.Waiting; // Intercambiar por Playing para que el timer corra hasta que exista el endpanel
+        ResetRun();
+        CurrentState = GameState.Playing; // Intercambiar por Playing para que el timer corra hasta que exista el endpanel
         timeRemaining = gameTime;
 
         Time.timeScale = 1f; // aseguramos que esté activo
 
         UpdateTimerUI();
 
-        endGamePanel.SetActive(false);
         albumPanel.SetActive(false);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // cada vez que entro a Menú o Gameplay, reseteo
+        if (scene.name == menuSceneName || scene.name == gameplayScene)
+        {
+            ResetRun();
+            // Si en Menú querés Waiting y en Gameplay auto-start, podés diferenciar acá
+            CurrentState = (scene.name == gameplayScene) ? GameState.Playing : GameState.Waiting;
+            Time.timeScale = 1f;
+            UpdateTimerUI();
+        }
     }
 
     private void Update()
     {
-        DifficultyMult += Time.deltaTime * difficultyLevel;
 
         if (CurrentState == GameState.Playing)
         {
+            DifficultyMult = Mathf.Min(DifficultyMult + Time.deltaTime * difficultyGrowth, maxDifficulty);
             timeRemaining -= Time.unscaledDeltaTime;
 
             if (timeRemaining <= 0)
@@ -94,10 +117,9 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         if (CurrentState != GameState.Waiting) return;
-
-        DifficultyMult = difficultyLevel * 0.4f;
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
+        DifficultyMult = Mathf.Max(DifficultyMult, baseDifficulty);
 
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
@@ -141,7 +163,6 @@ public class GameManager : MonoBehaviour
 
         CurrentState = GameState.Ended;
         Time.timeScale = 0f;
-        endGamePanel.SetActive(true);
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
         SceneManager.LoadScene(menuSceneName);
@@ -203,6 +224,18 @@ public class GameManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+
+    private void ResetRun()
+    {
+        // Estado base para una nueva partida
+        CurrentState = GameState.Waiting;       // o Playing si querés auto‑start
+        Time.timeScale = 1f;
+
+        timeRemaining = gameTime;
+        DifficultyMult = baseDifficulty;        //  Reinicio dificultad
+
+        UpdateTimerUI();
     }
 
 

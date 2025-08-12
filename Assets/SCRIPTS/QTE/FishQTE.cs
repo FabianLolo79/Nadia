@@ -24,7 +24,7 @@ public class FishQTE : MonoBehaviour
 
     void Start()
     {
-        currentSpeed = 1f;    
+        currentSpeed = 0.2f;    
     }
 
     private void Awake()
