@@ -242,7 +242,7 @@ public class GameManager : MonoBehaviour
     private void RebindSceneRefs()
     {
         // TimerText
-        var tgo = GameObject.FindWithTag("TimerSText");
+        var tgo = GameObject.FindWithTag("TimerText");
         timerText = tgo ? tgo.GetComponent<TMP_Text>() : null;
 
         // Actualizá la UI apenas re-vinculada

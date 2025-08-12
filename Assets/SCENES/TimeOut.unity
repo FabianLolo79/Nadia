@@ -263,25 +263,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeOut
       objectReference: {fileID: 0}
+    - target: {fileID: 4313909118786786848, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 116.92499
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346479191282307069, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 501.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346479191282307069, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 338.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5346479191282307069, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5346479191282307069, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391039707105723472, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 491.2621
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391039707105723472, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 873.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391039707105723472, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391039707105723472, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9147778699838083526, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 9147778699838083526, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
       propertyPath: m_margin.x
-      value: -71.58234
+      value: -5.1007996
       objectReference: {fileID: 0}
     - target: {fileID: 9147778699838083526, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
       propertyPath: m_margin.z
-      value: -28.931671
+      value: -2.9172513
       objectReference: {fileID: 0}
     - target: {fileID: 9147778699838083526, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

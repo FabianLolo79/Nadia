@@ -1715,8 +1715,12 @@ PrefabInstance:
       value: Timer
       objectReference: {fileID: 0}
     - target: {fileID: 8138438991104636172, guid: f3b278577b54e8441a72f39aaf57a94f, type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: TimeText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138438991104636172, guid: f3b278577b54e8441a72f39aaf57a94f, type: 3}
+      propertyPath: m_TagString
+      value: TimerText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

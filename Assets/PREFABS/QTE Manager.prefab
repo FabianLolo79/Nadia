@@ -346,8 +346,8 @@ MonoBehaviour:
   pointB: {fileID: 1363411585314566460}
   safeZone: {fileID: 8795356657162230594}
   pointerSpeed: 0
-  minPointerSpeed: 0.1
-  maxPointerSpeed: 0.6
+  minPointerSpeed: 5
+  maxPointerSpeed: 10
   currentSpeed: 0
 --- !u!1 &5659147092908177237
 GameObject:

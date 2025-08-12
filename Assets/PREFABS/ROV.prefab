@@ -479,6 +479,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f741d5dbac2bd6e4d9188b4fe8621f60, type: 2}
   - {fileID: 11400000, guid: 677ebd84b9c0bb041ae2f41c28337347, type: 2}
   - {fileID: 11400000, guid: 9de2f968714c22b45b64a85605231d6c, type: 2}
+  - {fileID: 11400000, guid: b137e83dc33cf98408ad2cdd69d201f8, type: 2}
 --- !u!50 &7505567671691438966
 Rigidbody2D:
   serializedVersion: 5
@@ -685,7 +686,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7031266307511157915, guid: 6a1306489a5565f4181134579505573c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 575962720365939901}
+      addedObject: {fileID: 5917470749940221682}
   m_SourcePrefab: {fileID: 100100000, guid: 6a1306489a5565f4181134579505573c, type: 3}
 --- !u!4 &5206725487864348999 stripped
 Transform:
@@ -697,7 +698,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7031266307511157915, guid: 6a1306489a5565f4181134579505573c, type: 3}
   m_PrefabInstance: {fileID: 3388418850574246558}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &575962720365939901
+--- !u!95 &5917470749940221682
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0

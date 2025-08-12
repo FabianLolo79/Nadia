@@ -331,12 +331,12 @@ PrefabInstance:
       value: QTE Manager
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
-      propertyPath: maxPointerSpeed
-      value: 3.5
+      propertyPath: currentSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
-      propertyPath: minPointerSpeed
-      value: 1
+      propertyPath: maxPointerSpeed
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8902053275594059476, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Pivot.x

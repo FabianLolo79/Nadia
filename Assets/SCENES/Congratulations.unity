@@ -342,9 +342,49 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 3151582214312591240, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 504.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151582214312591240, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 896.7145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151582214312591240, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151582214312591240, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3832380664740697108, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
       propertyPath: m_Name
       value: Banner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867338544032254245, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867338544032254245, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867338544032254245, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867338544032254245, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294901503
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552981133531067001, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 448.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552981133531067001, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6194856335677447691, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
       propertyPath: m_Sprite
