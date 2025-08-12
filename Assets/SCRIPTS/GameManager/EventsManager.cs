@@ -10,6 +10,8 @@ public class EventsManager : MonoBehaviour
     public static EventsManager Instance { get; private set; }
 
     public event Action OnTimeUp;
+    public event Action OnCongrats;
+
     public event Action OnAlbumCompleted;
 
     private void Awake()
@@ -24,5 +26,7 @@ public class EventsManager : MonoBehaviour
     }
 
     public void TimeUp() => OnTimeUp?.Invoke();
+    public void Congrats() => OnCongrats?.Invoke();
+
     public void AlbumCompleted() => OnAlbumCompleted?.Invoke();
 }

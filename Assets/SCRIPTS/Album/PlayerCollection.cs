@@ -31,7 +31,9 @@ public class PlayerCollection : MonoBehaviour
     public static PlayerCollection Instance { get; private set; }
 
     public event Action OnCollectionChanged;
+    [SerializeField] private string congratulationsSceneName = "Congratulations"; // Nombre de la escena de felicitaciones
 
+    public event Action OnCollectionComplete; // Evento cuando se completa el álbum
     private void Awake()
     {
         BuildIndex();
@@ -106,10 +108,20 @@ public class PlayerCollection : MonoBehaviour
 
         if (added)
         {
-            collectedIds.Add(species.speciesID); // 🔹 Importante: registrar el ID
-            Save(); // 🔹 Guardar inmediatamente
+            collectedIds.Add(species.speciesID);
+            Save();
             Debug.Log($"Collected new species: {species.speciesID}");
             OnCollectionChanged?.Invoke();
+
+            // ✅ Chequear si ya se completó
+            if (collectedSpecies.Count >= allSpecies.Count)
+            {
+                Debug.Log("[PlayerCollection] Álbum completado!");
+                OnCollectionComplete?.Invoke(); // Avisar a otros sistemas
+
+                // Cargar la escena de felicitaciones
+                GameManager.Instance.EndGameByCongrats();
+            }
         }
 
     }
@@ -168,6 +180,8 @@ public class PlayerCollection : MonoBehaviour
 
     public void ClearProgress()
     {
+
+
         collectedIds.Clear();
         collectedSpecies.Clear();
         PlayerPrefs.DeleteKey(PREFS_KEY);

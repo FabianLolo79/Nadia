@@ -19,7 +19,7 @@ public class BannerSceneLoader : MonoBehaviour
 
     private IEnumerator WaitAndSubscribe()
     {
-        // Espera hasta que EventsManager esté listo
+        // Espera hasta que EventsManager estï¿½ listo
         while (EventsManager.Instance == null) yield return null;
         TrySubscribe();
     }
@@ -29,6 +29,8 @@ public class BannerSceneLoader : MonoBehaviour
         if (EventsManager.Instance != null && !_subscribed)
         {
             EventsManager.Instance.OnTimeUp += HandleTimeUp;
+            EventsManager.Instance.OnCongrats += HandleCongratulation;
+
             _subscribed = true;
         }
     }
@@ -50,8 +52,14 @@ public class BannerSceneLoader : MonoBehaviour
 
     private void HandleTimeUp()
     {
-        // Descongelar por si el GameManager dejó el tiempo en 0
+        // Descongelar por si el GameManager dejï¿½ el tiempo en 0
         Time.timeScale = 1f;
         SceneManager.LoadScene(timeUpSceneName);
+    }
+    private void HandleCongratulation()
+    {
+        // Descongelar por si el GameManager dejï¿½ el tiempo en 0
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(albumCompletedSceneName);
     }
 }
