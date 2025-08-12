@@ -157,6 +157,18 @@ public class GameManager : MonoBehaviour
         EventsManager.Instance?.TimeUp(); // NUEVO
     }
 
+    public void EndGameByAlbum()
+    {
+        if (CurrentState == GameState.Ended) return;
+
+        CurrentState = GameState.Ended;
+        Time.timeScale = 0f;
+        OnGameEnd?.Invoke();
+        OnStopScroll?.Invoke();
+
+    }
+
+
     public void EndGame()
     {
         if (CurrentState == GameState.Ended) return;
