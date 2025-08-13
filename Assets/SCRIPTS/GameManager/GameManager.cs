@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-            // Música del menú
+            // Música del menú 
             //AudioManager.Instance.PlayMusicMenu();
         }
         else if (scene.name == gameplayScene)
@@ -186,13 +186,20 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Ended) return;
 
+        AudioManager.Instance.PauseGameMusicWithEngine();
+
+        AudioManager.Instance.StopMusic();
+
         CurrentState = GameState.Ended;
         Time.timeScale = 0f;
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
+             
 
         // Lanzar evento global para BannerSceneLoader
         EventsManager.Instance?.TimeUp(); // NUEVO
+
+
     }
 
     public void EndGame()
@@ -222,7 +229,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; // aseguramos que no esté pausado
         SceneManager.LoadScene(menuSceneName);
 
-        AudioManager.Instance.PlayMusicMenu();
+        //AudioManager.Instance.PlayMusicMenu(); TODO que onda
     }
 
     // ==== Scroll manual ====
@@ -270,19 +277,14 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
 
         // Lógica para reproducir sonido en los últimos 10 segundos
-        if (timeRemaining <= 10f && timeRemaining > 0 && !isWarningSoundPlaying)
+        if (timeRemaining <= 5f && timeRemaining > 0 && !isWarningSoundPlaying)
         {
             AudioManager.Instance.PlayClockAlarm(); // Reproducir sonido de advertencia
             isWarningSoundPlaying = true;
         }
-        else if (timeRemaining <= 0)
+        else if (timeRemaining == 0)
         {
-            // Detener el sonido si ya terminó el tiempo
-            if (isWarningSoundPlaying)
-            {
-                AudioManager.Instance.StopClockAlarm(); // Detener el sonido
-                isWarningSoundPlaying = false;
-            }
+            AudioManager.Instance.StopMusic();
         }
     }
 

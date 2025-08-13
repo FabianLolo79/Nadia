@@ -46,6 +46,8 @@ public class BannerSceneLoader : MonoBehaviour
     private void LoadAlbumCompletedScene()
     {
         SceneManager.LoadScene(albumCompletedSceneName);
+        
+        // acá disparar 
     }
 
     private void HandleTimeUp()

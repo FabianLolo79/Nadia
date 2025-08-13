@@ -92,7 +92,7 @@ public class AudioManager : MonoBehaviour
     // ------------------- MÚSICA -------------------
     public void PlayMusic(EventReference musicRef)
     {
-        StopMusic();
+        StopMusic(); // Asegura que no haya otra música sonando
         currentMusic = RuntimeManager.CreateInstance(musicRef);
         currentMusic.start();
     }
@@ -100,41 +100,34 @@ public class AudioManager : MonoBehaviour
     public void StopMusic()
     {
         if (currentMusic.isValid())
+        {
             currentMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            currentMusic.release();
+        }
     }
 
-    // Pausar la música actual sin destruirla
+    // Pausar/Reanudar música actual
     public void PauseMusic() => currentMusic.setPaused(true);
     public void ResumeMusic() => currentMusic.setPaused(false);
 
     public void SwitchMusic(EventReference newMusic)
     {
-        StopMusic();
         PlayMusic(newMusic);
     }
 
-    public void PlayCreditToMusic()
-    {
-        SwitchMusic(musicCreditos);
-    }
-
-    public void PlayCreditToMusicBack()
-    {
-        SwitchMusic(musicMenu);
-    }
-
-    public void PlayGameMusicWithEngine()
-    {
-        StopMusic();                    // Para musicMenu
-        PlayMusic(musicGame);           // Reproduce música de juego
-        StartEngineAsc();               // Arranca sonido motor ascendente
-    }
-
+    // Atajos específicos
     public void PlayMusicMenu() => PlayMusic(musicMenu);
     public void PlayMusicGame() => PlayMusic(musicGame);
     public void PlayMusicAmbientGame() => PlayMusic(musicAmbientGame);
     public void PlayMusicCreditos() => PlayMusic(musicCreditos);
     public void PlayMusicFinalHimno() => PlayMusic(musicFinalHimno);
+
+    // Ejemplo con motor
+    public void PlayGameMusicWithEngine()
+    {
+        PlayMusic(musicGame);
+        StartEngineAsc();
+    }
 
     // ------------------- SNAPSHOTS -------------------
 
@@ -202,6 +195,12 @@ public class AudioManager : MonoBehaviour
         engineAscInstance.setPaused(false);
     }
 
+    //public void StopGameMusicWithEngine()
+    //{
+    //    currentMusic.setPaused(true);
+
+    //}
+
     private IEnumerator ChangeMotorIntensity(EventInstance instance, int startValue, int endValue, float delay)
     {
         for (int value = startValue; value <= endValue; value++)
@@ -229,7 +228,27 @@ public class AudioManager : MonoBehaviour
         instance.release();
     }
 }
+    //private bool garraSonando = false;
 
+    //public void StartGarra()
+    //{
+    //    if (!garraSonando)
+    //    {
+    //        garra = RuntimeManager.CreateInstance(garra);
+    //        garra.start();
+    //        garraSonando = true;
+    //    }
+    //}
+
+    //public void StopGarra()
+    //{
+    //    if (garraSonando && garraInstance.isValid())
+    //    {
+    //        garraInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    //        garraInstance.release();
+    //        garraSonando = false;
+    //    }
+    //}
     public void PlaySfx(EventReference sfx)
     {
         RuntimeManager.PlayOneShot(sfx);

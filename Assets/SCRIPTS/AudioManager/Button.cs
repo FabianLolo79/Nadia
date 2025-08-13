@@ -16,8 +16,7 @@ public class Button : MonoBehaviour
             Debug.LogWarning("No se encontr� el AudioManager en la escena o en memoria.");
         }
 
-
     }
 
-   
+    
 }

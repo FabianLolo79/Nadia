@@ -122,8 +122,15 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
             garraInstance.start();
             garraSonando = true;
         }
+        //else NO FUNCIONA PARA EL FINAL DEL TIMER
+        //{
+        //    garraInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        //    garraSonando = false;
 
-        HandleInput(input.magnitude, input.normalized, radius, cam);
+        //}
+
+
+            HandleInput(input.magnitude, input.normalized, radius, cam);
         handle.anchoredPosition = input * radius * handleRange;
 
        
@@ -241,6 +248,18 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         if (icon != null)
         {
             icon.sprite = scrollMode ? scrollIcon : normalIcon;
+        }
+
+    }
+
+    private void OnDisable()
+    {
+        // Detener y liberar el sonido de la garra al desactivar el objeto
+        if (garraInstance.isValid() && garraSonando)
+        {
+            garraInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            garraInstance.release();
+            garraSonando = false;
         }
     }
 }
