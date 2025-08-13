@@ -147,7 +147,6 @@ public class GameManager : MonoBehaviour
         if (CurrentState != GameState.Waiting) return;
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
-        DifficultyMult = Mathf.Max(DifficultyMult, baseDifficulty);
 
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
@@ -201,6 +200,18 @@ public class GameManager : MonoBehaviour
 
 
     }
+
+    public void EndGameByAlbum()
+    {
+        if (CurrentState == GameState.Ended) return;
+
+        CurrentState = GameState.Ended;
+        Time.timeScale = 0f;
+        OnGameEnd?.Invoke();
+        OnStopScroll?.Invoke();
+
+    }
+
 
     public void EndGame()
     {

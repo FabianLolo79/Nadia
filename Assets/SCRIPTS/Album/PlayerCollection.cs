@@ -106,12 +106,20 @@ public class PlayerCollection : MonoBehaviour
 
         if (added)
         {
-            collectedIds.Add(species.speciesID); // 🔹 Importante: registrar el ID
-            Save(); // 🔹 Guardar inmediatamente
+            collectedIds.Add(species.speciesID);
+            Save();
             Debug.Log($"Collected new species: {species.speciesID}");
             OnCollectionChanged?.Invoke();
-        }
 
+            // ✅ Chequear si ya se completó
+            if (collectedSpecies.Count >= allSpecies.Count)
+            {
+                Debug.Log("[PlayerCollection] Álbum completado!");
+
+                // Cargar la escena de felicitaciones
+                EventsManager.Instance.Congrats();
+            }
+        }
     }
 
     // ===== Persistencia simple (PlayerPrefs + JSON) =====
