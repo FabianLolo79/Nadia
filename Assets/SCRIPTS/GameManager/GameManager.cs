@@ -118,7 +118,8 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-            // Música del gameplay
+
+            //Música del gameplay
             AudioManager.Instance.PlayGameMusicWithEngine();
         }
     }

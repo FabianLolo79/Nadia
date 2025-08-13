@@ -18,5 +18,14 @@ public class Button : MonoBehaviour
 
     }
 
-    
+    public void StarSnashot()
+    {
+        AudioManager.Instance.StartSnapshotEnPausa();
+    }
+
+    public void StopSnapshot()
+    {
+        AudioManager.Instance.StopSnapshotEnPausa();
+    }
+
 }

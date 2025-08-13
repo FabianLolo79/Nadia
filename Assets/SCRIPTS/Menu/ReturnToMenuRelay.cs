@@ -15,6 +15,6 @@ public class ReturnToMenuRelay : MonoBehaviour
         Time.timeScale = 1f; // por si estabas en pausa
         SceneManager.LoadScene(menuSceneName);
 
-        AudioManager.Instance.PlayMusicMenu();
+        //AudioManager.Instance.PlayMusicMenu();
     }
 }

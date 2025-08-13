@@ -73,9 +73,11 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
     }
+    
+    //DE ACA ANTES EJECUTABA LA MUSICA
     private void Start()
     {
-        PlayMusicMenu();
+        PlayMusicMenu(); 
     }
 
     // ------------------- MÉTODOS GENERALES -------------------
