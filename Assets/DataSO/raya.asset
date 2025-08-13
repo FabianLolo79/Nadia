@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: raya
   speciesImage: {fileID: 21300000, guid: 013372e4926043844bfc9b6522b29dcb, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: c63a74524c5937e4fa2fb41f7d98695e, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 1144040982
+      Data2: 1170801536
+      Data3: 1047664033
+      Data4: 1648572180
+    Path: event:/SFX-DESCRIPCION/raya

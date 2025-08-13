@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: estrellaculona
   speciesImage: {fileID: 21300000, guid: a06a182fa499a0341a3500030b5ef12c, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: c4d27d53a672b3d43b4462f7f04a664a, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 1543181582
+      Data2: 1151444897
+      Data3: -1516067194
+      Data4: 315850202
+    Path: event:/SFX-DESCRIPCION/estrella_culona

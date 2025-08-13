@@ -242,8 +242,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3685340197908478375, guid: 984efb05057a43543bd98d7a60cd1718, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 33174982}
   m_SourcePrefab: {fileID: 100100000, guid: 984efb05057a43543bd98d7a60cd1718, type: 3}
+--- !u!1 &33174981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3685340197908478375, guid: 984efb05057a43543bd98d7a60cd1718, type: 3}
+  m_PrefabInstance: {fileID: 33174980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &33174982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33174981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1826557474
+      Data2: 1126203948
+      Data3: 471742389
+      Data4: 391743718
+    Path: event:/SFX-UI/button_tap_1
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1519672169
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,8 +293,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1519672172}
   - component: {fileID: 1519672171}
-  - component: {fileID: 1519672170}
   - component: {fileID: 1519672173}
+  - component: {fileID: 1519672174}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -263,14 +302,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1519672170
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519672169}
-  m_Enabled: 1
 --- !u!20 &1519672171
 Camera:
   m_ObjectHideFlags: 0
@@ -381,6 +412,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1519672174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519672169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

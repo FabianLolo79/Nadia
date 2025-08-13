@@ -1,7 +1,10 @@
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
-public class Button1 : MonoBehaviour
+public class Button : MonoBehaviour
 {
+
     public void PlayTapSound()
     {
         if (AudioManager.Instance != null)
@@ -12,6 +15,9 @@ public class Button1 : MonoBehaviour
         {
             Debug.LogWarning("No se encontr� el AudioManager en la escena o en memoria.");
         }
+
+
     }
 
+   
 }

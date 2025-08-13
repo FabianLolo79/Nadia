@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: peluquitas
   speciesImage: {fileID: 21300000, guid: 5ba9efe8e8166464e80d7f5a7e7c8958, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 0707cb97c87baf240b79583786527219, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: -328996616
+      Data2: 1127775098
+      Data3: 1847170238
+      Data4: 1530940088
+    Path: event:/SFX-DESCRIPCION/peluquitas

@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: estrellalocaarana
   speciesImage: {fileID: 21300000, guid: dd220125e19cf584ba6f922fe1ee4f5c, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 493381854b666b040bfab293f2faa107, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 1901963404
+      Data2: 1130961151
+      Data3: 2103592591
+      Data4: -1170374971
+    Path: event:/SFX-DESCRIPCION/estrella_loca_1

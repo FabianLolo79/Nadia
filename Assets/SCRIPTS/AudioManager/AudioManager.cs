@@ -11,17 +11,7 @@ public class AudioManager : MonoBehaviour
         get
         {
             if (_instance == null)
-            {
-                // Buscar en la escena actual
                 _instance = FindObjectOfType<AudioManager>();
-
-                // Si no existe, crearlo automáticamente
-                if (_instance == null)
-                {
-                    GameObject obj = new GameObject("AudioManager");
-                    _instance = obj.AddComponent<AudioManager>();
-                }
-            }
             return _instance;
         }
     }
@@ -161,6 +151,22 @@ public class AudioManager : MonoBehaviour
             activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
+    public void StartSnapshotEnPausa()
+    {
+        StopSnapshotEnPausa(); // Primero detenemos cualquier instancia previa
+        activeSnapshot = RuntimeManager.CreateInstance(snapshotEnPausa);
+        activeSnapshot.start();
+    }
+
+    public void StopSnapshotEnPausa()
+    {
+        if (activeSnapshot.isValid())
+        {
+            activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            activeSnapshot.release();
+        }
+    }
+
 
     // ------------------- MOTORES -------------------
     public void StartEngineAsc()
@@ -171,7 +177,7 @@ public class AudioManager : MonoBehaviour
         engineAscInstance = CreateInstance(engineAsc);
         engineAscInstance.start();
 
-        StartCoroutine(ChangeMotorIntensity(engineAscInstance, 0, 3, 3f));
+        StartCoroutine(ChangeMotorIntensity(engineAscInstance, 0, 3, 1.5f));
     }
     public void StartEngineDesc()
     {
@@ -181,9 +187,20 @@ public class AudioManager : MonoBehaviour
         engineDescInstance = CreateInstance(engineDesc);
         engineDescInstance.start();
 
-        StartCoroutine(ChangeMotorIntensity(engineDescInstance, 0, 3, 3f));
+        StartCoroutine(ChangeMotorIntensity(engineDescInstance, 0, 3, 1.5f));
     }
 
+    public void PauseGameMusicWithEngine()
+    {
+        currentMusic.setPaused(true);   // Pausa música del juego
+        engineAscInstance.setPaused(true); // Pausa motor
+    }
+
+    public void ResumeGameMusicWithEngine()
+    {
+        currentMusic.setPaused(false);
+        engineAscInstance.setPaused(false);
+    }
 
     private IEnumerator ChangeMotorIntensity(EventInstance instance, int startValue, int endValue, float delay)
     {
@@ -202,6 +219,16 @@ public class AudioManager : MonoBehaviour
     public void PlayTakeObject() => PlayOneShot(winTakeObject);
     public void PlayFallObject() => PlayOneShot(wrongTakeObject);
     public void PlayClockAlarm() => PlayOneShot(clockAlarm);
+
+    public void StopClockAlarm()
+{
+    if (!clockAlarm.IsNull)
+    {
+        var instance = RuntimeManager.CreateInstance(clockAlarm);
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.release();
+    }
+}
 
     public void PlaySfx(EventReference sfx)
     {

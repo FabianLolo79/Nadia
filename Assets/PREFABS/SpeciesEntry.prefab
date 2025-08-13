@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 6945335617133628844}
   - component: {fileID: 1526906485088115113}
   - component: {fileID: 5670518048630635848}
+  - component: {fileID: 3805700171335261685}
   m_Layer: 5
   m_Name: audioButton
   m_TagString: Untagged
@@ -367,4 +368,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1526906485088115113}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3805700171335261685}
+        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
+        m_MethodName: PlayTapSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3805700171335261685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8451711217869950439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

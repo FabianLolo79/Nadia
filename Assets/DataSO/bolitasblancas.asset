@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: bolitasblancas
   speciesImage: {fileID: 21300000, guid: f776014550d3c0b4ea4df2859551ae5e, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 050e45539b209a344977f75256e5f0f1, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 2135029032
+      Data2: 1254915686
+      Data3: -1616337757
+      Data4: 751389631
+    Path: event:/SFX-DESCRIPCION/esponja_vitria-bolitas_blancas

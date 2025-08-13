@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: batatita
   speciesImage: {fileID: 21300000, guid: 346cb18dbf6725f4ea296d913720eb96, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: e1afad735a07d244aa24d8c2c2fc4eec, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 1744514844
+      Data2: 1151121900
+      Data3: -174011205
+      Data4: 326467161
+    Path: event:/SFX-DESCRIPCION/batata

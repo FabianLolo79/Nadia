@@ -64,6 +64,8 @@ public class FishQTE : MonoBehaviour
         else if (Vector3.Distance(pointerTransform.position, pointB.position) < 0.1f)
         {
             FinishQTE(false);
+            
+
         }
 
         // Input jugador
@@ -82,5 +84,15 @@ public class FishQTE : MonoBehaviour
     {
         isRunning = false;
         OnQTEFinished?.Invoke(success);
+
+        // Reproducir sonido según el resultado
+        if (success)
+        {
+            AudioManager.Instance.PlayTakeObject(); // Éxito
+        }
+        else
+        {
+            AudioManager.Instance.PlayFallObject(); // Fallo
+        }
     }
 }

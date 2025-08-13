@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ReturnToMenuRelay : MonoBehaviour
 {
     [SerializeField] private string menuSceneName = "Menu";
-    [SerializeField] private Button selfButton; // opcional
+    [SerializeField] private UnityEngine.UI.Button selfButton; // opcional
 
     public void ReturnToMenu()
     {
@@ -14,5 +14,7 @@ public class ReturnToMenuRelay : MonoBehaviour
 
         Time.timeScale = 1f; // por si estabas en pausa
         SceneManager.LoadScene(menuSceneName);
+
+        AudioManager.Instance.PlayMusicMenu();
     }
 }
