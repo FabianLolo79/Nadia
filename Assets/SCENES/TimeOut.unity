@@ -318,8 +318,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2118284890462842549, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7783295217841040912}
   m_SourcePrefab: {fileID: 100100000, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+--- !u!1 &7783295217841040911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2118284890462842549, guid: cd01be88bd4f2be4781eee7d4005d582, type: 3}
+  m_PrefabInstance: {fileID: 7783295217841040910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7783295217841040912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783295217841040911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 199845517
+      Data2: 1229333586
+      Data3: 958967722
+      Data4: 498922570
+    Path: event:/MUSICA/music_creditos
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

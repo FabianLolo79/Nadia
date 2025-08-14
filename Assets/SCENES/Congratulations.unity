@@ -456,6 +456,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8677824585789367772, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4564565027455732272}
+    - targetCorrespondingSourceObject: {fileID: 3832380664740697108, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4564565027455732274}
   m_SourcePrefab: {fileID: 100100000, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
 --- !u!1 &4564565027455732271 stripped
 GameObject:
@@ -469,6 +472,42 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4564565027455732271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -214798243
+      Data2: 1214189266
+      Data3: 713302455
+      Data4: -1870281739
+    Path: event:/MUSICA/final_himno
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &4564565027455732273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3832380664740697108, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+  m_PrefabInstance: {fileID: 4564565027455732270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4564565027455732274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564565027455732273}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}

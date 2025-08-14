@@ -208,7 +208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196731620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -410,6 +410,7 @@ GameObject:
   - component: {fileID: 319106597}
   - component: {fileID: 319106596}
   - component: {fileID: 319106595}
+  - component: {fileID: 319106598}
   m_Layer: 5
   m_Name: Volver
   m_TagString: Untagged
@@ -505,18 +506,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: ResumeMusic
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &319106596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,6 +544,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319106593}
   m_CullTransparentMesh: 1
+--- !u!114 &319106598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319106593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &350181371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1201,7 @@ GameObject:
   - component: {fileID: 790117912}
   - component: {fileID: 790117911}
   - component: {fileID: 790117910}
+  - component: {fileID: 790117913}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -1295,18 +1297,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PauseMusic
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &790117911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +1335,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790117908}
   m_CullTransparentMesh: 1
+--- !u!114 &790117913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790117908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &827089143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1359,7 @@ GameObject:
   - component: {fileID: 827089145}
   - component: {fileID: 827089147}
   - component: {fileID: 827089148}
+  - component: {fileID: 827089149}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1488,6 +1491,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &827089149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827089143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b28044ae784194bb6e7ac19ea880c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicaDeEscena:
+    Guid:
+      Data1: 1861438760
+      Data2: 1088790423
+      Data3: -1737488234
+      Data4: -965577654
+    Path: event:/MUSICA/music_menu
 --- !u!1 &875926151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,6 +2912,7 @@ GameObject:
   - component: {fileID: 2146898043}
   - component: {fileID: 2146898042}
   - component: {fileID: 2146898041}
+  - component: {fileID: 2146898044}
   m_Layer: 5
   m_Name: MiAlbum
   m_TagString: Untagged
@@ -3035,6 +3058,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146898039}
   m_CullTransparentMesh: 1
+--- !u!114 &2146898044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146898039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &25044276784826153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3823,6 +3858,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7140120830944998810}
+        m_TargetAssemblyTypeName: AudioStopper, Assembly-CSharp
+        m_MethodName: StopAllAudioExceptMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: ResumeMusic
@@ -4246,6 +4293,7 @@ GameObject:
   - component: {fileID: 25044276784826153}
   - component: {fileID: 4978884834083848671}
   - component: {fileID: 7140120830944998809}
+  - component: {fileID: 7140120830944998810}
   m_Layer: 5
   m_Name: "MiAlb\xFAm"
   m_TagString: Untagged
@@ -4265,6 +4313,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7140120830944998810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140120830944998808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51716bb66c6853949a3a7e4c0461aea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!224 &7236224907567728486
 RectTransform:
   m_ObjectHideFlags: 0

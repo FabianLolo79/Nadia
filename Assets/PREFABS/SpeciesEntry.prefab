@@ -62,12 +62,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconImage: {fileID: 1540830096725469957}
-  collectedIconColor: {r: 1, g: 1, b: 1, a: 1}
-  collectedNameColor: {r: 0.58184135, g: 0.3693485, b: 0.9433962, a: 1}
-  collectedDescriptionColor: {r: 0.59013444, g: 0.48660558, b: 0.764151, a: 1}
-  notCollectedIconColor: {r: 0.45490196, g: 0.45490196, b: 0.45490196, a: 0.48235294}
-  notCollectedNameColor: {r: 1, g: 1, b: 1, a: 0.4}
-  notCollectedDescriptionColor: {r: 1, g: 1, b: 1, a: 0.4}
+  collectedColor: {r: 1, g: 1, b: 1, a: 1}
+  notCollectedColor: {r: 0.4, g: 0.4, b: 0.4, a: 0.4}
+  descriptiveAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1850696740533288913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +375,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3805700171335261685}
         m_TargetAssemblyTypeName: Button1, Assembly-CSharp
         m_MethodName: PlayTapSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -5753798710820526909}
+        m_TargetAssemblyTypeName: SpeciesEntry, Assembly-CSharp
+        m_MethodName: PlayDescriptiveAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,45 +1,71 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using FMODUnity;
+using FMOD.Studio;
 
-/// <summary>
-/// Controla cómo se muestra una entrada del álbum.
-/// Muestra nombre, descripción e imagen de una especie,
-/// y ajusta su apariencia dependiendo de si fue recolectada o no.
-/// </summary>
 public class SpeciesEntry : MonoBehaviour
 {
     [Header("UI Elements")]
-    [SerializeField] private Image iconImage;         
+    [SerializeField] private Image iconImage;
 
-    [Header("Collected Colors")]
-    [SerializeField] private Color collectedIconColor = Color.white;
-    [SerializeField] private Color collectedNameColor = Color.white;
-    [SerializeField] private Color collectedDescriptionColor = Color.white;
+    [Header("Colors")]
+    [SerializeField] private Color collectedColor = Color.white;
+    [SerializeField] private Color notCollectedColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
 
-    [Header("Not Collected Colors")]
-    [SerializeField] private Color notCollectedIconColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
-    [SerializeField] private Color notCollectedNameColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
-    [SerializeField] private Color notCollectedDescriptionColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
+    [SerializeField] private EventReference descriptiveAudio;
 
-    /// <summary>
-    /// Configura la entrada del álbum con los datos de la especie.
-    /// </summary>
+    // 🔹 Bandera estática: compartida por TODAS las instancias
+    private static bool isAnyAudioPlaying = false;
+
+    // 🔹 Instancia del evento para poder detenerlo
+    private EventInstance currentAudioInstance;
+
     public void Setup(SpeciesSO species, bool collected)
     {
-       
-        // Asignar imagen
         iconImage.sprite = species.speciesImage;
+        iconImage.color = collected ? collectedColor : notCollectedColor;
+        descriptiveAudio = species.audio_descriptivo;
+    }
 
-        // Ajustar colores según estado
-        if (collected)
+    public void PlayDescriptiveAudio()
+    {
+        // Si ya hay un audio en reproducción, no hacer nada
+        if (isAnyAudioPlaying)
         {
-            iconImage.color = collectedIconColor;
+            Debug.Log("Ya hay un audio reproduciéndose, espera a que termine.");
+            return;
         }
-        else
+
+        if (!descriptiveAudio.IsNull)
         {
-            iconImage.color = notCollectedIconColor;
+            // Marcar que hay audio en reproducción
+            isAnyAudioPlaying = true;
+
+            // Crear instancia del evento para controlar fin de reproducción
+            currentAudioInstance = RuntimeManager.CreateInstance(descriptiveAudio);
+            currentAudioInstance.start();
+
+            // 🔹 Detectar cuando el audio termina
+            currentAudioInstance.release(); // Libera memoria al finalizar
+            CheckAudioEnd();
         }
     }
+
+    private async void CheckAudioEnd()
+    {
+        // Revisar el estado del evento periódicamente
+        PLAYBACK_STATE state;
+        do
+        {
+            await System.Threading.Tasks.Task.Delay(100);
+            currentAudioInstance.getPlaybackState(out state);
+        }
+        while (state != PLAYBACK_STATE.STOPPED);
+
+        // Al terminar, resetear la bandera
+        isAnyAudioPlaying = false;
+    }
 }
+
+
 
