@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,5 +17,8 @@ public class ReturnToMenuRelay : MonoBehaviour
         SceneManager.LoadScene(menuSceneName);
 
         //AudioManager.Instance.PlayMusicMenu();
+
+        RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
     }
 }

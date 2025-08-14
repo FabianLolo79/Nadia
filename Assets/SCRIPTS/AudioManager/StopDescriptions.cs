@@ -2,7 +2,7 @@ using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 
-public class AudioStopper : MonoBehaviour
+public class StopDescriptions : MonoBehaviour
 {
     [Header("Música de fondo")]
     [SerializeField] private EventReference backgroundMusic; // Música que debe seguir sonando
