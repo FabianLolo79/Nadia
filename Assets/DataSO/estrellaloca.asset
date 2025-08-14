@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: estrellaloca
   m_EditorClassIdentifier: 
   speciesID: estrellaloca
-  speciesImage: {fileID: 21300000, guid: a7f0663d94b65bc44aa26150e4518165, type: 3}
+  speciesImage: {fileID: 21300000, guid: fbb77ee28c062434aab3e8b1a06bff77, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 687389c8ec6dbcb468cf6e11fd106891, type: 3}
   audio_descriptivo:
     Guid:

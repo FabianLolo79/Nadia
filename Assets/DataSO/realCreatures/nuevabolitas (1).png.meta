@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f776014550d3c0b4ea4df2859551ae5e
+guid: a15b5824c7b72d04f9e2d7de149623ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5542124856007466554
-    second: bolitasblancasbgnegro_0
+      213: -1027540113929649799
+    second: nuevabolitas (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bolitasblancasbgnegro_0
+      name: nuevabolitas (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
-        height: 810
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3e103f613599ec40800000000000000
-      internalID: 5542124856007466554
+      spriteID: 97142c4e5b17db1f0800000000000000
+      internalID: -1027540113929649799
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bolitasblancasbgnegro_0: 5542124856007466554
+      nuevabolitas (1)_0: -1027540113929649799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ddb5fa8cc46920a429dfb0ef9a2a9286
+guid: 758d10d86acedaf40aca880af4b9053a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -884483794327566000
-    second: estrellalocabgnegro_0
+      213: 7333690361520310650
+    second: nuevabatatita_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: estrellalocabgnegro_0
+      name: nuevabatatita_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1660
-        height: 1245
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 059048ddcaea9b3f0800000000000000
-      internalID: -884483794327566000
+      spriteID: a79cf1b378086c560800000000000000
+      internalID: 7333690361520310650
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      estrellalocabgnegro_0: -884483794327566000
+      nuevabatatita_0: 7333690361520310650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

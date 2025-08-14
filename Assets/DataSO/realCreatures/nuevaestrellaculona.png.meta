@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 955e04676f4fd3b4ab89b4bc0199931f
+guid: 63f73259dc2aef74bbb6535cd6ca65de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5925802502607407327
-    second: batatita_0
+      213: -1070687315791919974
+    second: nuevaestrellaculona_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: batatita_0
+      name: nuevaestrellaculona_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1599
-        height: 1200
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 127f6f6250253cda0800000000000000
-      internalID: -5925802502607407327
+      spriteID: a94c4bc1f872421f0800000000000000
+      internalID: -1070687315791919974
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      batatita_0: -5925802502607407327
+      nuevaestrellaculona_0: -1070687315791919974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

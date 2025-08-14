@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: estrellamutante
   m_EditorClassIdentifier: 
   speciesID: estrellamutante
-  speciesImage: {fileID: 21300000, guid: 1b3afe267d7e6dc4fa9527f02179aad1, type: 3}
+  speciesImage: {fileID: -8036214622482361136, guid: 365a6418b1946f744a06350be846f1ec, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 1ea9fca98f01ae249a3c6c722166517e, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd220125e19cf584ba6f922fe1ee4f5c
+guid: 5472f15cc7ea90a4db416821f4049999
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 785513535353533564
-    second: estrellaarana_0
+      213: 1348067436216940364
+    second: nuevoamarillin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: estrellaarana_0
+      name: nuevoamarillin_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
-        height: 810
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7432090664b6ea00800000000000000
-      internalID: 785513535353533564
+      spriteID: c477bfcd03c45b210800000000000000
+      internalID: 1348067436216940364
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      estrellaarana_0: 785513535353533564
+      nuevoamarillin_0: 1348067436216940364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

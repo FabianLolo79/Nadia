@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: batatita
   m_EditorClassIdentifier: 
   speciesID: batatita
-  speciesImage: {fileID: 21300000, guid: 346cb18dbf6725f4ea296d913720eb96, type: 3}
+  speciesImage: {fileID: 21300000, guid: 758d10d86acedaf40aca880af4b9053a, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: e1afad735a07d244aa24d8c2c2fc4eec, type: 3}
   audio_descriptivo:
     Guid:

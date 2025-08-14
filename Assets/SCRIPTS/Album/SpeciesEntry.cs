@@ -10,7 +10,7 @@ public class SpeciesEntry : MonoBehaviour
 
     [Header("Colors")]
     [SerializeField] private Color collectedColor = Color.white;
-    [SerializeField] private Color notCollectedColor = new Color(0.4f, 0.4f, 0.4f, 0.4f);
+    [SerializeField] private Color notCollectedColor = new Color(1f, 1f, 1f, 1f);
 
     [SerializeField] private EventReference descriptiveAudio;
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1b3afe267d7e6dc4fa9527f02179aad1
+guid: fc33acec9c3907047b866266f27f48a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6845022409935067738
-    second: estrellamutantebgnegro_0
+      213: -8136743454290550768
+    second: nuevapeluquita_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: estrellamutantebgnegro_0
+      name: nuevapeluquita_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1660
-        height: 1245
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5a94c78d976efe50800000000000000
-      internalID: 6845022409935067738
+      spriteID: 010e68a40fa741f80800000000000000
+      internalID: -8136743454290550768
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      estrellamutantebgnegro_0: 6845022409935067738
+      nuevapeluquita_0: -8136743454290550768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

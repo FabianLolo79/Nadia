@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 45640936189f68e4aa0bd3f4d3f7e0d1
+guid: 64ad6f21adce1324fae27861edfd9ea0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7446523065305442723
-    second: pulpo_0
+      213: 3925533674967834316
+    second: nuevopulpito_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pulpo_0
+      name: nuevopulpito_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 960
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5657b8b9b2a8a890800000000000000
-      internalID: -7446523065305442723
+      spriteID: cce9a4a341c4a7630800000000000000
+      internalID: 3925533674967834316
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pulpo_0: -7446523065305442723
+      nuevopulpito_0: 3925533674967834316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

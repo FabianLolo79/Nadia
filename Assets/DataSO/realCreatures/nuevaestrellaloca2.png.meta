@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 013372e4926043844bfc9b6522b29dcb
+guid: fbb77ee28c062434aab3e8b1a06bff77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2847085743724766186
-    second: raya_0
+      213: -8098749601152954707
+    second: nuevaestrellaloca2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: raya_0
+      name: nuevaestrellaloca2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1080
-        height: 810
+        width: 500
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae32bcf3661e28720800000000000000
-      internalID: 2847085743724766186
+      spriteID: dae017295267b9f80800000000000000
+      internalID: -8098749601152954707
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      raya_0: 2847085743724766186
+      nuevaestrellaloca2_0: -8098749601152954707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
