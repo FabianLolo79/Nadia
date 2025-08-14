@@ -15,3 +15,10 @@ MonoBehaviour:
   speciesID: estrellaloca
   speciesImage: {fileID: 21300000, guid: a7f0663d94b65bc44aa26150e4518165, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 687389c8ec6dbcb468cf6e11fd106891, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: -113987268
+      Data2: 1106082370
+      Data3: 1743888528
+      Data4: -299699534
+    Path: event:/SFX-DESCRIPCION/estrella_loca_2
