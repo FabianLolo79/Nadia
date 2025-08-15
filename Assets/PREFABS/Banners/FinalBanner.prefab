@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 2428914640688376639}
   - component: {fileID: 1261974192731681920}
   - component: {fileID: 1847021844904099980}
+  - component: {fileID: 1481880084883007838}
   m_Layer: 5
   m_Name: Banner
   m_TagString: Untagged
@@ -306,6 +307,38 @@ MonoBehaviour:
   blinkSpeed: 1.2
   fadeOutOnTap: 0.18
   ignoreTapOverUI: 0
+  cooldown: 9
+--- !u!114 &1481880084883007838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832380664740697108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -214798243
+      Data2: 1214189266
+      Data3: 713302455
+      Data4: -1870281739
+    Path: event:/MUSICA/final_himno
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6251303462558779154
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +588,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 360, y: 640}
+  m_SizeDelta: {x: 504.402, y: 896.7145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6365134233833327369
 CanvasRenderer:
@@ -629,8 +662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.42001343, y: -47}
-  m_SizeDelta: {x: 289.4605, y: 373.4869}
+  m_AnchoredPosition: {x: -0.42001343, y: 11}
+  m_SizeDelta: {x: 289.4605, y: 448.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8297088747346653007
 CanvasRenderer:
@@ -679,6 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2935965643998998769}
+  - component: {fileID: 7820983677161321803}
   m_Layer: 0
   m_Name: FinalBanner
   m_TagString: Untagged
@@ -703,3 +737,34 @@ Transform:
   - {fileID: 2223147440214633146}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7820983677161321803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8677824585789367772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -214798243
+      Data2: 1214189266
+      Data3: 713302455
+      Data4: -1870281739
+    Path: event:/MUSICA/final_himno
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

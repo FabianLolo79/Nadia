@@ -349,6 +349,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1847021844904099980, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
+      propertyPath: cooldown
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2935965643998998769, guid: 016a0d2295f197a49a19c632556555e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 209.60689
