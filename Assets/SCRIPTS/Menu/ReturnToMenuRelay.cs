@@ -10,6 +10,7 @@ public class ReturnToMenuRelay : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        AudioManager.Instance.PlayTapButton();
 
         // Evitar dobles clics durante el load
         if (selfButton) selfButton.interactable = false;
@@ -21,5 +22,6 @@ public class ReturnToMenuRelay : MonoBehaviour
         AudioManager.Instance.ResumeMusic();
 
         RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
     }
 }
