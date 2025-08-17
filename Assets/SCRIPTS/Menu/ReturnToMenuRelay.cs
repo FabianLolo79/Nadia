@@ -10,13 +10,16 @@ public class ReturnToMenuRelay : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        AudioManager.Instance.PlayTapButton();
+
         // Evitar dobles clics durante el load
         if (selfButton) selfButton.interactable = false;
 
         Time.timeScale = 1f; // por si estabas en pausa
         SceneManager.LoadScene(menuSceneName);
 
-        //AudioManager.Instance.PlayMusicMenu();
+        // IMPORTANTE: reanudar música por si estabas en el álbum
+        AudioManager.Instance.ResumeMusic();
 
         RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
 

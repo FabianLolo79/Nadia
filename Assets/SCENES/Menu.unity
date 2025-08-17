@@ -411,6 +411,7 @@ GameObject:
   - component: {fileID: 319106596}
   - component: {fileID: 319106595}
   - component: {fileID: 319106598}
+  - component: {fileID: 319106599}
   m_Layer: 5
   m_Name: Volver
   m_TagString: Untagged
@@ -494,9 +495,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayTapButton
+      - m_Target: {fileID: 319106599}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -554,6 +555,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &319106599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319106593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &350181371
@@ -1285,9 +1298,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayTapButton
+      - m_Target: {fileID: 790117913}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1344,7 +1357,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 790117908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &827089143
@@ -2227,41 +2240,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89bd913ee3d6ddb409cee71ad0c5e7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicAmbientGame:
+  musicEvent:
     Guid:
-      Data1: -1627717264
-      Data2: 1172157032
-      Data3: 1378331582
-      Data4: 1106699373
-    Path: event:/MUSICA/ambient_game
-  musicFinalHimno:
-    Guid:
-      Data1: -214798243
-      Data2: 1214189266
-      Data3: 713302455
-      Data4: -1870281739
-    Path: event:/MUSICA/final_himno
-  musicGame:
-    Guid:
-      Data1: -1895278133
-      Data2: 1162902231
-      Data3: -178366560
-      Data4: 891792443
-    Path: event:/MUSICA/music_game
-  musicMenu:
-    Guid:
-      Data1: 1861438760
-      Data2: 1088790423
-      Data3: -1737488234
-      Data4: -965577654
-    Path: event:/MUSICA/music_menu
-  musicCreditos:
-    Guid:
-      Data1: 199845517
-      Data2: 1229333586
-      Data3: 958967722
-      Data4: 498922570
-    Path: event:/MUSICA/music_creditos
+      Data1: -664006351
+      Data2: 1121573785
+      Data3: -910804577
+      Data4: 1952624643
+    Path: event:/MUSICA/music_scene
   amarillin:
     Guid:
       Data1: -1621768786
@@ -2332,34 +2317,6 @@ MonoBehaviour:
       Data3: 1047664033
       Data4: 1648572180
     Path: event:/SFX-DESCRIPCION/raya
-  changeMandoBoat:
-    Guid:
-      Data1: 279997002
-      Data2: 1251577010
-      Data3: 368967588
-      Data4: -690685015
-    Path: event:/SFX-Submarine/change_mando-boat
-  changeMandoGarra:
-    Guid:
-      Data1: 721375479
-      Data2: 1300444949
-      Data3: 1898103986
-      Data4: -435062280
-    Path: event:/SFX-Submarine/change_mando-garra
-  engineAsc:
-    Guid:
-      Data1: 1408492914
-      Data2: 1187502945
-      Data3: 154387096
-      Data4: -1796659001
-    Path: event:/SFX-Submarine/engine_boat-asc
-  engineDesc:
-    Guid:
-      Data1: -1529993940
-      Data2: 1289400369
-      Data3: 1101208205
-      Data4: 875581836
-    Path: event:/SFX-Submarine/engine_boat-desc
   garra:
     Guid:
       Data1: 361367301
@@ -2367,20 +2324,6 @@ MonoBehaviour:
       Data3: -68190023
       Data4: -1016974185
     Path: event:/SFX-Submarine/robot_arm
-  lintern:
-    Guid:
-      Data1: 2015576469
-      Data2: 1140791146
-      Data3: -769043523
-      Data4: -1561650109
-    Path: event:/SFX-Submarine/click_lintern
-  bubble:
-    Guid:
-      Data1: -34692276
-      Data2: 1217953628
-      Data3: -1190248541
-      Data4: -770720232
-    Path: event:/SFX-Submarine/bubble
   winTakeObject:
     Guid:
       Data1: 887429758
@@ -2409,34 +2352,6 @@ MonoBehaviour:
       Data3: 471742389
       Data4: 391743718
     Path: event:/SFX-UI/button_tap_1
-  snapshotEnPausa:
-    Guid:
-      Data1: -839849594
-      Data2: 1210518770
-      Data3: 375669683
-      Data4: -1433612652
-    Path: snapshot:/en_pausa
-  snapshotSinMusica:
-    Guid:
-      Data1: 1089282327
-      Data2: 1211072376
-      Data3: 1987325840
-      Data4: 1973335127
-    Path: snapshot:/sin_musica
-  snapshotSinAmbiente:
-    Guid:
-      Data1: 1185136630
-      Data2: 1178969704
-      Data3: 686273412
-      Data4: -1120641068
-    Path: snapshot:/sin_ambiente
-  snapshotSinSfx:
-    Guid:
-      Data1: -1712564338
-      Data2: 1261495232
-      Data3: -917607549
-      Data4: -1814629697
-    Path: snapshot:/sin_sfx
 --- !u!4 &1790905466
 Transform:
   m_ObjectHideFlags: 0
@@ -2464,6 +2379,7 @@ GameObject:
   - component: {fileID: 1918896624}
   - component: {fileID: 1918896623}
   - component: {fileID: 1918896622}
+  - component: {fileID: 1918896625}
   m_Layer: 5
   m_Name: Jugar
   m_TagString: Untagged
@@ -2547,9 +2463,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayTapButton
+      - m_Target: {fileID: 1918896625}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2597,6 +2513,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918896620}
   m_CullTransparentMesh: 1
+--- !u!114 &1918896625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918896620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1928675261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2695,7 @@ GameObject:
   - component: {fileID: 2061380914}
   - component: {fileID: 2061380913}
   - component: {fileID: 2061380912}
+  - component: {fileID: 2061380915}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -2850,9 +2779,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayTapButton
+      - m_Target: {fileID: 2061380915}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2900,6 +2829,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061380910}
   m_CullTransparentMesh: 1
+--- !u!114 &2061380915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061380910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2146898039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,7 +2853,7 @@ GameObject:
   - component: {fileID: 2146898043}
   - component: {fileID: 2146898042}
   - component: {fileID: 2146898041}
-  - component: {fileID: 2146898044}
+  - component: {fileID: 2146898045}
   m_Layer: 5
   m_Name: MiAlbum
   m_TagString: Untagged
@@ -2996,9 +2937,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1790905465}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayTapButton
+      - m_Target: {fileID: 2146898045}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3058,7 +2999,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146898039}
   m_CullTransparentMesh: 1
---- !u!114 &2146898044
+--- !u!114 &2146898045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3067,7 +3008,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2146898039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &25044276784826153
@@ -3227,8 +3168,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8410020255989854670}
-        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
-        m_MethodName: PlayTapSound
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3846,21 +3787,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7140120830944998809}
-        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
-        m_MethodName: PlayTapSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7140120830944998810}
-        m_TargetAssemblyTypeName: AudioStopper, Assembly-CSharp
-        m_MethodName: StopAllAudioExceptMusic
+        m_TargetAssemblyTypeName: StopDescriptions, Assembly-CSharp
+        m_MethodName: StopAudioDescription
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3873,6 +3802,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: ResumeMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7140120830944998811}
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4292,8 +4233,8 @@ GameObject:
   - component: {fileID: 1241237996068730848}
   - component: {fileID: 25044276784826153}
   - component: {fileID: 4978884834083848671}
-  - component: {fileID: 7140120830944998809}
   - component: {fileID: 7140120830944998810}
+  - component: {fileID: 7140120830944998811}
   m_Layer: 5
   m_Name: "MiAlb\xFAm"
   m_TagString: Untagged
@@ -4301,18 +4242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7140120830944998809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7140120830944998808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7140120830944998810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4325,13 +4254,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51716bb66c6853949a3a7e4c0461aea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+--- !u!114 &7140120830944998811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140120830944998808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7236224907567728486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4467,8 +4401,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7574755620820068537}
-        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
-        m_MethodName: PlayTapSound
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4563,7 +4497,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3948278311123486738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7601083962952435890
@@ -4861,7 +4795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8410020255989854669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &8450535658207009593
@@ -4949,8 +4883,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8485852428307183554}
-        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
-        m_MethodName: PlayTapSound
+        m_TargetAssemblyTypeName: SfxButtonTap, Assembly-CSharp
+        m_MethodName: PlaySfxTapSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4969,7 +4903,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3069799438511235904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c87d25eb10328944ea46119c44c111f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 587976cd8f3bdaf46aa8706190f4591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8491747931047069465

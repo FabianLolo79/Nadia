@@ -10,8 +10,8 @@ public class SceneMusicStarter : MonoBehaviour
     {
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.StopMusic(); // <--- Detiene música anterior si aún suena
-            AudioManager.Instance.PlayMusic(musicaDeEscena);
+            // AudioManager.Instance.StopMusic();  <--- Detiene música anterior si aún suena
+            //AudioManager.Instance.PlayMusic(musicaDeEscena);
         }
     }
 }

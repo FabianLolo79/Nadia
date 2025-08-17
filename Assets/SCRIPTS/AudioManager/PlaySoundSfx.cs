@@ -7,6 +7,6 @@ public class PlaySoundSfx : MonoBehaviour
 
     public void PlaySfx()
     {
-        AudioManager.Instance.PlaySfx(sfxEvent);
+       // AudioManager.Instance.PlaySfx(sfxEvent);
     }
 }

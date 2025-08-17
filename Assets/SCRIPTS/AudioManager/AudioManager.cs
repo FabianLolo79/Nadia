@@ -1,7 +1,7 @@
 using FMOD.Studio;
 using FMODUnity;
-using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,11 +17,7 @@ public class AudioManager : MonoBehaviour
     }
 
     [Header("MÚSICA")]
-    [SerializeField] private EventReference musicAmbientGame;
-    [SerializeField] private EventReference musicFinalHimno;
-    [SerializeField] private EventReference musicGame;
-    [SerializeField] private EventReference musicMenu;
-    [SerializeField] private EventReference musicCreditos;
+    [SerializeField] private EventReference musicEvent; // Evento ÚNICO de música en FMOD
 
     [Header("AUDIOS DESCRIPTIVOS")]
     [SerializeField] private EventReference amarillin;
@@ -36,13 +32,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private EventReference raya;
 
     [Header("SFX SUBMARINE")]
-    [SerializeField] private EventReference changeMandoBoat;
-    [SerializeField] private EventReference changeMandoGarra;
-    [SerializeField] private EventReference engineAsc;
-    [SerializeField] private EventReference engineDesc;
     [SerializeField] private EventReference garra;
-    [SerializeField] private EventReference lintern;
-    [SerializeField] private EventReference bubble;
     [SerializeField] private EventReference winTakeObject;
     [SerializeField] private EventReference wrongTakeObject;
     [SerializeField] private EventReference clockAlarm;
@@ -50,17 +40,8 @@ public class AudioManager : MonoBehaviour
     [Header("SFX UI")]
     [SerializeField] private EventReference buttonTap;
 
-    [Header("SNAPSHOTS")]
-    [SerializeField] private EventReference snapshotEnPausa;
-    [SerializeField] private EventReference snapshotSinMusica;
-    [SerializeField] private EventReference snapshotSinAmbiente;
-    [SerializeField] private EventReference snapshotSinSfx;
-
-    // Instancias activas
-    private EventInstance currentMusic;
-    private EventInstance activeSnapshot;
-    private EventInstance engineAscInstance;
-    private EventInstance engineDescInstance;
+    // ------------------- INSTANCIAS -------------------
+    private EventInstance musicInstance;
 
     private void Awake()
     {
@@ -69,200 +50,70 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         _instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); // Persistente entre escenas
 
+        StartMusic();
+        SceneManager.sceneLoaded += OnSceneLoaded; // Detectar escena cargada
     }
-    
-    //DE ACA ANTES EJECUTABA LA MUSICA
-    private void Start()
+
+    // ------------------- MÚSICA -------------------
+    private void StartMusic()
     {
-        PlayMusicMenu(); 
+        musicInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicInstance.start();
     }
 
-    // ------------------- MÉTODOS GENERALES -------------------
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        UpdateMusic(scene.name);
+    }
+
+    private void UpdateMusic(string sceneName)
+    {
+        // Usamos parámetro en FMOD llamado "MusicState"
+        // Ejemplo: 0=Menu, 1=Tutorial, 2=Gameplay, 3=GameOver
+
+        if (sceneName == "Menu") musicInstance.setParameterByName("music_play", 0); 
+        else if (sceneName == "ScrollingMap") musicInstance.setParameterByName("music_play", 1); 
+        else if (sceneName == "TimeOut") musicInstance.setParameterByName("music_play", 2); 
+        else if (sceneName == "Congratulations") musicInstance.setParameterByName("music_play", 3);
+    }
+
+    public void PauseMusic() => musicInstance.setPaused(true);
+    public void ResumeMusic() => musicInstance.setPaused(false);
+
+    // ------------------- SFX -------------------
     public void PlayOneShot(EventReference soundRef)
     {
         RuntimeManager.PlayOneShot(soundRef);
     }
 
-    public EventInstance CreateInstance(EventReference soundRef)
-    {
-        return RuntimeManager.CreateInstance(soundRef);
-    }
-
-    // ------------------- MÚSICA -------------------
-    public void PlayMusic(EventReference musicRef)
-    {
-        StopMusic(); // Asegura que no haya otra música sonando
-        currentMusic = RuntimeManager.CreateInstance(musicRef);
-        currentMusic.start();
-    }
-
-    public void StopMusic()
-    {
-        if (currentMusic.isValid())
-        {
-            currentMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            currentMusic.release();
-        }
-    }
-
-    // Pausar/Reanudar música actual
-    public void PauseMusic() => currentMusic.setPaused(true);
-    public void ResumeMusic() => currentMusic.setPaused(false);
-
-    public void SwitchMusic(EventReference newMusic)
-    {
-        PlayMusic(newMusic);
-    }
-
-    // Atajos específicos
-    public void PlayMusicMenu() => PlayMusic(musicMenu);
-    public void PlayMusicGame() => PlayMusic(musicGame);
-    public void PlayMusicAmbientGame() => PlayMusic(musicAmbientGame);
-    public void PlayMusicCreditos() => PlayMusic(musicCreditos);
-    public void PlayMusicFinalHimno() => PlayMusic(musicFinalHimno);
-
-    // Ejemplo con motor
-    public void PlayGameMusicWithEngine()
-    {
-        PlayMusic(musicGame);
-        StartEngineAsc();
-    }
-
-    // ------------------- SNAPSHOTS -------------------
-
-    public void StartSnapshot(EventReference snapshotRef)
-    {
-        StopSnapshot();
-        activeSnapshot = RuntimeManager.CreateInstance(snapshotRef);
-        activeSnapshot.start();
-    }
-
-    public void StopSnapshot()
-    {
-        if (activeSnapshot.isValid())
-            activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    }
-
-    public void StartSnapshotEnPausa()
-    {
-        StopSnapshotEnPausa(); // Primero detenemos cualquier instancia previa
-        activeSnapshot = RuntimeManager.CreateInstance(snapshotEnPausa);
-        activeSnapshot.start();
-    }
-
-    public void StopSnapshotEnPausa()
-    {
-        if (activeSnapshot.isValid())
-        {
-            activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            activeSnapshot.release();
-        }
-    }
-
-
-    // ------------------- MOTORES -------------------
-    public void StartEngineAsc()
-    {
-        if (engineAscInstance.isValid())
-            engineAscInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
-        engineAscInstance = CreateInstance(engineAsc);
-        engineAscInstance.start();
-
-        StartCoroutine(ChangeMotorIntensity(engineAscInstance, 0, 3, 1.5f));
-    }
-    public void StartEngineDesc()
-    {
-        if (engineDescInstance.isValid())
-            engineDescInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
-        engineDescInstance = CreateInstance(engineDesc);
-        engineDescInstance.start();
-
-        StartCoroutine(ChangeMotorIntensity(engineDescInstance, 0, 3, 1.5f));
-    }
-
-    public void PauseGameMusicWithEngine()
-    {
-        currentMusic.setPaused(true);   // Pausa música del juego
-        engineAscInstance.setPaused(true); // Pausa motor
-    }
-
-    public void ResumeGameMusicWithEngine()
-    {
-        currentMusic.setPaused(false);
-        engineAscInstance.setPaused(false);
-    }
-
-    //public void StopGameMusicWithEngine()
-    //{
-    //    currentMusic.setPaused(true);
-
-    //}
-
-    private IEnumerator ChangeMotorIntensity(EventInstance instance, int startValue, int endValue, float delay)
-    {
-        for (int value = startValue; value <= endValue; value++)
-        {
-            instance.setParameterByName("intensidad_motor", value);
-            yield return new WaitForSeconds(delay);
-        }
-    }
-   
-    // ------------------- SFX -------------------
     public void PlayTapButton() => PlayOneShot(buttonTap);
-    public void PlayChangeMandoBoat() => PlayOneShot(changeMandoBoat);
-    public void PlayChangeMandoGarra() => PlayOneShot(changeMandoGarra);
-    public void PlayLintern() => PlayOneShot(lintern);
     public void PlayTakeObject() => PlayOneShot(winTakeObject);
     public void PlayFallObject() => PlayOneShot(wrongTakeObject);
     public void PlayClockAlarm() => PlayOneShot(clockAlarm);
 
     public void StopClockAlarm()
-{
-    if (!clockAlarm.IsNull)
     {
-        var instance = RuntimeManager.CreateInstance(clockAlarm);
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        instance.release();
-    }
-}
-    //private bool garraSonando = false;
-
-    //public void StartGarra()
-    //{
-    //    if (!garraSonando)
-    //    {
-    //        garra = RuntimeManager.CreateInstance(garra);
-    //        garra.start();
-    //        garraSonando = true;
-    //    }
-    //}
-
-    //public void StopGarra()
-    //{
-    //    if (garraSonando && garraInstance.isValid())
-    //    {
-    //        garraInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-    //        garraInstance.release();
-    //        garraSonando = false;
-    //    }
-    //}
-    public void PlaySfx(EventReference sfx)
-    {
-        RuntimeManager.PlayOneShot(sfx);
+        if (!clockAlarm.IsNull)
+        {
+            var instance = RuntimeManager.CreateInstance(clockAlarm);
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.release();
+        }
     }
 
     // ------------------- LIMPIEZA -------------------
     private void OnDestroy()
     {
-        StopMusic();
-        StopSnapshot();
+        SceneManager.sceneLoaded -= OnSceneLoaded;
 
-        if (engineAscInstance.isValid()) engineAscInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        if (engineDescInstance.isValid()) engineDescInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (musicInstance.isValid())
+        {
+            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            musicInstance.release();
+        }
     }
 }
