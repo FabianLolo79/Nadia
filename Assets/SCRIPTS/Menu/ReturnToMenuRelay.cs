@@ -18,7 +18,8 @@ public class ReturnToMenuRelay : MonoBehaviour
         Debug.Log("Relaymanda al menu");
         SceneManager.LoadScene(menuSceneName);
 
-        //AudioManager.Instance.PlayMusicMenu();
+        // IMPORTANTE: reanudar música por si estabas en el álbum
+        AudioManager.Instance.ResumeMusic();
 
         RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
 

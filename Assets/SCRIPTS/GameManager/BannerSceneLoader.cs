@@ -50,8 +50,6 @@ public class BannerSceneLoader : MonoBehaviour
         Time.timeScale = 1f;
 
         SceneManager.LoadScene(albumCompletedSceneName);
-        
-        // acá disparar 
     }
 
     private void HandleTimeUp()

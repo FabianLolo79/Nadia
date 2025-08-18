@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
 
 
             //Música del gameplay
-            AudioManager.Instance.PlayGameMusicWithEngine();
+            //AudioManager.Instance.PlayGameMusicWithEngine();
         }
     }
 
@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState != GameState.Playing) return;
 
-        AudioManager.Instance.StartSnapshotEnPausa();
+        //AudioManager.Instance.StartSnapshotEnPausa();
 
         CurrentState = GameState.Paused;
         Time.timeScale = 0f;
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState != GameState.Paused) return;
 
-        AudioManager.Instance.StopSnapshotEnPausa();
+        //AudioManager.Instance.StopSnapshotEnPausa();
 
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
@@ -186,9 +186,9 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Ended) return;
 
-        AudioManager.Instance.PauseGameMusicWithEngine();
+        //AudioManager.Instance.PauseGameMusicWithEngine();
 
-        AudioManager.Instance.StopMusic();
+       // AudioManager.Instance.StopMusic();
 
         CurrentState = GameState.Ended;
         Time.timeScale = 0f;
@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
         OnStopScroll?.Invoke();
 
         // Cambio de música
-        AudioManager.Instance.PlayMusicMenu();
+        //AudioManager.Instance.PlayMusicMenu();
 
         SceneManager.LoadScene(menuSceneName);
     }
@@ -296,7 +296,7 @@ public class GameManager : MonoBehaviour
         }
         else if (timeRemaining == 0)
         {
-            AudioManager.Instance.StopMusic();
+            //AudioManager.Instance.StopMusic();
         }
     }
 

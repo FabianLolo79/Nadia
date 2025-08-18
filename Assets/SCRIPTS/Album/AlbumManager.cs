@@ -46,6 +46,10 @@ public class AlbumManager : MonoBehaviour
         albumPanel.SetActive(true);
         Time.timeScale = 0f; // Pausa el juego
         isOpen = true;
+
+        // NUEVO: Pausar la música al abrir álbum
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PauseMusic();
     }
 
     // Oculta el álbum y reanuda el juego
@@ -54,6 +58,10 @@ public class AlbumManager : MonoBehaviour
         albumPanel.SetActive(false);
         Time.timeScale = 1f; // Reanuda el juego
         isOpen = false;
+
+        // NUEVO: Reanudar música al cerrar álbum
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.ResumeMusic();
     }
 
     // Borra todas las entradas instanciadas en el contenedor
