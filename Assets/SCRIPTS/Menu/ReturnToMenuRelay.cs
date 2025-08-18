@@ -10,8 +10,6 @@ public class ReturnToMenuRelay : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        AudioManager.Instance.PlayTapButton();
-
         // Evitar dobles clics durante el load
         if (selfButton) selfButton.interactable = false;
 
