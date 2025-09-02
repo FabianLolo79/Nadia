@@ -15,38 +15,11 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638907643870431525
+  lastModified: 638921607300365719
   FileSizes:
   - Name: 
-    Value: 2490
+    Value: 1934
   Exists: 1
---- !u!114 &-8957189065688712007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/bubble
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/bubble
-  Guid:
-    Data1: -34692276
-    Data2: 1217953628
-    Data3: -1190248541
-    Data4: -770720232
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1594
 --- !u!114 &-8825976406871088251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,34 +47,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 22774
---- !u!114 &-8424400705994824287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/engine_boat-asc
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/engine_boat-asc
-  Guid:
-    Data1: 1408492914
-    Data2: 1187502945
-    Data3: 154387096
-    Data4: -1796659001
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6561073004308822426}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 307373
 --- !u!114 &-8143354350005600927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,33 +101,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12500
---- !u!114 &-8035919785020219036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/click_lintern
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/click_lintern
-  Guid:
-    Data1: 2015576469
-    Data2: 1140791146
-    Data3: -769043523
-    Data4: -1561650109
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 400
 --- !u!114 &-7709002337768895281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,57 +128,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 35371
---- !u!114 &-6928796817716665750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSICA/music_menu
-  m_EditorClassIdentifier: 
-  Path: event:/MUSICA/music_menu
-  Guid:
-    Data1: 1861438760
-    Data2: 1088790423
-    Data3: -1737488234
-    Data4: -965577654
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 251402
---- !u!114 &-6561073004308822426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/engine_boat-asc/intensidad_motor
-  m_EditorClassIdentifier: 
-  Name: intensidad_motor
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 922942343
-    data2: 576434727
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-6181042780675299593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +155,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-5310703057001807177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_scene/music_play
+  m_EditorClassIdentifier: 
+  Name: music_play
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 1031004040
+    data2: 3490901902
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4310879261771781423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,61 +233,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7335
---- !u!114 &-4125462739985121636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSICA/final_himno
-  m_EditorClassIdentifier: 
-  Path: event:/MUSICA/final_himno
-  Guid:
-    Data1: -214798243
-    Data2: 1214189266
-    Data3: 713302455
-    Data4: -1870281739
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 20000
---- !u!114 &-4118375216500158052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/engine_boat-desc
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/engine_boat-desc
-  Guid:
-    Data1: -1529993940
-    Data2: 1289400369
-    Data3: 1101208205
-    Data4: 875581836
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -470261287991900363}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 308000
 --- !u!114 &-3956419597152996715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,7 +275,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638907643870366484
+  lastModified: 638921607300365719
   FileSizes: []
   Exists: 1
 --- !u!114 &-3711856228109306577
@@ -469,6 +305,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 94
+--- !u!114 &-2525769632560056142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSICA/music_scene
+  m_EditorClassIdentifier: 
+  Path: event:/MUSICA/music_scene
+  Guid:
+    Data1: -664006351
+    Data2: 1121573785
+    Data3: -910804577
+    Data4: 1952624643
+  Banks:
+  - {fileID: 1967911130306217454}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5310703057001807177}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 322827
+--- !u!114 &-1812380583362385210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/sin_pausa
+  m_EditorClassIdentifier: 
+  Path: snapshot:/sin_pausa
+  Guid:
+    Data1: 1089282327
+    Data2: 1211072376
+    Data3: 1987325840
+    Data4: 1973335127
+  Banks:
+  - {fileID: -3917333088618812197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-805397406285499040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,30 +387,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 19500
---- !u!114 &-470261287991900363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/engine_boat-desc/intensidad_motor
-  m_EditorClassIdentifier: 
-  Name: intensidad_motor
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 922942343
-    data2: 576434727
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,104 +404,68 @@ MonoBehaviour:
   - {fileID: -3917333088618812197}
   - {fileID: 1967911130306217454}
   EditorEvents:
-  - {fileID: 1078642350184157323}
   - {fileID: 3042054106474292087}
-  - {fileID: 3624485815586891052}
-  - {fileID: 1077401207073862333}
   - {fileID: -8143354350005600927}
   - {fileID: 2554147078476771304}
   - {fileID: -8825976406871088251}
   - {fileID: -3956419597152996715}
   - {fileID: -7709002337768895281}
   - {fileID: 1994601861124137945}
-  - {fileID: -6928796817716665750}
   - {fileID: -805397406285499040}
-  - {fileID: -4118375216500158052}
   - {fileID: 206146780735792195}
-  - {fileID: 3695764386976681759}
-  - {fileID: -8957189065688712007}
   - {fileID: -4227296952917308889}
-  - {fileID: -4125462739985121636}
-  - {fileID: 7999180395597201468}
-  - {fileID: -8424400705994824287}
   - {fileID: 9216173144852749513}
   - {fileID: -4310879261771781423}
-  - {fileID: 3812548406810507053}
-  - {fileID: -8035919785020219036}
   - {fileID: 1720216819675465035}
-  - {fileID: 6014026070761020557}
   - {fileID: -6181042780675299593}
   - {fileID: -3711856228109306577}
-  - {fileID: 7734439049730722561}
   - {fileID: -8114010780332596054}
+  - {fileID: -1812380583362385210}
+  - {fileID: -2525769632560056142}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3917333088618812197}
   StringsBanks:
   - {fileID: -8984776978519488713}
   cacheVersion: 131848
-  cacheTime: 638907643873952252
+  cacheTime: 638921607304524709
   SerializableEventsDict:
-  - key: snapshot:/sin_musica
-    index: 0
   - key: snapshot:/en_pausa
-    index: 1
-  - key: snapshot:/sin_sfx
-    index: 2
-  - key: snapshot:/sin_ambiente
-    index: 3
+    index: 0
   - key: event:/SFX-Submarine/robot_arm
-    index: 4
+    index: 1
   - key: event:/SFX-Submarine/wrong_falls-object
-    index: 5
+    index: 2
   - key: event:/SFX-DESCRIPCION/centolla_coqueta
-    index: 6
+    index: 3
   - key: event:/SFX-DESCRIPCION/estrella_culona
-    index: 7
+    index: 4
   - key: event:/SFX-DESCRIPCION/raya
-    index: 8
+    index: 5
   - key: event:/SFX-DESCRIPCION/batata
-    index: 9
-  - key: event:/MUSICA/music_menu
-    index: 10
+    index: 6
   - key: event:/SFX-DESCRIPCION/esponja_vitria-bolitas_blancas
-    index: 11
-  - key: event:/SFX-Submarine/engine_boat-desc
-    index: 12
+    index: 7
   - key: event:/SFX-DESCRIPCION/estrella_loca_2
-    index: 13
-  - key: event:/SFX-Submarine/change_mando-boat
-    index: 14
-  - key: event:/SFX-Submarine/bubble
-    index: 15
+    index: 8
   - key: event:/SFX-DESCRIPCION/chanchito_de_mar
-    index: 16
-  - key: event:/MUSICA/final_himno
-    index: 17
-  - key: event:/MUSICA/ambient_game
-    index: 18
-  - key: event:/SFX-Submarine/engine_boat-asc
-    index: 19
+    index: 9
   - key: event:/SFX-Submarine/win_take-object
-    index: 20
+    index: 10
   - key: event:/SFX-DESCRIPCION/estrella_loca_1
-    index: 21
-  - key: event:/MUSICA/music_creditos
-    index: 22
-  - key: event:/SFX-Submarine/click_lintern
-    index: 23
+    index: 11
   - key: event:/SFX-DESCRIPCION/amarillin
-    index: 24
-  - key: event:/MUSICA/music_game
-    index: 25
+    index: 12
   - key: event:/SFX-Submarine/chaos_alarm
-    index: 26
+    index: 13
   - key: event:/SFX-UI/button_tap_1
-    index: 27
-  - key: event:/SFX-Submarine/change_mando-garra
-    index: 28
+    index: 14
   - key: event:/SFX-DESCRIPCION/peluquitas
-    index: 29
+    index: 15
+  - key: snapshot:/sin_pausa
+    index: 16
+  - key: event:/MUSICA/music_scene
+    index: 17
 --- !u!114 &206146780735792195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,60 +493,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28646
---- !u!114 &1077401207073862333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/sin_ambiente
-  m_EditorClassIdentifier: 
-  Path: snapshot:/sin_ambiente
-  Guid:
-    Data1: 1185136630
-    Data2: 1178969704
-    Data3: 686273412
-    Data4: -1120641068
-  Banks:
-  - {fileID: -3917333088618812197}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &1078642350184157323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/sin_musica
-  m_EditorClassIdentifier: 
-  Path: snapshot:/sin_musica
-  Guid:
-    Data1: 1089282327
-    Data2: 1211072376
-    Data3: 1987325840
-    Data4: 1973335127
-  Banks:
-  - {fileID: -3917333088618812197}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &1720216819675465035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +535,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Nadia.bank
   Name: Nadia
   StudioPath: bank:/Nadia
-  lastModified: 638907643873952252
+  lastModified: 638921607304524709
   FileSizes: []
   Exists: 1
 --- !u!114 &1994601861124137945
@@ -842,168 +619,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &3624485815586891052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/sin_sfx
-  m_EditorClassIdentifier: 
-  Path: snapshot:/sin_sfx
-  Guid:
-    Data1: -1712564338
-    Data2: 1261495232
-    Data3: -917607549
-    Data4: -1814629697
-  Banks:
-  - {fileID: -3917333088618812197}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &3695764386976681759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/change_mando-boat
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/change_mando-boat
-  Guid:
-    Data1: 279997002
-    Data2: 1251577010
-    Data3: 368967588
-    Data4: -690685015
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2151
---- !u!114 &3812548406810507053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSICA/music_creditos
-  m_EditorClassIdentifier: 
-  Path: event:/MUSICA/music_creditos
-  Guid:
-    Data1: 199845517
-    Data2: 1229333586
-    Data3: 958967722
-    Data4: 498922570
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 134827
---- !u!114 &6014026070761020557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSICA/music_game
-  m_EditorClassIdentifier: 
-  Path: event:/MUSICA/music_game
-  Guid:
-    Data1: -1895278133
-    Data2: 1162902231
-    Data3: -178366560
-    Data4: 891792443
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 48000
---- !u!114 &7734439049730722561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX-Submarine/change_mando-garra
-  m_EditorClassIdentifier: 
-  Path: event:/SFX-Submarine/change_mando-garra
-  Guid:
-    Data1: 721375479
-    Data2: 1300444949
-    Data3: 1898103986
-    Data4: -435062280
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1567
---- !u!114 &7999180395597201468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSICA/ambient_game
-  m_EditorClassIdentifier: 
-  Path: event:/MUSICA/ambient_game
-  Guid:
-    Data1: -1627717264
-    Data2: 1172157032
-    Data3: 1378331582
-    Data4: 1106699373
-  Banks:
-  - {fileID: 1967911130306217454}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12000
 --- !u!114 &9216173144852749513
 MonoBehaviour:
   m_ObjectHideFlags: 0
