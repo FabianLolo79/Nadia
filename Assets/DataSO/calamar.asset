@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: calamar
   m_EditorClassIdentifier: 
   speciesID: calamar
-  speciesImage: {fileID: 21300000, guid: c187c3be45b63c94c9263f05a964b3dd, type: 3}
+  speciesImage: {fileID: -4133743673523565123, guid: 0e464b7136a867f409ea728d6f96ccec, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 5f1ea8094166edf49966c23c20c4c886, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

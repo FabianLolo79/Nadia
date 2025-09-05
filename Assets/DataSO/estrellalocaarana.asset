@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: estrellalocaarana
   m_EditorClassIdentifier: 
   speciesID: estrellalocaarana
-  speciesImage: {fileID: 21300000, guid: 5f355dc116515c94a84cae9b545df157, type: 3}
+  speciesImage: {fileID: 2013406018199827096, guid: f698448ca8a9778449514d3633ed1540, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 493381854b666b040bfab293f2faa107, type: 3}
   audio_descriptivo:
     Guid:
