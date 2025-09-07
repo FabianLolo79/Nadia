@@ -14,6 +14,8 @@ public class ReturnToMenuRelay : MonoBehaviour
         if (selfButton) selfButton.interactable = false;
 
         Time.timeScale = 1f; // por si estabas en pausa
+
+        Debug.Log("Relaymanda al menu");
         SceneManager.LoadScene(menuSceneName);
 
         // IMPORTANTE: reanudar música por si estabas en el álbum

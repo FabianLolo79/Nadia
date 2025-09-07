@@ -43,6 +43,11 @@ public class GameManager : MonoBehaviour
     [Header("UI Timer")]
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private float gameTime = 60f;
+
+    [SerializeField] private float timerIncrease = 5f;
+
+    [SerializeField] private float timerDecrease = 3f;
+
     private bool isWarningSoundPlaying = false;
     private float timeRemaining;
 
@@ -264,11 +269,13 @@ public class GameManager : MonoBehaviour
     public void FishCaught(SpeciesSO species)
     {
         OnFishCatch?.Invoke(species);
+        IncreaseTimer();
     }
 
     public void FishNotCaught(SpeciesSO species)
     {
         OnFishNotCatch?.Invoke(species);
+        DecreaseTimer();
     }
 
     // ==== Control álbum ====
@@ -310,6 +317,17 @@ public class GameManager : MonoBehaviour
         DifficultyMult = baseDifficulty;        //  Reinicio dificultad
 
         UpdateTimerUI();
+    }
+
+    private void IncreaseTimer()
+    {
+        timeRemaining += timerIncrease;
+    }
+
+    private void DecreaseTimer()
+    {
+        timeRemaining -= timerDecrease;
+
     }
 
     private void RebindSceneRefs()

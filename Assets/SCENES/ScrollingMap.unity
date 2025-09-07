@@ -246,6 +246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2245015907775147007, guid: 4541341c297bb7a459842f07c76f325e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 7195339057411972468, guid: 4541341c297bb7a459842f07c76f325e, type: 3}
       propertyPath: m_Name
       value: 'Darkness ROV '
@@ -349,7 +353,7 @@ Camera:
   m_GameObject: {fileID: 718814911}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -418,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -830,6 +834,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3528444774827298162, guid: bb3329cd7f3c1fc418583358d0a1079f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528444774827298162, guid: bb3329cd7f3c1fc418583358d0a1079f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 5162244786704010822, guid: bb3329cd7f3c1fc418583358d0a1079f, type: 3}
       propertyPath: m_Name
       value: Darkness ONTOP
@@ -982,6 +994,10 @@ PrefabInstance:
     - target: {fileID: 3789365551277851068, guid: 7904040df1a2abb47b696ed5da97d605, type: 3}
       propertyPath: m_Name
       value: ROV
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544838986782782446, guid: 7904040df1a2abb47b696ed5da97d605, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 6214144791904133529, guid: 7904040df1a2abb47b696ed5da97d605, type: 3}
       propertyPath: _joystick

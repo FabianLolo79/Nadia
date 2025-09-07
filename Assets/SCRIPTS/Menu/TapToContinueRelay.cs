@@ -14,7 +14,9 @@ public class TapToContinueRelay : MonoBehaviour
     [SerializeField] private float fadeOutOnTap = 0.18f;
 
     [Header("Opcional")]
-    [SerializeField] private bool ignoreTapOverUI = false; // true si querés que no tome taps sobre UI
+    [SerializeField] private bool ignoreTapOverUI = false; // true si querï¿½s que no tome taps sobre UI
+
+    [SerializeField] private float cooldown = 3f;
 
     private bool touched;
 
@@ -39,7 +41,12 @@ public class TapToContinueRelay : MonoBehaviour
 
         touched = true;
         if (tapIcon && fadeOutOnTap > 0f) StartCoroutine(FadeOutThenGo());
-        else relay?.ReturnToMenu();
+        else
+        {
+            Debug.Log("Else al relay fade al menu");
+
+            relay?.ReturnToMenu();
+        }
     }
 
     IEnumerator BlinkIcon()
@@ -65,6 +72,9 @@ public class TapToContinueRelay : MonoBehaviour
             tapIcon.color = c;
             yield return null;
         }
+
+        yield return new WaitForSeconds(cooldown);
+        Debug.Log("Tapto manda al relay fade al menu");
 
         relay?.ReturnToMenu();
     }

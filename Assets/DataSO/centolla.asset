@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: centolla
   m_EditorClassIdentifier: 
   speciesID: centolla
-  speciesImage: {fileID: 21300000, guid: b6d4cb0188a01774ab51469190fba0e0, type: 3}
+  speciesImage: {fileID: 38646574719943392, guid: 59a011c10d6e6094b94f3b6a9d0535ee, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 1806871178440354993ef980e6aed5e5, type: 3}
   audio_descriptivo:
     Guid:

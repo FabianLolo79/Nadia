@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: esdepiscis
   m_EditorClassIdentifier: 
   speciesID: esdepiscis
-  speciesImage: {fileID: 21300000, guid: 49cf6090071a87f49ae36489801f58fd, type: 3}
+  speciesImage: {fileID: 4678534776429442414, guid: f5540a240137e914bac3ce21d44b8eb9, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 14eb1163972084c4785a7d00ccebc7a1, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

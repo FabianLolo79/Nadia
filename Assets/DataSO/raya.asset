@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: raya
   m_EditorClassIdentifier: 
   speciesID: raya
-  speciesImage: {fileID: -1757272664372122117, guid: 3fa8166498f8c66479ed50978b6217a8, type: 3}
+  speciesImage: {fileID: 1579890424244027973, guid: 96288cf11c72567489dcf36d329083af, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: c63a74524c5937e4fa2fb41f7d98695e, type: 3}
   audio_descriptivo:
     Guid:

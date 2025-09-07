@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: medusa
   m_EditorClassIdentifier: 
   speciesID: medusa
-  speciesImage: {fileID: 21300000, guid: 4ac3b40fb6579e14ebbe1cb8407979be, type: 3}
+  speciesImage: {fileID: -1250272688935780964, guid: 81368ba6144855b4085d68fab58cc97f, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: a82d40dce3cf8c442b2e1aceea2e7b51, type: 3}
+  audio_descriptivo:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
