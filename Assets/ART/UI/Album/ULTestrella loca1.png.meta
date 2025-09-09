@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ULTestrella loca1_0: 2013406018199827096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
