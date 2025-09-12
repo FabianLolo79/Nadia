@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ULT batatita_0: -8685403097256680464
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
