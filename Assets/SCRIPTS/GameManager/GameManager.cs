@@ -88,19 +88,6 @@ public class GameManager : MonoBehaviour
         albumPanel.SetActive(false);
     }
 
-    //private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    RebindSceneRefs();
-    //    // cada vez que entro a Menú o Gameplay, reseteo
-    //    if (scene.name == menuSceneName || scene.name == gameplayScene)
-    //    {
-    //        ResetRun();
-    //        // Si en Menú querés Waiting y en Gameplay auto-start, podés diferenciar acá
-    //        CurrentState = (scene.name == gameplayScene) ? GameState.Playing : GameState.Waiting;
-    //        Time.timeScale = 1f;
-    //        UpdateTimerUI();
-    //    }
-    //}
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -113,8 +100,6 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-            // Música del menú 
-            //AudioManager.Instance.PlayMusicMenu();
         }
         else if (scene.name == gameplayScene)
         {
@@ -123,9 +108,6 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-
-            //Música del gameplay
-            //AudioManager.Instance.PlayGameMusicWithEngine();
         }
     }
 
@@ -157,33 +139,26 @@ public class GameManager : MonoBehaviour
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
 
-        //AudioManager.Instance.PlayGameMusicWithEngine();
     }
 
     public void PauseGame()
     {
         if (CurrentState != GameState.Playing) return;
 
-        //AudioManager.Instance.StartSnapshotEnPausa();
-
         CurrentState = GameState.Paused;
         Time.timeScale = 0f;
         OnGamePause?.Invoke();
 
-        //AudioManager.Instance.PauseGameMusicWithEngine();
     }
 
     public void ResumeGame()
     {
         if (CurrentState != GameState.Paused) return;
 
-        //AudioManager.Instance.StopSnapshotEnPausa();
-
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
         OnGameResume?.Invoke();
 
-        //AudioManager.Instance.ResumeGameMusicWithEngine();
     }
 
     // NUEVO - solo para caso tiempo agotado
@@ -191,16 +166,11 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Ended) return;
 
-        //AudioManager.Instance.PauseGameMusicWithEngine();
-
-       // AudioManager.Instance.StopMusic();
-
         CurrentState = GameState.Ended;
         Time.timeScale = 0f;
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
              
-
         // Lanzar evento global para BannerSceneLoader
         EventsManager.Instance?.TimeUp(); // NUEVO
 
@@ -228,9 +198,6 @@ public class GameManager : MonoBehaviour
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
 
-        // Cambio de música
-        //AudioManager.Instance.PlayMusicMenu();
-
         SceneManager.LoadScene(menuSceneName);
     }
 
@@ -246,7 +213,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; // aseguramos que no esté pausado
         SceneManager.LoadScene(menuSceneName);
 
-        //AudioManager.Instance.PlayMusicMenu(); TODO que onda
     }
 
     // ==== Scroll manual ====

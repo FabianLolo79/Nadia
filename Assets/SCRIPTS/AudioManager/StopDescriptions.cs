@@ -16,14 +16,14 @@ public class StopDescriptions : MonoBehaviour
         RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
-    public void PauseMusic()
-    {
-        AudioManager.Instance.PauseMusic();
-    }
+    //public void PauseMusic()
+    //{
+    //    AudioManager.Instance.PauseMusic();
+    //}
 
-    public void PlayMusic() 
-    {
-        AudioManager.Instance.ResumeMusic();
-    }
+    //public void PlayMusic() 
+    //{
+    //    AudioManager.Instance.ResumeMusic();
+    //}
 
 }

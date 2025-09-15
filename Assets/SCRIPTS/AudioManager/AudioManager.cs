@@ -19,6 +19,9 @@ public class AudioManager : MonoBehaviour
     [Header("MÚSICA")]
     [SerializeField] private EventReference _musicEvent; // Evento ÚNICO de música en FMOD
 
+    [Header("SNAPSHOTS")]
+    [SerializeField] private EventReference _pauseSnapshot;
+
     [Header("AUDIOS DESCRIPTIVOS")]
     [SerializeField] private EventReference _amarillin;
     [SerializeField] private EventReference _batata;
@@ -43,6 +46,7 @@ public class AudioManager : MonoBehaviour
 
     // ------------------- INSTANCIAS -------------------
     private EventInstance _musicInstance;
+    private EventInstance _pauseSnapshotInstance;
 
     private void Awake()
     {
@@ -85,6 +89,26 @@ public class AudioManager : MonoBehaviour
     public void PauseMusic() => _musicInstance.setPaused(true);
     public void ResumeMusic() => _musicInstance.setPaused(false);
 
+    // ---------------------------- SNAPSHOT PAUSA ----------------------------
+    public void PlayPauseSnapshot()
+    {
+        if (_pauseSnapshot.IsNull) return;
+
+        if (!_pauseSnapshotInstance.isValid())
+            _pauseSnapshotInstance = RuntimeManager.CreateInstance(_pauseSnapshot);
+
+        _pauseSnapshotInstance.start();
+    }
+
+    public void StopPauseSnapshot()
+    {
+        if (_pauseSnapshotInstance.isValid())
+        {
+            _pauseSnapshotInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            _pauseSnapshotInstance.release();
+        }
+    }
+
     // ------------------- SFX -------------------
     public void PlayOneShot(EventReference soundRef)
     {
@@ -116,5 +140,7 @@ public class AudioManager : MonoBehaviour
             _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             _musicInstance.release();
         }
+
+        StopPauseSnapshot(); // asegura liberar el snapshot
     }
 }

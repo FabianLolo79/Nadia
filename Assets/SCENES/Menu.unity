@@ -2246,6 +2246,13 @@ MonoBehaviour:
       Data3: -910804577
       Data4: 1952624643
     Path: event:/MUSICA/music_scene
+  _pauseSnapshot:
+    Guid:
+      Data1: 203081096
+      Data2: 1233574867
+      Data3: -759223128
+      Data4: 11845716
+    Path: snapshot:/en_pausa
   _amarillin:
     Guid:
       Data1: -1621768786
@@ -2720,7 +2727,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PauseMusic
+        m_MethodName: PlayPauseSnapshot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3570,7 +3577,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: ResumeMusic
+        m_MethodName: StopPauseSnapshot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

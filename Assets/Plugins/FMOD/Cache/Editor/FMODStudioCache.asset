@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638921607300365719
+  lastModified: 638932906561065077
   FileSizes:
   - Name: 
-    Value: 1934
+    Value: 1924
   Exists: 1
 --- !u!114 &-8825976406871088251
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-5752536189609944536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX-DESCRIPCION/merenguito
+  m_EditorClassIdentifier: 
+  Path: event:/SFX-DESCRIPCION/merenguito
+  Guid:
+    Data1: -1999510116
+    Data2: 1324108024
+    Data3: 673953157
+    Data4: -1886541891
+  Banks:
+  - {fileID: 1967911130306217454}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11773
 --- !u!114 &-5310703057001807177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +302,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638921607300365719
+  lastModified: 638932906561035104
   FileSizes: []
   Exists: 1
 --- !u!114 &-3711856228109306577
@@ -333,33 +360,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 322827
---- !u!114 &-1812380583362385210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/sin_pausa
-  m_EditorClassIdentifier: 
-  Path: snapshot:/sin_pausa
-  Guid:
-    Data1: 1089282327
-    Data2: 1211072376
-    Data3: 1987325840
-    Data4: 1973335127
-  Banks:
-  - {fileID: -3917333088618812197}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &-805397406285499040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,15 +420,15 @@ MonoBehaviour:
   - {fileID: -6181042780675299593}
   - {fileID: -3711856228109306577}
   - {fileID: -8114010780332596054}
-  - {fileID: -1812380583362385210}
   - {fileID: -2525769632560056142}
+  - {fileID: -5752536189609944536}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3917333088618812197}
   StringsBanks:
   - {fileID: -8984776978519488713}
   cacheVersion: 131848
-  cacheTime: 638921607304524709
+  cacheTime: 638932906561065077
   SerializableEventsDict:
   - key: snapshot:/en_pausa
     index: 0
@@ -462,9 +462,9 @@ MonoBehaviour:
     index: 14
   - key: event:/SFX-DESCRIPCION/peluquitas
     index: 15
-  - key: snapshot:/sin_pausa
-    index: 16
   - key: event:/MUSICA/music_scene
+    index: 16
+  - key: event:/SFX-DESCRIPCION/merenguito
     index: 17
 --- !u!114 &206146780735792195
 MonoBehaviour:
@@ -535,7 +535,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Nadia.bank
   Name: Nadia
   StudioPath: bank:/Nadia
-  lastModified: 638921607304524709
+  lastModified: 638932888314025811
   FileSizes: []
   Exists: 1
 --- !u!114 &1994601861124137945
@@ -606,10 +606,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: snapshot:/en_pausa
   Guid:
-    Data1: -839849594
-    Data2: 1210518770
-    Data3: 375669683
-    Data4: -1433612652
+    Data1: 203081096
+    Data2: 1233574867
+    Data3: -759223128
+    Data4: 11845716
   Banks:
   - {fileID: -3917333088618812197}
   IsStream: 0
