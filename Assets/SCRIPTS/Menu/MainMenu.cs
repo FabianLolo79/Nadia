@@ -23,6 +23,11 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetInt("StartGameOnLoad", 1);
 
         SceneManager.LoadScene(gameSceneName);
+
+        // NUEVO: Reanudar música al cerrar álbum
+        if (AudioManager.Instance != null)
+            // desactivar el filtro Low-Pass
+            AudioManager.Instance.StopPauseSnapshot();
     }
 
     public void ShowAlbum()

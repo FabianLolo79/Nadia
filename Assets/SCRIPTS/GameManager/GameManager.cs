@@ -1,8 +1,9 @@
 using System;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement; // <-- Necesario para cambiar de escena
+using UnityEngine.UI;
+using FMODUnity;
 
 public class GameManager : MonoBehaviour
 {
@@ -55,7 +56,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private float timerDecrease = 3f;
 
-    private bool isWarningSoundPlaying = false;
+    // ==== sfx alarma de timer ====
+    private bool isWarningSoundPlaying = false; 
+
     private float timeRemaining;
 
 
@@ -96,19 +99,6 @@ public class GameManager : MonoBehaviour
         albumPanel.SetActive(false);
     }
 
-    //private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    RebindSceneRefs();
-    //    // cada vez que entro a Menú o Gameplay, reseteo
-    //    if (scene.name == menuSceneName || scene.name == gameplayScene)
-    //    {
-    //        ResetRun();
-    //        // Si en Menú querés Waiting y en Gameplay auto-start, podés diferenciar acá
-    //        CurrentState = (scene.name == gameplayScene) ? GameState.Playing : GameState.Waiting;
-    //        Time.timeScale = 1f;
-    //        UpdateTimerUI();
-    //    }
-    //}
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -121,8 +111,6 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-            // Música del menú 
-            //AudioManager.Instance.PlayMusicMenu();
         }
         else if (scene.name == gameplayScene)
         {
@@ -131,9 +119,6 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1f;
             UpdateTimerUI();
 
-
-            //Música del gameplay
-            //AudioManager.Instance.PlayGameMusicWithEngine();
         }
     }
 
@@ -173,26 +158,20 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState != GameState.Playing) return;
 
-        //AudioManager.Instance.StartSnapshotEnPausa();
-
         CurrentState = GameState.Paused;
         Time.timeScale = 0f;
         OnGamePause?.Invoke();
 
-        //AudioManager.Instance.PauseGameMusicWithEngine();
     }
 
     public void ResumeGame()
     {
         if (CurrentState != GameState.Paused) return;
 
-        //AudioManager.Instance.StopSnapshotEnPausa();
-
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
         OnGameResume?.Invoke();
 
-        //AudioManager.Instance.ResumeGameMusicWithEngine();
     }
 
     // NUEVO - solo para caso tiempo agotado
@@ -200,20 +179,20 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState == GameState.Ended) return;
 
-        //AudioManager.Instance.PauseGameMusicWithEngine();
-
-       // AudioManager.Instance.StopMusic();
-
         CurrentState = GameState.Ended;
         Time.timeScale = 0f;
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
              
-
         // Lanzar evento global para BannerSceneLoader
         EventsManager.Instance?.TimeUp(); // NUEVO
 
+        // NUEVO: Reanudar música al cerrar álbum
+        if (AudioManager.Instance != null)
+            // desactivar el filtro Low-Pass
+            AudioManager.Instance.StopPauseSnapshot();
 
+        RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     public void EndGameByAlbum()
@@ -237,9 +216,6 @@ public class GameManager : MonoBehaviour
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
 
-        // Cambio de música
-        //AudioManager.Instance.PlayMusicMenu();
-
         SceneManager.LoadScene(menuSceneName);
     }
 
@@ -255,7 +231,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; // aseguramos que no esté pausado
         SceneManager.LoadScene(menuSceneName);
 
-        //AudioManager.Instance.PlayMusicMenu(); TODO que onda
     }
 
     // ==== Scroll manual ====
@@ -306,7 +281,7 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
 
         // Lógica para reproducir sonido en los últimos 10 segundos
-        if (timeRemaining <= 5f && timeRemaining > 0 && !isWarningSoundPlaying)
+        if (timeRemaining <= 6f && timeRemaining > 0 && !isWarningSoundPlaying)
         {
             AudioManager.Instance.PlayClockAlarm(); // Reproducir sonido de advertencia
             isWarningSoundPlaying = true;

@@ -18,11 +18,9 @@ public class SpeciesEntry : MonoBehaviour
 
     [SerializeField] private EventReference descriptiveAudio;
 
-    // 🔹 Bandera estática: compartida por TODAS las instancias
+    // Estáticas: compartidas por TODAS las instancias
     private static bool isAnyAudioPlaying = false;
-
-    // 🔹 Instancia del evento para poder detenerlo
-    private EventInstance currentAudioInstance;
+    private static EventInstance currentAudioInstance;
 
     public void Setup(SpeciesSO species, bool collected)
     {
@@ -36,27 +34,52 @@ public class SpeciesEntry : MonoBehaviour
 
     public void PlayDescriptiveAudio()
     {
-        // Si ya hay un audio en reproducción, no hacer nada
-        if (isAnyAudioPlaying)
+        // 1. Si ya hay audio sonando, lo paramos inmediatamente
+        if (isAnyAudioPlaying && currentAudioInstance.isValid())
         {
-            Debug.Log("Ya hay un audio reproduciéndose, espera a que termine.");
-            return;
+            currentAudioInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            currentAudioInstance.release();
+            isAnyAudioPlaying = false;
         }
 
-        if (!descriptiveAudio.IsNull)
-        {
-            // Marcar que hay audio en reproducción
-            isAnyAudioPlaying = true;
+        // 2. Si no hay audio asignado, nos vamos
+        if (descriptiveAudio.IsNull) return;
 
-            // Crear instancia del evento para controlar fin de reproducción
-            currentAudioInstance = RuntimeManager.CreateInstance(descriptiveAudio);
-            currentAudioInstance.start();
+        // 3. Creamos y lanzamos el nuevo
+        currentAudioInstance = RuntimeManager.CreateInstance(descriptiveAudio);
+        currentAudioInstance.start();
+        currentAudioInstance.release(); // se auto-libera al terminar
+        isAnyAudioPlaying = true;
 
-            // 🔹 Detectar cuando el audio termina
-            currentAudioInstance.release(); // Libera memoria al finalizar
-            CheckAudioEnd();
-        }
+        // 4. Detectar cuando termine para liberar la bandera
+        CheckAudioEnd();
     }
+
+    //public void PlayDescriptiveAudio()
+    //{
+    //    // Si ya hay un audio en reproducción, no hacer nada
+    //    if (isAnyAudioPlaying)
+    //    {
+    //        Debug.Log("Ya hay un audio reproduciéndose, espera a que termine.");
+    //        return;
+    //    }
+
+    //    if (!descriptiveAudio.IsNull)
+    //    {
+    //        // Marcar que hay audio en reproducción
+    //        isAnyAudioPlaying = true;
+
+    //        // Crear instancia del evento para controlar fin de reproducción
+    //        currentAudioInstance = RuntimeManager.CreateInstance(descriptiveAudio);
+    //        currentAudioInstance.start();
+
+    //        // 🔹 Detectar cuando el audio termina
+    //        currentAudioInstance.release(); // Libera memoria al finalizar
+    //        CheckAudioEnd();
+    //    }
+    //}
+
+
 
     private async void CheckAudioEnd()
     {

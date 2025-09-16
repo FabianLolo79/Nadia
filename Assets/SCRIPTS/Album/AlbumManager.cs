@@ -49,7 +49,8 @@ public class AlbumManager : MonoBehaviour
 
         // NUEVO: Pausar la música al abrir álbum
         if (AudioManager.Instance != null)
-            AudioManager.Instance.PauseMusic();
+            // activar el filtro Low-Pass
+            AudioManager.Instance.PlayPauseSnapshot();
     }
 
     // Oculta el álbum y reanuda el juego
@@ -61,7 +62,8 @@ public class AlbumManager : MonoBehaviour
 
         // NUEVO: Reanudar música al cerrar álbum
         if (AudioManager.Instance != null)
-            AudioManager.Instance.ResumeMusic();
+            // desactivar el filtro Low-Pass
+           AudioManager.Instance.StopPauseSnapshot();
     }
 
     // Borra todas las entradas instanciadas en el contenedor

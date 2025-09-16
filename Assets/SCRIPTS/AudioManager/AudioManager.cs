@@ -17,31 +17,36 @@ public class AudioManager : MonoBehaviour
     }
 
     [Header("MÚSICA")]
-    [SerializeField] private EventReference musicEvent; // Evento ÚNICO de música en FMOD
+    [SerializeField] private EventReference _musicEvent; // Evento ÚNICO de música en FMOD
+
+    [Header("SNAPSHOTS")]
+    [SerializeField] private EventReference _pauseSnapshot;
 
     [Header("AUDIOS DESCRIPTIVOS")]
-    [SerializeField] private EventReference amarillin;
-    [SerializeField] private EventReference batata;
-    [SerializeField] private EventReference centollaCoqueta;
-    [SerializeField] private EventReference chanchitoDeMar;
-    [SerializeField] private EventReference esponjaVitria;
-    [SerializeField] private EventReference estrellaCulona;
-    [SerializeField] private EventReference estrellaLoca1;
-    [SerializeField] private EventReference estrellaLoca2;
-    [SerializeField] private EventReference peluquita;
-    [SerializeField] private EventReference raya;
+    [SerializeField] private EventReference _amarillin;
+    [SerializeField] private EventReference _batata;
+    [SerializeField] private EventReference _centollaCoqueta;
+    [SerializeField] private EventReference _chanchitoDeMar;
+    [SerializeField] private EventReference _esponjaVitria;
+    [SerializeField] private EventReference _estrellaCulona;
+    [SerializeField] private EventReference _estrellaLoca1;
+    [SerializeField] private EventReference _estrellaLoca2;
+    [SerializeField] private EventReference _peluquita;
+    [SerializeField] private EventReference _raya;
+    [SerializeField] private EventReference _merenguito;
 
     [Header("SFX SUBMARINE")]
-    [SerializeField] private EventReference garra;
-    [SerializeField] private EventReference winTakeObject;
-    [SerializeField] private EventReference wrongTakeObject;
-    [SerializeField] private EventReference clockAlarm;
+    [SerializeField] private EventReference _garra;
+    [SerializeField] private EventReference _winTakeObject;
+    [SerializeField] private EventReference _wrongTakeObject;
+    [SerializeField] private EventReference _clockAlarm;
 
     [Header("SFX UI")]
-    [SerializeField] private EventReference buttonTap;
+    [SerializeField] private EventReference _buttonTap;
 
     // ------------------- INSTANCIAS -------------------
-    private EventInstance musicInstance;
+    private EventInstance _musicInstance;
+    private EventInstance _pauseSnapshotInstance;
 
     private void Awake()
     {
@@ -61,8 +66,8 @@ public class AudioManager : MonoBehaviour
     // ------------------- MÚSICA -------------------
     private void StartMusic()
     {
-        musicInstance = RuntimeManager.CreateInstance(musicEvent);
-        musicInstance.start();
+        _musicInstance = RuntimeManager.CreateInstance(_musicEvent);
+        _musicInstance.start();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -75,14 +80,34 @@ public class AudioManager : MonoBehaviour
         // Usamos parámetro en FMOD llamado "MusicState"
         // Ejemplo: 0=Menu, 1=Tutorial, 2=Gameplay, 3=GameOver
 
-        if (sceneName == "Menu") musicInstance.setParameterByName("music_play", 0); 
-        else if (sceneName == "ScrollingMap") musicInstance.setParameterByName("music_play", 1); 
-        else if (sceneName == "TimeOut") musicInstance.setParameterByName("music_play", 2); 
-        else if (sceneName == "Congratulations") musicInstance.setParameterByName("music_play", 3);
+        if (sceneName == "Menu") _musicInstance.setParameterByName("music_play", 0); 
+        else if (sceneName == "ScrollingMap") _musicInstance.setParameterByName("music_play", 1); 
+        else if (sceneName == "TimeOut") _musicInstance.setParameterByName("music_play", 2); 
+        else if (sceneName == "Congratulations") _musicInstance.setParameterByName("music_play", 3);
     }
 
-    public void PauseMusic() => musicInstance.setPaused(true);
-    public void ResumeMusic() => musicInstance.setPaused(false);
+    public void PauseMusic() => _musicInstance.setPaused(true);
+    public void ResumeMusic() => _musicInstance.setPaused(false);
+
+    // ---------------------------- SNAPSHOT PAUSA ----------------------------
+    public void PlayPauseSnapshot()
+    {
+        if (_pauseSnapshot.IsNull) return;
+
+        if (!_pauseSnapshotInstance.isValid())
+            _pauseSnapshotInstance = RuntimeManager.CreateInstance(_pauseSnapshot);
+
+        _pauseSnapshotInstance.start();
+    }
+
+    public void StopPauseSnapshot()
+    {
+        if (_pauseSnapshotInstance.isValid())
+        {
+            _pauseSnapshotInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            _pauseSnapshotInstance.release();
+        }
+    }
 
     // ------------------- SFX -------------------
     public void PlayOneShot(EventReference soundRef)
@@ -90,16 +115,16 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(soundRef);
     }
 
-    public void PlayTapButton() => PlayOneShot(buttonTap);
-    public void PlayTakeObject() => PlayOneShot(winTakeObject);
-    public void PlayFallObject() => PlayOneShot(wrongTakeObject);
-    public void PlayClockAlarm() => PlayOneShot(clockAlarm);
+    public void PlayTapButton() => PlayOneShot(_buttonTap);
+    public void PlayTakeObject() => PlayOneShot(_winTakeObject);
+    public void PlayFallObject() => PlayOneShot(_wrongTakeObject);
+    public void PlayClockAlarm() => PlayOneShot(_clockAlarm);
 
     public void StopClockAlarm()
     {
-        if (!clockAlarm.IsNull)
+        if (!_clockAlarm.IsNull)
         {
-            var instance = RuntimeManager.CreateInstance(clockAlarm);
+            var instance = RuntimeManager.CreateInstance(_clockAlarm);
             instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             instance.release();
         }
@@ -110,10 +135,12 @@ public class AudioManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
 
-        if (musicInstance.isValid())
+        if (_musicInstance.isValid())
         {
-            musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            musicInstance.release();
+            _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            _musicInstance.release();
         }
+
+        StopPauseSnapshot(); // asegura liberar el snapshot
     }
 }

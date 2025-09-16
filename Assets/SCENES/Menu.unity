@@ -2239,112 +2239,126 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89bd913ee3d6ddb409cee71ad0c5e7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicEvent:
+  _musicEvent:
     Guid:
       Data1: -664006351
       Data2: 1121573785
       Data3: -910804577
       Data4: 1952624643
     Path: event:/MUSICA/music_scene
-  amarillin:
+  _pauseSnapshot:
+    Guid:
+      Data1: 203081096
+      Data2: 1233574867
+      Data3: -759223128
+      Data4: 11845716
+    Path: snapshot:/en_pausa
+  _amarillin:
     Guid:
       Data1: -1621768786
       Data2: 1297309845
       Data3: 537771698
       Data4: -979247592
     Path: event:/SFX-DESCRIPCION/amarillin
-  batata:
+  _batata:
     Guid:
       Data1: 1744514844
       Data2: 1151121900
       Data3: -174011205
       Data4: 326467161
     Path: event:/SFX-DESCRIPCION/batata
-  centollaCoqueta:
+  _centollaCoqueta:
     Guid:
       Data1: 2097207050
       Data2: 1097218590
       Data3: 2086717607
       Data4: 74161492
     Path: event:/SFX-DESCRIPCION/centolla_coqueta
-  chanchitoDeMar:
+  _chanchitoDeMar:
     Guid:
       Data1: 2035293528
       Data2: 1077072748
       Data3: -1484845387
       Data4: 229555329
     Path: event:/SFX-DESCRIPCION/chanchito_de_mar
-  esponjaVitria:
+  _esponjaVitria:
     Guid:
       Data1: 2135029032
       Data2: 1254915686
       Data3: -1616337757
       Data4: 751389631
     Path: event:/SFX-DESCRIPCION/esponja_vitria-bolitas_blancas
-  estrellaCulona:
+  _estrellaCulona:
     Guid:
       Data1: 1543181582
       Data2: 1151444897
       Data3: -1516067194
       Data4: 315850202
     Path: event:/SFX-DESCRIPCION/estrella_culona
-  estrellaLoca1:
+  _estrellaLoca1:
     Guid:
       Data1: 1901963404
       Data2: 1130961151
       Data3: 2103592591
       Data4: -1170374971
     Path: event:/SFX-DESCRIPCION/estrella_loca_1
-  estrellaLoca2:
+  _estrellaLoca2:
     Guid:
       Data1: -113987268
       Data2: 1106082370
       Data3: 1743888528
       Data4: -299699534
     Path: event:/SFX-DESCRIPCION/estrella_loca_2
-  peluquita:
+  _peluquita:
     Guid:
       Data1: -328996616
       Data2: 1127775098
       Data3: 1847170238
       Data4: 1530940088
     Path: event:/SFX-DESCRIPCION/peluquitas
-  raya:
+  _raya:
     Guid:
       Data1: 1144040982
       Data2: 1170801536
       Data3: 1047664033
       Data4: 1648572180
     Path: event:/SFX-DESCRIPCION/raya
-  garra:
+  _merenguito:
+    Guid:
+      Data1: -1999510116
+      Data2: 1324108024
+      Data3: 673953157
+      Data4: -1886541891
+    Path: event:/SFX-DESCRIPCION/merenguito
+  _garra:
     Guid:
       Data1: 361367301
       Data2: 1139336049
       Data3: -68190023
       Data4: -1016974185
     Path: event:/SFX-Submarine/robot_arm
-  winTakeObject:
+  _winTakeObject:
     Guid:
       Data1: 887429758
       Data2: 1175463227
       Data3: -670512236
       Data4: -1845145861
     Path: event:/SFX-Submarine/win_take-object
-  wrongTakeObject:
+  _wrongTakeObject:
     Guid:
       Data1: -680938487
       Data2: 1169013324
       Data3: -793809525
       Data4: 1148426071
     Path: event:/SFX-Submarine/wrong_falls-object
-  clockAlarm:
+  _clockAlarm:
     Guid:
       Data1: 1596785372
       Data2: 1148101660
       Data3: 579859893
       Data4: -171390338
     Path: event:/SFX-Submarine/chaos_alarm
-  buttonTap:
+  _buttonTap:
     Guid:
       Data1: -1826557474
       Data2: 1126203948
@@ -2713,7 +2727,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PauseMusic
+        m_MethodName: PlayPauseSnapshot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3563,7 +3577,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1790905465}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: ResumeMusic
+        m_MethodName: StopPauseSnapshot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4694,12 +4708,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a6fb8ed960eccd44db494f8af50ce9b2, type: 2}
   - {fileID: 11400000, guid: 9b95c1aedf5760d478855b93dce6e93a, type: 2}
   - {fileID: 11400000, guid: b137e83dc33cf98408ad2cdd69d201f8, type: 2}
-  - {fileID: 11400000, guid: 38cedb71913d7a64d9e0881162b93f4c, type: 2}
+  - {fileID: 11400000, guid: 4fba947604402634b896c90e4fbbc69a, type: 2}
   - {fileID: 11400000, guid: 677ebd84b9c0bb041ae2f41c28337347, type: 2}
   - {fileID: 11400000, guid: d4ac7908480eb2744b0dd9d06160cbaf, type: 2}
   - {fileID: 11400000, guid: f741d5dbac2bd6e4d9188b4fe8621f60, type: 2}
   - {fileID: 11400000, guid: 187dc5ae775fc434787286c125122604, type: 2}
-  - {fileID: 11400000, guid: 4fba947604402634b896c90e4fbbc69a, type: 2}
+  - {fileID: 11400000, guid: 38cedb71913d7a64d9e0881162b93f4c, type: 2}
   - {fileID: 11400000, guid: eb1675cf614fc2d4cad91de5800581c0, type: 2}
   playerCollection: {fileID: 876366473}
 --- !u!222 &8501926534049028312

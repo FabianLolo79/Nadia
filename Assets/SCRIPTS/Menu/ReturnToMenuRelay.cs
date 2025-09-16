@@ -19,9 +19,14 @@ public class ReturnToMenuRelay : MonoBehaviour
         SceneManager.LoadScene(menuSceneName);
 
         // IMPORTANTE: reanudar música por si estabas en el álbum
-        AudioManager.Instance.ResumeMusic();
+        //AudioManager.Instance.ResumeMusic();
 
         RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        // NUEVO: Reanudar música al cerrar álbum
+        if (AudioManager.Instance != null)
+            // desactivar el filtro Low-Pass
+            AudioManager.Instance.StopPauseSnapshot();
 
     }
 }
