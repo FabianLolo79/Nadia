@@ -42,9 +42,16 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Timer")]
     [SerializeField] private TMP_Text timerText;
+
+    [SerializeField] private TMP_Text currentScore;
+    [SerializeField] private TMP_Text highScore;
+
     [SerializeField] private float gameTime = 60f;
 
     [SerializeField] private float timerIncrease = 5f;
+
+    [SerializeField] private int currentPoints;
+    private int savedHighScore;
 
     [SerializeField] private float timerDecrease = 3f;
 
@@ -83,6 +90,7 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f; // aseguramos que esté activo
 
+        savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
         UpdateTimerUI();
 
         albumPanel.SetActive(false);
@@ -154,9 +162,10 @@ public class GameManager : MonoBehaviour
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
 
+        InitializePoints();
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
-
+        UpdateScoreUI();
         //AudioManager.Instance.PlayGameMusicWithEngine();
     }
 
@@ -270,6 +279,7 @@ public class GameManager : MonoBehaviour
     {
         OnFishCatch?.Invoke(species);
         IncreaseTimer();
+        IncreasePoints(species);
     }
 
     public void FishNotCaught(SpeciesSO species)
@@ -322,6 +332,35 @@ public class GameManager : MonoBehaviour
     private void IncreaseTimer()
     {
         timeRemaining += timerIncrease;
+    }
+    private void IncreasePoints(SpeciesSO species)
+    {
+        currentPoints += species.speciesScore;
+            UpdateScoreUI();
+
+            // Verificar y guardar highscore
+            if (currentPoints > savedHighScore)
+            {
+                savedHighScore = currentPoints;
+                PlayerPrefs.SetInt("HighScore", savedHighScore);
+                PlayerPrefs.Save();
+                UpdateScoreUI();
+            }
+    }
+    private void UpdateScoreUI()
+    {
+        if (currentScore != null)
+            currentScore.text = $"Score: {currentPoints}";
+
+        if (highScore != null)
+            highScore.text = $"High Score: {savedHighScore}";
+    }
+
+    private void InitializePoints()
+    {
+        currentPoints = 0;
+        UpdateScoreUI();
+
     }
 
     private void DecreaseTimer()
