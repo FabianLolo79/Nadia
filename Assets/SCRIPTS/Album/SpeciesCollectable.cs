@@ -12,6 +12,9 @@ public class SpeciesCollectable : MonoBehaviour
 
     [SerializeField] GameObject SucceedVFX;
     [SerializeField] GameObject FailedVFX;
+    [SerializeField] GameObject FiveScore;
+    [SerializeField] GameObject TenScore;
+    [SerializeField] GameObject FifteenScore;
 
     [SerializeField] GameObject NewSpeciesVFX;
 
@@ -46,10 +49,26 @@ void Start()
 {
     FishQTE.Instance.OnQTEFinished += Dissapear;
 
-    // Si el jugador todavía NO tiene esta especie, spawneamos halo
-    if (!PlayerCollection.Instance.HasCollected(speciesData))
-    {
-        Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+        // Si el jugador todavía NO tiene esta especie, spawneamos halo
+        if (!PlayerCollection.Instance.HasCollected(speciesData))
+        {
+            Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+
+            switch (speciesData.speciesScore)
+            {
+                case 5:
+                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    break;
+                case 10:
+                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    break;
+                case 15:
+                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    break;
+                default:
+                    Debug.Log("Species score not assigned correctly");
+                    break;
+            }
     }
 }
 

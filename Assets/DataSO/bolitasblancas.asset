@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: bolitasblancas
   m_EditorClassIdentifier: 
   speciesID: "Esponja Vampiro (Esponja V\xEDtrea)"
+  speciesScore: 5
   speciesImage: {fileID: 7894170665071128085, guid: 841271efd8d9c2448a274cb474e7e61f, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 050e45539b209a344977f75256e5f0f1, type: 3}
   audio_descriptivo:

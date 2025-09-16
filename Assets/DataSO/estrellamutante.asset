@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: estrellamutante
   m_EditorClassIdentifier: 
   speciesID: Estrella de mar abisal Claro
+  speciesScore: 10
   speciesImage: {fileID: -9159156920495590092, guid: f6eeee95dad42b24c920cec682d3fb99, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 1ea9fca98f01ae249a3c6c722166517e, type: 3}
   audio_descriptivo:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: batatita
   m_EditorClassIdentifier: 
   speciesID: "Amarill\xEDn (Erizo de mar)"
+  speciesScore: 5
   speciesImage: {fileID: -8685403097256680464, guid: 62c57dd70503e4b488d063f6f43bda58, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: e1afad735a07d244aa24d8c2c2fc4eec, type: 3}
   audio_descriptivo:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: estrellaloca
   m_EditorClassIdentifier: 
   speciesID: "An\xE9mona de mar"
+  speciesScore: 5
   speciesImage: {fileID: -9002744003752174821, guid: 4b707ee1790a1d9488cf0dfff181bbe7, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 21d70fdc495fd0648852641e03016b01, type: 3}
   audio_descriptivo:

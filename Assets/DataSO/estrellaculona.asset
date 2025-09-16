@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: estrellaculona
   m_EditorClassIdentifier: 
   speciesID: Estrella Culona (Estrella de mar abisal)
+  speciesScore: 10
   speciesImage: {fileID: -4349333547798689896, guid: 119b38ff1c6822c48b76c34627594450, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 58cf830c6b38a0a4f9ecd51e48711cfd, type: 3}
   audio_descriptivo:

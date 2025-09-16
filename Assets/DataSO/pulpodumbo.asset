@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: pulpodumbo
   m_EditorClassIdentifier: 
   speciesID: Pulpo Dumbo (Pulpo de profundidad)
+  speciesScore: 10
   speciesImage: {fileID: 4906866662818641170, guid: 376af60b1eaa9c242bca190e03c9f8a8, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 62ae4192933117947a94de1ba38c3142, type: 3}
   audio_descriptivo:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: medusa
   m_EditorClassIdentifier: 
   speciesID: Medusa de profundidad
+  speciesScore: 15
   speciesImage: {fileID: -1250272688935780964, guid: 81368ba6144855b4085d68fab58cc97f, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: a82d40dce3cf8c442b2e1aceea2e7b51, type: 3}
   audio_descriptivo:

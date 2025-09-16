@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: peluquitas
   m_EditorClassIdentifier: 
   speciesID: Remolacha (coral blando)
+  speciesScore: 5
   speciesImage: {fileID: -2740049940910449922, guid: c8464f289b1dfb341bd84c84aa7b7531, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 1e95e0828719aa44993a36dac5868716, type: 3}
   audio_descriptivo:
