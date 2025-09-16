@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: centolla
   m_EditorClassIdentifier: 
-  speciesID: centolla
+  speciesID: Centolla Coqueta
   speciesImage: {fileID: 38646574719943392, guid: 59a011c10d6e6094b94f3b6a9d0535ee, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 1806871178440354993ef980e6aed5e5, type: 3}
   audio_descriptivo:

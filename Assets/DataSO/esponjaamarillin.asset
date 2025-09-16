@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: esponjaamarillin
   m_EditorClassIdentifier: 
-  speciesID: esponjaamarillin
+  speciesID: "Amarill\xEDn (Erizo de mar)"
   speciesImage: {fileID: -911242593232851982, guid: 24589f51af8cfba49ad983477715c931, type: 3}
-  speciesImagePixel: {fileID: 21300000, guid: 0027cd8dfb74b44419f3a80df3b74844, type: 3}
+  speciesImagePixel: {fileID: 21300000, guid: e8e449d37c8ab4e4b83640eb89e03e6d, type: 3}
   audio_descriptivo:
     Guid:
       Data1: -1621768786

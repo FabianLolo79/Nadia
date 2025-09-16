@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: estrellaloca
   m_EditorClassIdentifier: 
-  speciesID: estrellaloca
+  speciesID: "An\xE9mona de mar"
   speciesImage: {fileID: -9002744003752174821, guid: 4b707ee1790a1d9488cf0dfff181bbe7, type: 3}
-  speciesImagePixel: {fileID: 21300000, guid: 687389c8ec6dbcb468cf6e11fd106891, type: 3}
+  speciesImagePixel: {fileID: 21300000, guid: 21d70fdc495fd0648852641e03016b01, type: 3}
   audio_descriptivo:
     Guid:
       Data1: -113987268

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesID: pulpo
   speciesImage: {fileID: 2381719294036119576, guid: dbbc24de0e8281c4f8560ed1105d95ed, type: 3}
-  speciesImagePixel: {fileID: 21300000, guid: 5e0d4e6e7b3a3e44798fc30abff47972, type: 3}
+  speciesImagePixel: {fileID: 21300000, guid: 5ab285a22aaa7f7458eddb32af6ef97f, type: 3}
   audio_descriptivo:
     Guid:
       Data1: 0
