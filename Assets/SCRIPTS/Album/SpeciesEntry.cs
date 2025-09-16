@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using FMODUnity;
 using FMOD.Studio;
+using TMPro;
 
 public class SpeciesEntry : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] private Image iconImage;
+    [SerializeField] private TextMeshProUGUI idText;
+
+
 
     [Header("Colors")]
     [SerializeField] private Color collectedColor = Color.white;
@@ -25,6 +29,9 @@ public class SpeciesEntry : MonoBehaviour
         iconImage.sprite = species.speciesImage;
         iconImage.color = collected ? collectedColor : notCollectedColor;
         descriptiveAudio = species.audio_descriptivo;
+
+        if (idText != null) 
+            idText.text = species.speciesID;
     }
 
     public void PlayDescriptiveAudio()

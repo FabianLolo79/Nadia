@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7259c7ed3dedc84786f4807860b6910, type: 3}
   m_Name: esdepiscis
   m_EditorClassIdentifier: 
-  speciesID: esdepiscis
+  speciesID: Calamar de Cristal
   speciesImage: {fileID: 4678534776429442414, guid: f5540a240137e914bac3ce21d44b8eb9, type: 3}
   speciesImagePixel: {fileID: 21300000, guid: 14eb1163972084c4785a7d00ccebc7a1, type: 3}
   audio_descriptivo:
