@@ -1,8 +1,9 @@
 using System;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement; // <-- Necesario para cambiar de escena
+using UnityEngine.UI;
+using FMODUnity;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,7 +49,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private float timerDecrease = 3f;
 
-    private bool isWarningSoundPlaying = false;
+    // ==== sfx alarma de timer ====
+    private bool isWarningSoundPlaying = false; 
+
     private float timeRemaining;
 
 
@@ -174,7 +177,12 @@ public class GameManager : MonoBehaviour
         // Lanzar evento global para BannerSceneLoader
         EventsManager.Instance?.TimeUp(); // NUEVO
 
+        // NUEVO: Reanudar música al cerrar álbum
+        if (AudioManager.Instance != null)
+            // desactivar el filtro Low-Pass
+            AudioManager.Instance.StopPauseSnapshot();
 
+        RuntimeManager.GetBus("bus:/AudiosDescriptivos").stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     public void EndGameByAlbum()
@@ -262,7 +270,7 @@ public class GameManager : MonoBehaviour
         timerText.text = $"{minutes:00}:{seconds:00}";
 
         // Lógica para reproducir sonido en los últimos 10 segundos
-        if (timeRemaining <= 5f && timeRemaining > 0 && !isWarningSoundPlaying)
+        if (timeRemaining <= 6f && timeRemaining > 0 && !isWarningSoundPlaying)
         {
             AudioManager.Instance.PlayClockAlarm(); // Reproducir sonido de advertencia
             isWarningSoundPlaying = true;
