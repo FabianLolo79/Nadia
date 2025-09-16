@@ -57,13 +57,13 @@ void Start()
             switch (speciesData.speciesScore)
             {
                 case 5:
-                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    Instantiate(FiveScore, transform.position, Quaternion.identity, transform);
                     break;
                 case 10:
-                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    Instantiate(TenScore, transform.position, Quaternion.identity, transform);
                     break;
                 case 15:
-                    Instantiate(NewSpeciesVFX, transform.position, Quaternion.identity, transform);
+                    Instantiate(FifteenScore, transform.position, Quaternion.identity, transform);
                     break;
                 default:
                     Debug.Log("Species score not assigned correctly");
