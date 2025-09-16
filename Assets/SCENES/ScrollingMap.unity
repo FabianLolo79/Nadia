@@ -1211,6 +1211,10 @@ PrefabInstance:
       propertyPath: m_Spacing
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 1743373351006825811, guid: c112f681e4632ea48854644d6055c80c, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 2437866987553578784, guid: c112f681e4632ea48854644d6055c80c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.7249
