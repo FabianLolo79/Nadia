@@ -319,8 +319,7 @@ PrefabInstance:
       propertyPath: albumPanel
       value: 
       objectReference: {fileID: 1714272908}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -859,33 +858,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1176016818258582326, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: garra.Path
-      value: event:/SFX-Submarine/robot_arm
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176016818258582326, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: garra.Guid.Data1
-      value: 361367301
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176016818258582326, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: garra.Guid.Data2
-      value: 1139336049
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176016818258582326, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: garra.Guid.Data3
-      value: -68190023
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176016818258582326, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: garra.Guid.Data4
-      value: -1016974185
-      objectReference: {fileID: 0}
     - target: {fileID: 1524752747186914162, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6607372462424041103, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
-      propertyPath: deadZone
-      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 8586675280890287856, guid: 7a9bd8ba675718d49a53979196eca53e, type: 3}
       propertyPath: m_Pivot.x
@@ -1678,6 +1653,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: species.Array.size
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[28]'
+      value: 
+      objectReference: {fileID: 324341334727109972, guid: dce2f156eb860954d8d1ec45fd3fe2d6, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[29]'
+      value: 
+      objectReference: {fileID: 324341334727109972, guid: dce2f156eb860954d8d1ec45fd3fe2d6, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[30]'
+      value: 
+      objectReference: {fileID: 6261860513568352205, guid: 11793b668a64c20498662829c64ac126, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[31]'
+      value: 
+      objectReference: {fileID: 6261860513568352205, guid: 11793b668a64c20498662829c64ac126, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[32]'
+      value: 
+      objectReference: {fileID: 7752333407973815868, guid: 7393d5c655ba9ea48b142964691b6a5f, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[33]'
+      value: 
+      objectReference: {fileID: 7752333407973815868, guid: 7393d5c655ba9ea48b142964691b6a5f, type: 3}
+    - target: {fileID: 4771785509304438960, guid: 9a6db367156fb594c805ebb3d081ec61, type: 3}
+      propertyPath: 'species.Array.data[34]'
+      value: 
+      objectReference: {fileID: 7752333407973815868, guid: 7393d5c655ba9ea48b142964691b6a5f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

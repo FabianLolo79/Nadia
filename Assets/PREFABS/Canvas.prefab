@@ -123,11 +123,11 @@ MonoBehaviour:
   snapY: 0
   garra:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 361367301
+      Data2: 1139336049
+      Data3: -68190023
+      Data4: -1016974185
+    Path: event:/SFX-Submarine/robot_arm
   background: {fileID: 8760252049599620988}
   handle: {fileID: 6474557880971418236}
   doubleTapMaxDelay: 0.3
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handleRange: 1
-  deadZone: 0
+  deadZone: 0.57
   axisOptions: 0
   snapX: 0
   snapY: 0
@@ -332,11 +332,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: currentSpeed
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: maxPointerSpeed
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633876979009632770, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
+      propertyPath: minPointerSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8902053275594059476, guid: da516f5a9ba87f34d8dec202ff8199ea, type: 3}
       propertyPath: m_Pivot.x

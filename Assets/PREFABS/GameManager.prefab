@@ -54,7 +54,12 @@ MonoBehaviour:
   maxDifficulty: 3
   albumPanel: {fileID: 0}
   timerText: {fileID: 0}
+  currentScore: {fileID: 0}
+  highScore: {fileID: 0}
   gameTime: 60
+  timerIncrease: 3
+  currentPoints: 0
+  timerDecrease: 5
 --- !u!114 &2449593057060611453
 MonoBehaviour:
   m_ObjectHideFlags: 0
