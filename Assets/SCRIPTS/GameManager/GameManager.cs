@@ -57,10 +57,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float timerDecrease = 3f;
 
     // ==== sfx alarma de timer ====
-    private bool isWarningSoundPlaying = false; 
+    private bool isWarningSoundPlaying = false;
 
     private float timeRemaining;
 
+    private bool isPaused;
 
     // ==== Singleton ====
     public static GameManager Instance { get; private set; }
@@ -107,9 +108,9 @@ public class GameManager : MonoBehaviour
         if (scene.name == menuSceneName)
         {
             ResetRun();
-            CurrentState = GameState.Waiting;
+            CurrentState = GameState.Paused;
             Time.timeScale = 1f;
-            UpdateTimerUI();
+            
 
         }
         else if (scene.name == gameplayScene)
@@ -147,6 +148,8 @@ public class GameManager : MonoBehaviour
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
 
+        isPaused = false;
+
         InitializePoints();
         OnGameStart?.Invoke();
         OnStartScroll?.Invoke();
@@ -183,7 +186,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         OnGameEnd?.Invoke();
         OnStopScroll?.Invoke();
-             
+
         // Lanzar evento global para BannerSceneLoader
         EventsManager.Instance?.TimeUp(); // NUEVO
 
@@ -276,9 +279,12 @@ public class GameManager : MonoBehaviour
     // ==== Actualizar UI timer ====
     private void UpdateTimerUI()
     {
+        if (isPaused) return;
+
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = $"{minutes:00}:{seconds:00}";
+
 
         // Lógica para reproducir sonido en los últimos 10 segundos
         if (timeRemaining <= 6f && timeRemaining > 0 && !isWarningSoundPlaying)
@@ -311,16 +317,16 @@ public class GameManager : MonoBehaviour
     private void IncreasePoints(SpeciesSO species)
     {
         currentPoints += species.speciesScore;
-            UpdateScoreUI();
+        UpdateScoreUI();
 
-            // Verificar y guardar highscore
-            if (currentPoints > savedHighScore)
-            {
-                savedHighScore = currentPoints;
-                PlayerPrefs.SetInt("HighScore", savedHighScore);
-                PlayerPrefs.Save();
-                UpdateScoreUI();
-            }
+        // Verificar y guardar highscore
+        if (currentPoints > savedHighScore)
+        {
+            savedHighScore = currentPoints;
+            PlayerPrefs.SetInt("HighScore", savedHighScore);
+            PlayerPrefs.Save();
+            UpdateScoreUI();
+        }
     }
     private void UpdateScoreUI()
     {
@@ -352,6 +358,16 @@ public class GameManager : MonoBehaviour
 
         // Actualizá la UI apenas re-vinculada
         UpdateTimerUI();
+    }
+
+    public void PauseTimer()
+    {
+        PauseGame();
+    }
+
+    public void UnpauseTimer()
+    {
+        ResumeGame();
     }
 
 

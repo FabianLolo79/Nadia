@@ -14,6 +14,9 @@ public class SpeciesMovement : MonoBehaviour
     {
         GameManager.Instance.OnStartScroll += ResumeScroll;
         GameManager.Instance.OnStopScroll += PauseScroll;
+        GameManager.Instance.OnGamePause += PauseScroll;
+        GameManager.Instance.OnGameResume += ResumeScroll;
+
     }
 
     public void PauseScroll()
