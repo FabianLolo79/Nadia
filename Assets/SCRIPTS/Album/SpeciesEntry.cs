@@ -9,7 +9,7 @@ public class SpeciesEntry : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private Image iconImage;
     [SerializeField] private TextMeshProUGUI idText;
-
+    [SerializeField] private GameObject audioButton;
 
 
     [Header("Colors")]
@@ -27,6 +27,9 @@ public class SpeciesEntry : MonoBehaviour
         iconImage.sprite = species.speciesImage;
         iconImage.color = collected ? collectedColor : notCollectedColor;
         descriptiveAudio = species.audio_descriptivo;
+        
+        if (audioButton != null)
+            audioButton.SetActive(!species.audio_descriptivo.IsNull);
 
         if (idText != null) 
             idText.text = species.speciesID;

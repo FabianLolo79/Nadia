@@ -63,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 1540830096725469957}
   idText: {fileID: 223736905662201493}
+  audioButton: {fileID: 8451711217869950439}
   collectedColor: {r: 1, g: 1, b: 1, a: 1}
   notCollectedColor: {r: 0.4, g: 0.4, b: 0.4, a: 0.4}
   descriptiveAudio:
