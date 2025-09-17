@@ -18,8 +18,8 @@ MonoBehaviour:
   speciesImagePixel: {fileID: 21300000, guid: 7d5cd7091d930e24cb0797199cab886e, type: 3}
   audio_descriptivo:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1999510116
+      Data2: 1324108024
+      Data3: 673953157
+      Data4: -1886541891
+    Path: event:/SFX-DESCRIPCION/merenguito
