@@ -331,10 +331,10 @@ public class GameManager : MonoBehaviour
     private void UpdateScoreUI()
     {
         if (currentScore != null)
-            currentScore.text = $"Score: {currentPoints}";
+            currentScore.text = $"{currentPoints}";
 
         if (highScore != null)
-            highScore.text = $"High Score: {savedHighScore}";
+            highScore.text = $"{savedHighScore}";
     }
 
     private void InitializePoints()
