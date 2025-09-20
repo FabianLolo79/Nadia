@@ -1189,6 +1189,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2035453885779043343, guid: 856832b157ac7dd4fa22d246e6b3e45f, type: 3}
+      propertyPath: m_TagString
+      value: CurrentScoreText
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929282223127200937, guid: 856832b157ac7dd4fa22d246e6b3e45f, type: 3}
+      propertyPath: m_Name
+      value: TimerText
+      objectReference: {fileID: 0}
     - target: {fileID: 3203467895140962315, guid: 856832b157ac7dd4fa22d246e6b3e45f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1237,6 +1245,10 @@ PrefabInstance:
       propertyPath: playerCollection
       value: 
       objectReference: {fileID: 2058899204}
+    - target: {fileID: 8776686673452096403, guid: 856832b157ac7dd4fa22d246e6b3e45f, type: 3}
+      propertyPath: m_TagString
+      value: HighScoreText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

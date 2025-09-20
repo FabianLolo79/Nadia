@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Target
   - TimeText
+  - TimerText
+  - CurrentScoreText
+  - HighScoreText
   layers:
   - Default
   - TransparentFX

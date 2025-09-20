@@ -94,7 +94,6 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f; // aseguramos que esté activo
 
-        savedHighScore = PlayerPrefs.GetInt("HighScore", 0);
         UpdateTimerUI();
 
         albumPanel.SetActive(false);
@@ -103,18 +102,21 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        RebindSceneRefs();
+        
 
         if (scene.name == menuSceneName)
         {
             ResetRun();
             CurrentState = GameState.Paused;
             Time.timeScale = 1f;
-            
+
 
         }
         else if (scene.name == gameplayScene)
         {
+            RebindSceneRefs();
+
+
             ResetRun();
             CurrentState = GameState.Playing;
             Time.timeScale = 1f;
@@ -307,12 +309,16 @@ public class GameManager : MonoBehaviour
         timeRemaining = gameTime;
         DifficultyMult = baseDifficulty;        //  Reinicio dificultad
 
+        currentPoints = 0; //Reinicio puntaje actual
+        savedHighScore = PlayerPrefs.GetInt("HighScore", 0);  // Carga el récord
+
+        UpdateScoreUI();
         UpdateTimerUI();
     }
 
     private void IncreaseTimer()
     {
-        timeRemaining += timerIncrease;
+        timeRemaining = Mathf.Clamp(timeRemaining + timerIncrease, 0, gameTime);
     }
     private void IncreasePoints(SpeciesSO species)
     {
@@ -346,8 +352,7 @@ public class GameManager : MonoBehaviour
 
     private void DecreaseTimer()
     {
-        timeRemaining -= timerDecrease;
-
+        timeRemaining = Mathf.Clamp(timeRemaining - timerDecrease, 0, gameTime); //evita valores negativos
     }
 
     private void RebindSceneRefs()
@@ -356,8 +361,16 @@ public class GameManager : MonoBehaviour
         var tgo = GameObject.FindWithTag("TimerText");
         timerText = tgo ? tgo.GetComponent<TMP_Text>() : null;
 
+        var scoreGo = GameObject.FindWithTag("CurrentScoreText");
+        currentScore = scoreGo ? scoreGo.GetComponent<TMP_Text>() : null;
+
+        var highScoreGo = GameObject.FindWithTag("HighScoreText");
+        highScore = highScoreGo ? highScoreGo.GetComponent<TMP_Text>() : null;
+
         // Actualizá la UI apenas re-vinculada
         UpdateTimerUI();
+        UpdateScoreUI();
+
     }
 
     public void PauseTimer()
